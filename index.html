@@ -4,6 +4,9 @@
 <head>
     <title>Kyle Schnitzer</title>
 
+    <!-- Link CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
     <!-- Link Font Awesome stylesheet CDN -->
     <script src="https://kit.fontawesome.com/eba0e32aea.js" crossorigin="anonymous"></script>
 
@@ -17,23 +20,23 @@
 
 <body>
     <!-- Header Section -->
-    <header id="home">
+    <header>
         <!-- Navigation Section -->
-        <nav id="nav-bar">
+        <nav>
             <ul>
-                <li>
+                <li class="nav-list">
                     <a href="#home">Home</a>
                 </li>
-                <li>
+                <li class="nav-list">
                     <a href="#about">About</a>
                 </li>
-                <li>
+                <li class="nav-list" class="dropdown-toggle">
                     Resume
-                    <ul>
-                        <li>
+                    <ul class = dropdown-menu>
+                        <li class="nav-list" class ="dropdown-content">
                             <a href="#education">Education</a>
                         </li>
-                        <li>
+                        <li class="nav-list" class ="dropdown-content">
                             <a href="#experience">Experience</a>
                         </li>
                     </ul>
