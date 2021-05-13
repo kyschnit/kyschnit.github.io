@@ -4,10 +4,27 @@ html{
 
 .social{
     color: gray;
-    opacity: 0.5;
+    transition: color 0.2s;
+    padding-left: 2px;
 }
 
 .social:hover{
+    color: white;
+}
+
+.nav-link{
     color: gray;
-    opacity: 1;
+    transition: color 0.2s;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+#user-img{
+    margin-top: 1%;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    width: 200px;
 }
