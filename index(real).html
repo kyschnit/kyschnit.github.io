@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- Link CSS Stylesheet -->
@@ -28,23 +28,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Header Section -->
     <header>
         <div class="container-fluid" id="home">
-            <h1>Hi, I'm Kyle Schnitzer.</h1>
-            <p>
-                I'm a rising sophomore at the University of Michigan College of Engineering.
-            </p>
-            <p>
-                This site is intended to give you a short overview of 
-                <span class="text-link"><a href="#about">who I am</a></span>, 
-                <span class="text-link"><a href="#education">my education</a></span>, and 
-                <span class="text-link"><a href="#experience">my experience</a></span>.
-            </p>
-            <p>
-                Keep scrolling to learn more!
-            </p>
+            <div class="d-flex justify-content-center my-5">
+                <h1>Hi, I'm Kyle Schnitzer.</h1>
+            </div>
+            <div class="mb-5">
+                <img src="imgs/user.jpg" class="mx-auto d-block" id="user-img" alt="Kyle Schnitzer">
+            </div>
+            <div class="d-flex justify-content-center align-items-center mb-5">
+                <p id="intro">
+                    I'm a rising sophomore at the University of Michigan College of Engineering. <br><br>
+                    This site is intended to give you a short overview of
+                    <span class="text-link"><a href="#about">who I am</a></span>,
+                    <span class="text-link"><a href="#education">my education</a></span>, and
+                    <span class="text-link"><a href="#experience">my experience</a></span>. <br><br>
+                    Keep scrolling to learn more!
+                </p>
+            </div>
         </div>
     </header>
 
@@ -85,27 +88,31 @@
             </a>
         </div>
     </nav>
-  
+
     <!-- Main Section -->
     <main>
-        <div id="about">
-            <img src="imgs/user.jpg" class="mx-auto d-block" id="user-img" alt="Kyle Schnitzer">
+        <div class="container-fluid mt-3" id="about">
+
             <h2>About Me</h2>
             <p>
-                I'm a rising sophomore studying computer science at the University of Michigan. I'm still discovering my passions within the field,
-                but I have enjoyed my experiences with web design and Android app development. I'm willing to try anything at least once, and I'm 
-                constantly expanding my working knowledge. My primary programming experience lies in Java and C++. 
+                I'm a rising sophomore studying computer science at the University of Michigan. I'm still discovering my
+                passions within the field,
+                but I have enjoyed my experiences with web design and Android app development. I'm willing to try
+                anything at least once, and I'm
+                constantly expanding my working knowledge. My primary programming experience lies in Java and C++.
             </p>
             <p>
-                I grew up surrounded by technology, so it seemed almost inevitable that I would major in computer science. It is something that has
+                I grew up surrounded by technology, so it seemed almost inevitable that I would major in computer
+                science. It is something that has
                 shaped my life, and I hope to use it to make a positive impact on the world around me.
             </p>
             <p>
-                Outside of computers, my interests include running, biking, hiking, camping, playing video games, and 3D modeling with CAD software
+                Outside of computers, my interests include running, biking, hiking, camping, playing video games, and 3D
+                modeling with CAD software
                 (to view some of my CAD work, click here).
             </p>
         </div>
-        <div id="education">
+        <div class="container-fluid mt-3" id="education">
             <h2>Education</h2>
             <h3>University of Michigan</h3>
             <p>BSE in Computer Science &middot; Ann Arbor, MI &middot; August 2020 - April 2024(est.)</p>
@@ -118,21 +125,25 @@
                 <li>MATH 216 - Introduction to Differential Equations</li>
             </ul>
         </div>
-        <div id="experience">
+        <div class="container-fluid mt-3" id="experience">
             <h2>Experience</h2>
             <h3>Projects</h3>
+            <h4>Machine Learning</h4>
+            <h4>Web Backend</h4>
             <h4>Euchre</h4>
             <h4>Computer Vision/Seam Carving</h4>
             <h4>Cubes - A Video Game for Children with ASD</h4>
-            <h4>This Website(kyle-schnitzer.com)</h4>
+            <h4>This Website (kyle-schnitzer.com)</h4>
             <h4>Hungr</h4>
             <h3>Extracurriculars</h3>
             <h4>Michigan Hackers</h4>
+            <h4>Michigan Aeronautical Science Association (MASA)</h4>
             <h3>Work</h3>
+            <h4>Epsilon Imaging - Software Intern</h4>
         </div>
     </main>
     <!-- Footer Section -->
-    <footer id="contact">
+    <footer class="container-fluid mt-3" id="contact">
         <h2>Contact Me</h2>
     </footer>
 

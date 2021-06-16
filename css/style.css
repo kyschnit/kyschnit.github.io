@@ -26,5 +26,10 @@ html{
     border-radius: 50%;
     border-style: solid;
     border-color: black;
-    width: 200px;
+    border-width: 2px;
+    width: 150px;
+}
+
+#intro{
+    text-align: center;
 }
