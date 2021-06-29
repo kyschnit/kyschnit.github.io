@@ -2,8 +2,31 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: #27253c;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgray;
+}
+
+.header{
+    background-image: url("../imgs/background.jpg");
+    background-size: cover;
+}
+
+span>a{
+    color: #2E9CCA;
+}
+
+span>a:hover{
+    color: #29648A;
+}
+
+nav{
+    background-color: #737091;
+}
+
 .social{
-    color: gray;
+    color: lightgray;
     transition: color 0.2s;
     padding-left: 2px;
 }
@@ -32,4 +55,8 @@ html{
 
 #intro{
     text-align: center;
+}
+
+#about{
+    background-color: #73a0a5;
 }
