@@ -9,7 +9,7 @@ body{
 }
 
 .header{
-    overflow-y: scroll;
+    overflow: auto;
     font-size: 20px;
     
     background-image: url("../imgs/background.jpg");
