@@ -63,7 +63,7 @@ span>a:hover{
 }
 
 nav{
-    background-color: #182224;
+    background-color: #363e44;
 }
 
 .nav-link{
@@ -87,11 +87,11 @@ nav{
 
 .info{
     background-color: #c4ced5;
-    box-shadow: 5px 4px 4px black;
+    box-shadow: 3px 2px 2px black;
 }
 
 h2{
-    background-color: #182224;
+    background-color: #363e44;
     color: #fff;
     font-weight: bold;
     letter-spacing: 2px;

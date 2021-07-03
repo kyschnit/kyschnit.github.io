@@ -1,7 +1,5 @@
 TODO
 
 Add CAD portfolio
-Style with CSS
-Add experience descriptions
-Break up sections for CSS styling
-Add contact info
+Add descriptions(content)
+Add email, social links to contact section
