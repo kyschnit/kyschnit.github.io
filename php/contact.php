@@ -4,10 +4,10 @@ require('recaptcha-master/src/autoload.php');
 
 // configure
 // an email address that will be in the From field of the email.
-$from = 'Demo contact form <demo@domain.com>';
+$from = '<contact@kyle-schnitzer.com>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'kyschnit@umich.edu';
+$sendTo = '<kyschnit@umich.edu>';
 
 // subject of the email
 $subject = 'New message from contact form';
@@ -66,7 +66,7 @@ try {
 		// All the neccessary headers for the email.
 		$headers = array('Content-Type: text/plain; charset="UTF-8";',
 			'From: ' . $from,
-			'Reply-To: ' . $from,
+			'Reply-To: ' . $_POST['email'],
 			'Return-Path: ' . $from,
 		);
 		
