@@ -7,7 +7,7 @@ require('recaptcha-master/src/autoload.php');
 $from = 'Demo contact form <demo@domain.com>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'Demo contact form <demo@domain.com>';
+$sendTo = 'kyschnit@umich.edu';
 
 // subject of the email
 $subject = 'New message from contact form';
@@ -23,7 +23,7 @@ $okMessage = 'Contact form successfully submitted. Thank you, I will get back to
 $errorMessage = 'There was an error while submitting the form. Please try again later';
 
 // ReCaptch Secret
-$recaptchaSecret = '6LcNDXIbAAAAAF0pAeU6JPrNbV4vGnb6bbr16sAh';
+$recaptchaSecret = '6LdOOXIbAAAAAEdAqH_ud2WfEfXrks3nLNhRBIHe';
 
 // let's do the sending
 

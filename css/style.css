@@ -107,5 +107,9 @@ h2{
 }
 
 .btn:hover{
-    background-color: #29648A;;
+    background-color: #29648A;
+}
+
+.help-block{
+    color: red;
 }
