@@ -3,17 +3,55 @@ html{
 }
 
 body{
-    background-color: #27253c;
+    background-color: #E1BFC3;
     font-family: 'Calibri', 'Candara', 'Segoe', 'Segoe UI', 'Optima', Arial, sans-serif;
     color: black;
 }
 
 .header{
-    background-image: url("../imgs/background.jpg");
-    background-size: cover;
-    height: 100vh;
-    overflow: auto;
+    overflow-y: scroll;
     font-size: 20px;
+    
+    background-image: url("../imgs/background.jpg");
+
+    min-height: 500px;
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#intro-name{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 0 #333,
+        -1px -1px 0 #333,
+        1px -1px 0 #333,
+        -1px 1px 0 #333,
+        2px 2px 5px rgba(0,0,0,0.65);
+}
+
+#user-img{
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 2px 1px 1px black;
+    width: 150px;
+}
+
+#intro-text{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 0 #333,
+        -1px -1px 0 #333,
+        1px -1px 0 #333,
+        -1px 1px 0 #333,
+        2px 2px 5px rgba(0,0,0,0.65);
 }
 
 span>a{
@@ -25,7 +63,16 @@ span>a:hover{
 }
 
 nav{
-    background-color: #737091;
+    background-color: #182224;
+}
+
+.nav-link{
+    color: gray;
+    transition: color 0.2s;
+}
+
+.nav-link:hover{
+    color: white;
 }
 
 .social{
@@ -38,27 +85,27 @@ nav{
     color: white;
 }
 
-.nav-link{
-    color: gray;
-    transition: color 0.2s;
+.info{
+    background-color: #c4ced5;
+    box-shadow: 5px 4px 4px black;
 }
 
-.nav-link:hover{
-    color: white;
+h2{
+    background-color: #182224;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-left: 0.5%;
 }
 
-#user-img{
-    border-radius: 50%;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    width: 150px;
+.school-logo{
+    width: 4%;
 }
 
-#intro{
-    text-align: center;
+.btn{
+    background-color: #2E9CCA;
 }
 
-#about{
-    background-color: #73a0a5;
+.btn:hover{
+    background-color: #29648A;;
 }
