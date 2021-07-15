@@ -4,3 +4,4 @@ Add CAD portfolio
 Add descriptions(content)
 Add email, social links to contact section
 Fix captcha post error
+Fix mobile formatting(@media?)
