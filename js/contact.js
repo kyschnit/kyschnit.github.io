@@ -12,9 +12,19 @@ window.onload = function() {
 		.then(function() {
 			console.log('SUCCESS!');
 			document.getElementById('contact-form').reset();
+			$(document).ready(function(){
+				$('button').click(function(){
+					$('.alert-success').show()
+				}) 
+			});
 			
 		}, function(error) {
 			console.log('FAILED...', error);
+			$(document).ready(function(){
+				$('button').click(function(){
+					$('.alert-danger').show()
+				}) 
+			});
 		});
 	});
 }
