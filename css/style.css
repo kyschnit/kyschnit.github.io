@@ -130,3 +130,8 @@ p{
     background-color: #235475;
     color: white;
 }
+
+.alert{
+    line-height:35px;
+    padding: 0px 10px;
+}
