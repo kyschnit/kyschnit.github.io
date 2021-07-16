@@ -1,36 +1,24 @@
-$(function () {
+(function() {
+	emailjs.init("user_S9naJDiA4QnWLZ8GpMkXx");
+})();
 
-	window.verifyRecaptchaCallback = function (response) {
-		$('input[data-recaptcha]').val(response).trigger('change')
+window.onload = function() {
+	document.getElementById('contact-form').addEventListener('submit', function(event) {
+		event.preventDefault();
+		// generate a five digit number for the contact_number variable
+		this.contact_number.value = Math.random() * 100000 | 0;
+		// these IDs from the previous steps
+		emailjs.sendForm('contact_service', 'contact_form', this)
+		.then(function() {
+			console.log('SUCCESS!');
+		}, function(error) {
+			console.log('FAILED...', error);
+		});
+	});
+}
+
+function onSubmit() {
+	if(document.getElementById('security').value == 42){
+		return true;
 	}
-
-	window.expiredRecaptchaCallback = function () {
-		$('input[data-recaptcha]').val("").trigger('change')
-	}
-
-	$('#contact-form').validator();
-
-	$('#contact-form').on('submit', function (e) {
-		if (!e.isDefaultPrevented()) {
-			var url = "http://kyle-schnitzer.com/php/contact.php";
-
-			$.ajax({
-				type: "POST",
-				url: url,
-				data: $(this).serialize(),
-				success: function (data) {
-					var messageAlert = 'alert-' + data.type;
-					var messageText = data.message;
-
-					var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-					if (messageAlert && messageText) {
-						$('#contact-form').find('.messages').html(alertBox);
-						$('#contact-form')[0].reset();
-						grecaptcha.reset();
-					}
-				}
-			});
-			return false;
-		}
-	})
-});
+}
