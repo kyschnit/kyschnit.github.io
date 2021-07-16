@@ -3,7 +3,7 @@
 })();
 
 function successAlert() {
-	if($('#alert-failure').hasClass('in')) {
+	if($('#alert-failure').hasClass('show')) {
 		$('alert-failure').hide();
 	}
 	$('#alert-success').fadeIn(1000);
@@ -13,7 +13,7 @@ function successAlert() {
 }
 
 function failureAlert() {
-	if($('#alert-success').hasClass('in')) {
+	if($('#alert-success').hasClass('show')) {
 		$('alert-success').hide();
 	}
 	$('#alert-failure').fadeIn(1000);
