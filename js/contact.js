@@ -3,27 +3,23 @@
 })();
 
 function successAlert() {
-	$('#alert-success').fadeIn(1000);
 	if($('#alert-failure').hasClass('in')) {
 		$('alert-failure').hide();
 	}
+	$('#alert-success').fadeIn(1000);
 	setTimeout(function() { 
 		$('#alert-success').fadeOut(1000); 
 	}, 5000);
 }
 
 function failureAlert() {
+	if($('#alert-success').hasClass('in')) {
+		$('alert-success').hide();
+	}
 	$('#alert-failure').fadeIn(1000);
 	setTimeout(function() { 
-		if($('#alert-success').hasClass('in')) {
-			$('alert-success').hide();
-		}
 		$('#alert-failure').fadeOut(1000); 
 	}, 5000);
-}
-
-function checkAlertState(){
-	
 }
 
 window.onload = function() {
