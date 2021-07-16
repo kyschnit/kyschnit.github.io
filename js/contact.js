@@ -11,6 +11,8 @@ window.onload = function() {
 		emailjs.sendForm('contact_service', 'contact_form', this)
 		.then(function() {
 			console.log('SUCCESS!');
+			document.getElementById('contact-form').reset();
+			
 		}, function(error) {
 			console.log('FAILED...', error);
 		});
