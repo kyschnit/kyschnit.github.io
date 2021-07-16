@@ -118,12 +118,15 @@ p{
 
 .btn{
     background-color: #2E9CCA;
+    color: white;
 }
 
 .btn:hover{
     background-color: #29648A;
+    color: white;
 }
 
-.help-block{
-    color: red;
+.btn:active{
+    background-color: #235475;
+    color: white;
 }

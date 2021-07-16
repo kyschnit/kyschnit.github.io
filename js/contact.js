@@ -16,9 +16,3 @@ window.onload = function() {
 		});
 	});
 }
-
-function onSubmit() {
-	if(document.getElementById('security').value == 42){
-		return true;
-	}
-}
