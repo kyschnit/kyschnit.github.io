@@ -3,5 +3,5 @@ TODO
 Add CAD portfolio
 Add descriptions(content)
 Add email, social links to contact section
-Fix captcha post error
-Fix mobile formatting(@media?)
+Fix mobile formatting(@media?) - partially done, do as I go along
+Format experience section using navs

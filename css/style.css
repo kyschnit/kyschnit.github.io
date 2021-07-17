@@ -75,6 +75,24 @@ nav{
     color: white;
 }
 
+.nav-pills>.nav-item>a{
+    color: black;
+}
+
+.nav-pills>.nav-item{
+    background-color: #8fa3b3;
+    border-radius: 7%;
+}
+
+.nav-pills>.nav-item:hover{
+    background-color: #687580;
+    border-radius: 7%;
+}
+
+.nav-pills>.nav-item .active{
+    background-color: #363e44;
+}
+
 .social{
     color: lightgray;
     transition: color 0.2s;
@@ -113,7 +131,8 @@ p{
 }
 
 .school-logo{
-    width: 4%;
+    max-width: 100%;
+    height: auto;
 }
 
 .btn{
