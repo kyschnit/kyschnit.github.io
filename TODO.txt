@@ -4,4 +4,5 @@ Add CAD portfolio
 Add descriptions(content)
 Add email, social links to contact section
 Fix mobile formatting(@media?) - partially done, do as I go along
-Format experience section using navs
+Format experience section using navs + flex wrap
+Format education section using cards + flex wrap
