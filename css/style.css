@@ -29,8 +29,6 @@ body {
 }
 
 #user-img {
-    border-radius: 50%;
-    border: 1px solid black;
     box-shadow: 2px 1px 1px black;
     width: 150px;
 }
