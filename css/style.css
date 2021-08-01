@@ -11,8 +11,7 @@ body {
 .header {
     overflow: auto;
     font-size: 20px;
-    background-image: url("../imgs/background.jpg");
-    background-repeat: no-repeat;
+    background: url("../imgs/background.jpg") no-repeat center center fixed;
     background-size: cover;
     min-height: 500px;
     height: 100vh;
