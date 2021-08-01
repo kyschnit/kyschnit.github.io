@@ -12,6 +12,8 @@ body {
     overflow: auto;
     font-size: 20px;
     background-image: url("../imgs/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 500px;
     height: 100vh;
     background-attachment: fixed;
@@ -108,4 +110,18 @@ footer .social:hover {
 .school-logo {
     max-width: 100%;
     height: auto;
+}
+
+.expand-caret {
+    color: white;
+    transition: opacity 0.2s, transform 0.2s;
+    opacity: 1;
+}
+
+.expand-caret:hover {
+    opacity: 0.7;
+}
+
+a[aria-expanded='false']>.expand-caret {
+    transform: rotate(90deg);
 }

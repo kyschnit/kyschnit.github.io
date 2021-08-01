@@ -106,34 +106,52 @@
     <!-- Main Section -->
     <main>
         <div class="info d-flex flex-column mt-3 mx-4 px-3 pt-3 rounded" id="about">
-            <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 rounded">About Me</h2>
-            <p>
-                I'm a rising sophomore studying computer science at the University of Michigan. I'm still discovering my
-                passions within the field,
-                but I have enjoyed my experiences with web development and Android app development. I'm always willing
-                to learn something new, and I'm
-                constantly expanding my working knowledge. My primary programming experience lies in C++, Java, and
-                Angular.
-                I'm currently a software engineering intern at Epsilon Imaging, Inc.
-            </p>
-            <p>
-                I grew up surrounded by technology, so it seemed almost inevitable that I would major in computer
-                science. It is something that has
-                shaped my life, and I hope to use it to make a positive impact on the world around me.
-            </p>
-            <p>
-                Outside of programming, my interests include reading, running, biking, hiking, camping, playing video
-                games, and 3D
-                modeling with CAD software.
-                <!-- (to view some of my CAD work, click here) --> I am a member of MASA, the
-                University of Michigan's student rocketry club. I also help to lead Ten for Men, a youth group for
-                students at
-                the high school I attended.
-            </p>
+            <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 mb-3 rounded">About Me
+                <span class="float-right pr-3">
+                    <a data-toggle="collapse" data-target="#about-content" href="#about-content" aria-expanded="true">
+                        <i class="fas fa-caret-down 2x expand-caret"></i>
+                    </a>
+                </span>
+            </h2>
+            <div class="collapse show" id="about-content">
+                <p>
+                    I'm a rising sophomore studying computer science at the University of Michigan. I'm still
+                    discovering my
+                    passions within the field,
+                    but I have enjoyed my experiences with web development and Android app development. I'm always
+                    willing
+                    to learn something new, and I'm
+                    constantly expanding my working knowledge. My primary programming experience lies in C++, Java, and
+                    Angular.
+                    I'm currently a software engineering intern at Epsilon Imaging, Inc.
+                </p>
+                <p>
+                    I grew up surrounded by technology, so it seemed almost inevitable that I would major in computer
+                    science. It is something that has
+                    shaped my life, and I hope to use it to make a positive impact on the world around me.
+                </p>
+                <p>
+                    Outside of programming, my interests include reading, running, biking, hiking, camping, playing
+                    video
+                    games, and 3D
+                    modeling with CAD software.
+                    <!-- (to view some of my CAD work, click here) --> I am a member of MASA, the
+                    University of Michigan's student rocketry club. I also help to lead Ten for Men, a youth group for
+                    students at
+                    the high school I attended.
+                </p>
+            </div>
         </div>
         <div class="info d-flex flex-column mt-3 mx-4 px-3 pt-3 rounded" id="education">
-            <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 rounded">Education</h2>
-            <div class="card-deck mt-2 mb-4">
+            <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 mb-3 rounded">Education
+                <span class="float-right pr-3">
+                    <a data-toggle="collapse" data-target="#education-content" href="#education-content"
+                        aria-expanded="true">
+                        <i class="fas fa-caret-down 2x expand-caret"></i>
+                    </a>
+                </span>
+            </h2>
+            <div class="card-deck mt-2 mb-4 collapse show" id="education-content">
                 <div class="card shadow-sm">
                     <div class="card-body">
                         <h3 class="card-title">University of Michigan</h3>
@@ -174,95 +192,104 @@
             </div>
         </div>
         <div class="info d-flex flex-column mt-3 mx-4 px-3 pt-3 rounded" id="experience">
-            <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 rounded">Experience</h2>
-            <ul class="nav nav-pills nav-justified mt-2" role="tablist">
-                <li class="nav-item mr-1 rounded">
-                    <a class="nav-link active" data-toggle="pill" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item mr-1 rounded">
-                    <a class="nav-link" data-toggle="pill" href="#extracurriculars">Extracurriculars</a>
-                </li>
-                <li class="nav-item rounded">
-                    <a class="nav-link" data-toggle="pill" href="#work">Work</a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="projects">
-                    <div class="card-columns my-3">
-                        <div class="card bg-light shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">Road Trip Radius</h3>
-                                <h4 class="card-subtitle">HTML, CSS, JavaScript, Bootstrap</h4>
+            <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 mb-3 rounded">Experience
+                <span class="float-right pr-3">
+                    <a data-toggle="collapse" data-target="#experience-content" href="#experience-content"
+                        aria-expanded="true">
+                        <i class="fas fa-caret-down 2x expand-caret"></i>
+                    </a>
+                </span>
+            </h2>
+            <div class="collapse show" id="experience-content">
+                <ul class="nav nav-pills nav-justified mt-1" role="tablist">
+                    <li class="nav-item mr-1 rounded">
+                        <a class="nav-link active" data-toggle="pill" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item mr-1 rounded">
+                        <a class="nav-link" data-toggle="pill" href="#extracurriculars">Extracurriculars</a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link" data-toggle="pill" href="#work">Work</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="projects">
+                        <div class="card-columns my-3">
+                            <div class="card bg-light shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title">Road Trip Radius</h3>
+                                    <h4 class="card-subtitle">HTML, CSS, JavaScript, Bootstrap</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card bg-light shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">This Website (kyle-schnitzer.com)</h3>
-                                <h4 class="card-subtitle">HTML, CSS, JavaScript, Bootstrap</h4>
+                            <div class="card bg-light shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title">This Website (kyle-schnitzer.com)</h3>
+                                    <h4 class="card-subtitle">HTML, CSS, JavaScript, Bootstrap</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card bg-light shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">Machine Learning</h3>
-                                <h4 class="card-subtitle">C++</h4>
+                            <div class="card bg-light shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title">Machine Learning</h3>
+                                    <h4 class="card-subtitle">C++</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card bg-light shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">Web Backend</h3>
-                                <h4 class="card-subtitle">C++</h4>
+                            <div class="card bg-light shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title">Web Backend</h3>
+                                    <h4 class="card-subtitle">C++</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card bg-light shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">Euchre</h3>
-                                <h4 class="card-subtitle">C++</h4>
+                            <div class="card bg-light shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title">Euchre</h3>
+                                    <h4 class="card-subtitle">C++</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card bg-light shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">Seam Carving</h3>
-                                <h4 class="card-subtitle">C++</h4>
+                            <div class="card bg-light shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title">Seam Carving</h3>
+                                    <h4 class="card-subtitle">C++</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card bg-light shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">Cubes</h3>
-                                <h4 class="card-subtitle">GameMaker Language</h4>
+                            <div class="card bg-light shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title">Cubes</h3>
+                                    <h4 class="card-subtitle">GameMaker Language</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card bg-light shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">Hungr</h3>
-                                <h4 class="card-subtitle">Java, Android Studio</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="extracurriculars">
-                    <div class="card-columns my-3">
-                        <div class="card bg-light shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">Ten for Men</h3>
-                            </div>
-                        </div>
-                        <div class="card bg-light shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">Michigan Hackers</h3>
-                            </div>
-                        </div>
-                        <div class="card bg-light shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">MASA</h3>
+                            <div class="card bg-light shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title">Hungr</h3>
+                                    <h4 class="card-subtitle">Java, Android Studio</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="work">
-                    <div class="card-columns my-3">
-                        <div class="card bg-light shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">Epsilon Imaging</h3>
+                    <div class="tab-pane fade" id="extracurriculars">
+                        <div class="card-columns my-3">
+                            <div class="card bg-light shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title">Ten for Men</h3>
+                                </div>
+                            </div>
+                            <div class="card bg-light shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title">Michigan Hackers</h3>
+                                </div>
+                            </div>
+                            <div class="card bg-light shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title">MASA</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="work">
+                        <div class="card-columns my-3">
+                            <div class="card bg-light shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title">Epsilon Imaging</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -272,103 +299,114 @@
     </main>
     <!-- Footer Section -->
     <footer class="info d-flex flex-column my-3 mx-4 px-3 pt-3 rounded" id="contact">
-        <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 rounded">Contact Me</h2>
+        <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 mb-3 rounded">Contact Me
+            <span class="float-right pr-3">
+                <a data-toggle="collapse" data-target="#contact-content" href="#contact-content" aria-expanded="true">
+                    <i class="fas fa-caret-down 2x expand-caret"></i>
+                </a>
+            </span>
+        </h2>
+        <div class="collapse show" id="contact-content">
+            <div class="d-flex justify-content-center mt-2">
+                <a href="https://github.com/kyschnit" aria-label="Github" data-toggle="tooltip" data-placement="bottom"
+                    title="Visit my GitHub!" class="mr-4 social" id="github" target="_blank">
+                    <i class="fab fa-github fa-4x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/kyle-schnitzer-a203211a6/" aria-label="LinkedIn"
+                    data-toggle="tooltip" data-placement="bottom" title="Visit my LinkedIn!" class="social"
+                    id="linkedin" target="_blank">
+                    <i class="fab fa-linkedin fa-4x"></i>
+                </a>
+                <a href="mailto:kyschnit@umich.edu" aria-label="Send an Email" data-toggle="tooltip"
+                    data-placement="bottom" title="Send me an email at kyschnit@umich.edu" class="ml-4 social"
+                    id="mail">
+                    <i class="fas fa-envelope fa-4x"></i>
+                </a>
+            </div>
 
-        <div class="d-flex justify-content-center mt-2">
-            <a href="https://github.com/kyschnit" aria-label="Github" data-toggle="tooltip" data-placement="bottom"
-                title="Visit my GitHub!" class="mr-4 social" id="github" target="_blank">
-                <i class="fab fa-github fa-4x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/kyle-schnitzer-a203211a6/" aria-label="LinkedIn" data-toggle="tooltip"
-                data-placement="bottom" title="Visit my LinkedIn!" class="social" id="linkedin" target="_blank">
-                <i class="fab fa-linkedin fa-4x"></i>
-            </a>
-            <a href="mailto:kyschnit@umich.edu" aria-label="Send an Email" data-toggle="tooltip" data-placement="bottom"
-                title="Send me an email at kyschnit@umich.edu" class="ml-4 social" id="mail">
-                <i class="fas fa-envelope fa-4x"></i>
-            </a>
-        </div>
+            <form id="contact-form" method="post">
+                <div class="form-group" style="display: none">
+                    <input type="hidden" name="contact_number" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" placeholder="Your Name" id="name" name="user_name"
+                        required="required" data-error="Name is required.">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" placeholder="Your Email" id="email" name="user_email"
+                        required="required" data-error="Email is required.">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" class="form-control" placeholder="Message Subject" id="subject" name="subject"
+                        required="required" data-error="Subject is required.">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea type="text" class="form-control" placeholder="Your Message" rows="5" id="message"
+                        name="message" required="required" data-error="Please enter a message."></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6LdOOXIbAAAAAFgHQoZz3djcph517dpoT76GeUIQ"></div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-primary mb-3 col-lg-1 mr-2"
+                        value="Send Message">Submit</button>
+                </div>
+                <div class="modal fade" id="modal-success" data-backdrop="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border border-success">
 
-        <form id="contact-form" method="post">
-            <div class="form-group" style="display: none">
-                <input type="hidden" name="contact_number" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control" placeholder="Your Name" id="name" name="user_name"
-                    required="required" data-error="Name is required.">
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" placeholder="Your Email" id="email" name="user_email"
-                    required="required" data-error="Email is required.">
-            </div>
-            <div class="form-group">
-                <label for="subject">Subject:</label>
-                <input type="text" class="form-control" placeholder="Message Subject" id="subject" name="subject"
-                    required="required" data-error="Subject is required.">
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea type="text" class="form-control" placeholder="Your Message" rows="5" id="message"
-                    name="message" required="required" data-error="Please enter a message."></textarea>
-            </div>
-            <div class="form-group">
-                <div class="g-recaptcha" data-sitekey="6LdOOXIbAAAAAFgHQoZz3djcph517dpoT76GeUIQ"></div>
-            </div>
-            <div class="d-flex justify-content-between">
-                <button type="submit" class="btn btn-primary mb-3 col-lg-1 mr-2" value="Send Message">Submit</button>
-            </div>
-            <div class="modal fade" id="modal-success" data-backdrop="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content border border-success">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Message Sent</h4>
+                                <button type="button" class="close" data-dismiss="modal"
+                                    aria-label="Close">&times;</button>
+                            </div>
 
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                            <h4 class="modal-title">Message Sent</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Your message has been sent!
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-dismiss="modal"
+                                    aria-label="Close">Close</button>
+                            </div>
+
                         </div>
-
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            Your message has been sent!
-                        </div>
-
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-success" data-dismiss="modal"
-                                aria-label="Close">Close</button>
-                        </div>
-
                     </div>
                 </div>
-            </div>
-            <div class="modal fade" id="modal-failure" data-backdrop="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content border border-danger">
+                <div class="modal fade" id="modal-failure" data-backdrop="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border border-danger">
 
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                            <h4 class="modal-title">Message Failed to Send</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Message Failed to Send</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Make sure you have completed the captcha.
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
                         </div>
-
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            Make sure you have completed the captcha.
-                        </div>
-
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                        </div>
-
                     </div>
                 </div>
+            </form>
+            <div class="d-flex justify-content-center">
+                <p class="text-muted">Website created by Kyle Schnitzer. Hosted on Github Pages.</p>
             </div>
-        </form>
-        <div class="d-flex justify-content-center">
-            <p class="text-muted">Website created by Kyle Schnitzer. Hosted on Github Pages.</p>
         </div>
     </footer>
 </body>
