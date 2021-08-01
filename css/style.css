@@ -1,156 +1,113 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: #E1BFC3;
-    font-family: 'Calibri', 'Candara', 'Segoe', 'Segoe UI', 'Optima', Arial, sans-serif;
+body {
+    background-color: #e1bfc3;
+    font-family: "Calibri", "Candara", "Segoe", "Segoe UI", "Optima", Arial, sans-serif;
     color: black;
 }
 
-.header{
+.header {
     overflow: auto;
     font-size: 20px;
-    
     background-image: url("../imgs/background.jpg");
-
     min-height: 500px;
     height: 100vh;
-
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#intro-name{
+#intro-name {
     text-align: center;
     color: #fff;
     font-weight: bold;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 0 #333,
-        -1px -1px 0 #333,
-        1px -1px 0 #333,
-        -1px 1px 0 #333,
-        2px 2px 5px rgba(0,0,0,0.65);
+    text-shadow: 1px 1px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 2px 2px 5px rgba(0, 0, 0, 0.65);
 }
 
-#user-img{
+#user-img {
     border-radius: 50%;
     border: 1px solid black;
     box-shadow: 2px 1px 1px black;
     width: 150px;
 }
 
-#intro-text{
+#intro-text {
     text-align: center;
     color: #fff;
     font-weight: bold;
     letter-spacing: 3px;
-    text-shadow: 2px 2px 0 #333,
-        -1px -1px 0 #333,
-        1px -1px 0 #333,
-        -1px 1px 0 #333,
-        2px 2px 5px rgba(0,0,0,0.65);
+    text-shadow: 2px 2px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 2px 2px 5px rgba(0, 0, 0, 0.65);
 }
 
-span>a{
-    color: #2E9CCA;
+span>a {
+    color: #2e9cca;
 }
 
-span>a:hover{
-    color: #29648A;
+span>a:hover {
+    color: #29648a;
 }
 
-nav{
-    background-color: #363e44;
-}
-
-.nav-link{
-    color: gray;
-    transition: color 0.2s;
-}
-
-.nav-link:hover{
-    color: white;
-}
-
-.nav-pills>.nav-item>a{
+.nav-pills a {
     color: black;
 }
 
-.nav-pills>.nav-item{
+.nav-pills .nav-item {
     background-color: #8fa3b3;
-    border-radius: 7%;
 }
 
-.nav-pills>.nav-item:hover{
+.nav-pills .nav-item:hover {
     background-color: #687580;
-    border-radius: 7%;
 }
 
-.nav-pills>.nav-item .active{
+.nav-pills .nav-item .active {
     background-color: #363e44;
 }
 
-.social{
+.social {
     color: lightgray;
     transition: color 0.2s;
     padding-left: 2px;
 }
 
-.social:hover{
+.social:hover {
     color: white;
 }
 
-.info{
+.info {
     background-color: #c4ced5;
     box-shadow: 3px 2px 2px black;
 }
 
-h2{
-    background-color: #363e44;
-    color: #fff;
+.card-title {
     font-weight: bold;
-    letter-spacing: 2px;
-    padding-left: 0.5%;
 }
 
-h3{
-    font-weight: bolder;
-    padding-left: 0.5%;
+#github {
+    color: black;
 }
 
-h4{
-    font-weight: 500;
-    padding-left: 0.5%;
+#linkedin {
+    color: #0077b5;
 }
 
-p{
-    padding-left: 0.5%;
+#mail {
+    color: white;
 }
 
-.school-logo{
+footer .social {
+    transition: opacity 0.2s;
+    opacity: 1;
+}
+
+footer .social:hover {
+    opacity: 0.5;
+}
+
+.school-logo {
     max-width: 100%;
     height: auto;
-}
-
-.btn{
-    background-color: #2E9CCA;
-    color: white;
-}
-
-.btn:hover{
-    background-color: #29648A;
-    color: white;
-}
-
-.btn:active{
-    background-color: #235475;
-    color: white;
-}
-
-.alert{
-    line-height:35px;
-    padding: 0px 10px;
 }
