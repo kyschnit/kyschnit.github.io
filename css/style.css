@@ -16,8 +16,6 @@ body {
     min-height: 500px;
     height: 100vh;
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -81,10 +79,6 @@ span>a:hover {
     box-shadow: 3px 2px 2px black;
 }
 
-.card-title {
-    font-weight: bold;
-}
-
 #github {
     color: black;
 }
@@ -94,6 +88,10 @@ span>a:hover {
 }
 
 #mail {
+    color: white;
+}
+
+#resume {
     color: white;
 }
 

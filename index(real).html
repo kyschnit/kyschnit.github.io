@@ -51,6 +51,7 @@
                     I'm a rising sophomore at the University of Michigan College of Engineering. <br><br>
                     This site is intended to give you a short overview of
                     <span class="text-link"><a href="#about">who I am</a></span>,
+                    <span class="text-link"><a href="#skills">my skills</a></span>,
                     <span class="text-link"><a href="#education">my education</a></span>, and
                     <span class="text-link"><a href="#experience">my experience</a></span>. <br><br>
                     Keep scrolling to learn more!
@@ -71,6 +72,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -105,6 +109,7 @@
 
     <!-- Main Section -->
     <main>
+        <!-- About Section -->
         <div class="info d-flex flex-column mt-3 mx-4 px-3 pt-3 rounded" id="about">
             <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 mb-3 rounded">About Me
                 <span class="float-right pr-3">
@@ -142,6 +147,21 @@
                 </p>
             </div>
         </div>
+
+        <!-- Skills Section -->
+        <div class="info d-flex flex-column mt-3 mx-4 px-3 pt-3 rounded" id="skills">
+            <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 mb-3 rounded">My Skills
+                <span class="float-right pr-3">
+                    <a data-toggle="collapse" data-target="#skills-content" href="#skills-content" aria-expanded="true">
+                        <i class="fas fa-caret-down 2x expand-caret"></i>
+                    </a>
+                </span>
+            </h2>
+            <div class="collapse show" id="skills-content">
+            </div>
+        </div>
+
+        <!-- Education Section-->
         <div class="info d-flex flex-column mt-3 mx-4 px-3 pt-3 rounded" id="education">
             <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 mb-3 rounded">Education
                 <span class="float-right pr-3">
@@ -152,38 +172,43 @@
                 </span>
             </h2>
             <div class="card-deck mt-2 mb-4 collapse show" id="education-content">
-                <div class="card shadow-sm">
+                <div class="card border-dark bg-light shadow-sm">
+                    <div class="card-header">
+                        <h3 class="font-weight-bold mb-n1">University of Michigan</h3>
+                    </div>
                     <div class="card-body">
-                        <h3 class="card-title">University of Michigan</h3>
-                        <h4 class="card-subtitle text-muted">BSE in Computer Science &middot; Ann Arbor, MI &middot;
-                            August 2020 - April 2024(est.)</h4>
-                        <p>GPA: 3.75</p>
-                        <h4>Coursework</h4>
+                        <h4 class="card-title">B.S.E. in Computer Science</h4>
+                        <h5 class="card-subtitle text-muted">Ann Arbor, MI &middot; August 2020 - April 2024 (est.)</h5>
+                        <h5 class="mt-3">Coursework</h5>
                         <ul>
                             <li>EECS 280 - Programming and Introductory Data Structures</li>
                             <li>EECS 203 - Discrete Mathematics</li>
                             <li>ENGR 100 - Introduction to Engineering</li>
                             <li>MATH 216 - Introduction to Differential Equations</li>
                         </ul>
-                        <span class="mt-3 hidden-sm">
+                        <p class="mt-1">GPA: 3.75</p>
+                        <span class="mt-3 d-none d-sm-flex justify-content-center">
                             <a href="https://umich.edu" target="_blank"><img src="imgs/michigan_logo.png"
                                     class="school-logo"></a>
                         </span>
                     </div>
                 </div>
-                <div class="card shadow-sm">
+                <div class="card border-dark bg-light shadow-sm">
+                    <div class="card-header">
+                        <h3 class="font-weight-bold mb-n1">Saline High School</h3>
+                    </div>
                     <div class="card-body">
-                        <h3 class="card-title">Saline High School</h3>
-                        <p>Diploma &middot; Saline, MI &middot; September 2016 - April 2020</p>
-                        <p>GPA: 4.3</p>
-                        <h4>Coursework</h4>
+                        <h4 class="card-title">Diploma</h4>
+                        <h5 class="card-subtitle text-muted">Saline, MI &middot; September 2016 - May 2020</h5>
+                        <h5 class="mt-3">Coursework</h5>
                         <ul>
                             <li>AP Computer Science A</li>
                             <li>AP Calculus BC</li>
                             <li>AP Chemistry</li>
                             <li>AP Physics C: Mechanics</li>
                         </ul>
-                        <span class="mt-3 hidden-sm">
+                        <p class="mt-1">GPA: 4.3</p>
+                        <span class="mt-3 d-none d-sm-flex justify-content-center">
                             <a href="https://www.salineschools.org/" target="_blank"><img src="imgs/saline_logo.png"
                                     class="school-logo"></a>
                         </span>
@@ -191,6 +216,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Experience Section -->
         <div class="info d-flex flex-column mt-3 mx-4 px-3 pt-3 rounded" id="experience">
             <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 mb-3 rounded">Experience
                 <span class="float-right pr-3">
@@ -214,81 +241,105 @@
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="projects">
-                        <div class="card-columns my-3">
-                            <div class="card bg-light shadow-sm">
-                                <div class="card-body">
-                                    <h3 class="card-title">Road Trip Radius</h3>
-                                    <h4 class="card-subtitle">HTML, CSS, JavaScript, Bootstrap</h4>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 my-3">
+                            <div class="col mb-4">
+                                <div class="card h-100 border-dark bg-light shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Road Trip Radius</h3>
+                                        <h4 class="card-subtitle">HTML, CSS, JavaScript, Bootstrap</h4>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card bg-light shadow-sm">
-                                <div class="card-body">
-                                    <h3 class="card-title">This Website (kyle-schnitzer.com)</h3>
-                                    <h4 class="card-subtitle">HTML, CSS, JavaScript, Bootstrap</h4>
+                            <div class="col mb-4">
+                                <div class="card h-100 border-dark bg-light shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="card-title">This Website (kyle-schnitzer.com)</h3>
+                                        <h4 class="card-subtitle">HTML, CSS, JavaScript, Bootstrap</h4>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card bg-light shadow-sm">
-                                <div class="card-body">
-                                    <h3 class="card-title">Machine Learning</h3>
-                                    <h4 class="card-subtitle">C++</h4>
+                            <div class="col mb-4">
+                                <div class="card h-100 border-dark bg-light shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Machine Learning</h3>
+                                        <h4 class="card-subtitle">C++</h4>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card bg-light shadow-sm">
-                                <div class="card-body">
-                                    <h3 class="card-title">Web Backend</h3>
-                                    <h4 class="card-subtitle">C++</h4>
+                            <div class="col mb-4">
+                                <div class="card h-100 border-dark bg-light shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Web Backend</h3>
+                                        <h4 class="card-subtitle">C++</h4>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card bg-light shadow-sm">
-                                <div class="card-body">
-                                    <h3 class="card-title">Euchre</h3>
-                                    <h4 class="card-subtitle">C++</h4>
+                            <div class="col mb-4">
+                                <div class="card h-100 border-dark bg-light shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Euchre</h3>
+                                        <h4 class="card-subtitle">C++</h4>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card bg-light shadow-sm">
-                                <div class="card-body">
-                                    <h3 class="card-title">Seam Carving</h3>
-                                    <h4 class="card-subtitle">C++</h4>
+                            <div class="col mb-4">
+                                <div class="card h-100 border-dark bg-light shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Seam Carving</h3>
+                                        <h4 class="card-subtitle">C++</h4>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card bg-light shadow-sm">
-                                <div class="card-body">
-                                    <h3 class="card-title">Cubes</h3>
-                                    <h4 class="card-subtitle">GameMaker Language</h4>
+                            <div class="col mb-4">
+                                <div class="card h-100 border-dark bg-light shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Cubes</h3>
+                                        <h4 class="card-subtitle">GameMaker Language</h4>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card bg-light shadow-sm">
-                                <div class="card-body">
-                                    <h3 class="card-title">Hungr</h3>
-                                    <h4 class="card-subtitle">Java, Android Studio</h4>
+                            <div class="col mb-4">
+                                <div class="card h-100 border-dark bg-light shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Hungr</h3>
+                                        <h4 class="card-subtitle">Java, Android Studio</h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="extracurriculars">
-                        <div class="card-columns my-3">
-                            <div class="card bg-light shadow-sm">
-                                <div class="card-body">
-                                    <h3 class="card-title">Ten for Men</h3>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 my-3">
+                            <div class="col mb-4">
+                                <div class="card h-100 border-dark bg-light shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Ten for Men</h3>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card bg-light shadow-sm">
-                                <div class="card-body">
-                                    <h3 class="card-title">Michigan Hackers</h3>
+                            <div class="col mb-4">
+                                <div class="card h-100 border-dark bg-light shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Michigan Hackers</h3>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card bg-light shadow-sm">
-                                <div class="card-body">
-                                    <h3 class="card-title">MASA</h3>
+                            <div class="col mb-4">
+                                <div class="card h-100 border-dark bg-light shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="card-title">MASA</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="work">
-                        <div class="card-columns my-3">
-                            <div class="card bg-light shadow-sm">
-                                <div class="card-body">
-                                    <h3 class="card-title">Epsilon Imaging</h3>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 my-3">
+                            <div class="col mb-4">
+                                <div class="card h-100 border-dark bg-light shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Epsilon Imaging</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -297,8 +348,11 @@
             </div>
         </div>
     </main>
+
     <!-- Footer Section -->
     <footer class="info d-flex flex-column my-3 mx-4 px-3 pt-3 rounded" id="contact">
+
+        <!-- Contact Section -->
         <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 mb-3 rounded">Contact Me
             <span class="float-right pr-3">
                 <a data-toggle="collapse" data-target="#contact-content" href="#contact-content" aria-expanded="true">
@@ -321,6 +375,10 @@
                     data-placement="bottom" title="Send me an email at kyschnit@umich.edu" class="ml-4 social"
                     id="mail">
                     <i class="fas fa-envelope fa-4x"></i>
+                </a>
+                <a href="./files/Kyle Schnitzer Resume.pdf" aria-label="Download my Resume" data-toggle="tooltip"
+                    data-placement="bottom" title="Download my resume!" class="ml-4 social" id="resume" target="_blank">
+                    <i class="fas fa-file-download fa-4x"></i>
                 </a>
             </div>
 
