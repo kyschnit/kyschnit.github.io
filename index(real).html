@@ -20,7 +20,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
     <script type="text/javascript" src="js/contact.js"></script>
-    <script type="text/javascript" src="js/tooltip.js"></script>
+    <script type="text/javascript" src="js/tooltip-popover.js"></script>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
@@ -50,10 +50,10 @@
                 <p id="intro-text">
                     I'm a rising sophomore at the University of Michigan College of Engineering. <br><br>
                     This site is intended to give you a short overview of
-                    <span class="text-link"><a href="#about">who I am</a></span>,
-                    <span class="text-link"><a href="#skills">my skills</a></span>,
-                    <span class="text-link"><a href="#education">my education</a></span>, and
-                    <span class="text-link"><a href="#experience">my experience</a></span>. <br><br>
+                    <span class="text-link"><a tabindex="0" href="#about">who I am</a></span>,
+                    <span class="text-link"><a tabindex="0" href="#skills">my skills</a></span>,
+                    <span class="text-link"><a tabindex="0" href="#education">my education</a></span>, and
+                    <span class="text-link"><a tabindex="0" href="#experience">my experience</a></span>. <br><br>
                     Keep scrolling to learn more!
                 </p>
             </div>
@@ -136,7 +136,8 @@
                     shaped my life, and I hope to use it to make a positive impact on the world around me.
                 </p>
                 <p>
-                    Outside of programming, my interests include reading, running, biking, hiking, camping, playing
+                    Outside of programming, my interests include traveling, reading, running, biking, hiking, camping,
+                    playing
                     video
                     games, and 3D
                     modeling with CAD software.
@@ -245,88 +246,177 @@
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow-sm">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Road Trip Radius</h3>
+                                        <h3 class="font-weight-bold mb-n1">Road Trip Radius
+                                            <span class="float-right pr-1">
+                                                <i class="fas fa-car 2x"></i>
+                                            </span>
+                                        </h3>
                                     </div>
                                     <div class="card-body">
-                                        <h4 class="card-title">A Webapp for Planning Roadtrips</h4>
-                                        <h5 class="card-subtitle text-muted">HTML, CSS, JavaScript, Bootstrap</h5>
+                                        <h4 class="card-title">Roadtrip Planning Webapp</h4>
+                                        <h5 class="card-subtitle mb-2 text-muted">HTML, CSS, JavaScript, Bootstrap</h5>
+                                        <div class="d-flex justify-content-center">
+                                            <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
+                                                data-placement="bottom" data-content="Currently undergoing development. 
+                                            The plan is to use the Google Maps API to determine where the user can drive to in a specified period of time or driving distance. 
+                                            Inspired by my love for roadtrips with friends.">Description</a>
+                                            <a href="https://github.com/kyschnit/road-trip-radius" target="_blank"
+                                                class="btn">Code</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow-sm">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">kyle-schnitzer.com</h3>
+                                        <h3 class="font-weight-bold mb-n1">kyle-schnitzer.com
+                                            <span class="float-right pr-1">
+                                                <i class="fas fa-code 2x"></i>
+                                            </span>
+                                        </h3>
                                     </div>
                                     <div class="card-body">
                                         <h4 class="card-title">This Website!</h4>
-                                        <h5 class="card-subtitle text-muted">HTML, CSS, JavaScript, Bootstrap</h5>
+                                        <h5 class="card-subtitle mb-2 text-muted">HTML, CSS, JavaScript, Bootstrap</h5>
+                                        <div class="d-flex justify-content-center">
+                                            <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
+                                                data-placement="bottom" data-content="I built this website almost entirely from scratch during
+                                            my time in college. It was intended as a way to improve upon my web
+                                            development skills in addition to being a portfolio of my work. This is a
+                                            constant work in progress, expanding as I gain more experience. All of the
+                                            code is available on my GitHub.">Description</a>
+                                            <a href="https://github.com/kyschnit/kyschnit.github.io" target="_blank"
+                                                class="btn">Code</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow-sm">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Machine Learning</h3>
+                                        <h3 class="font-weight-bold mb-n1">Machine Learning
+                                            <span class="float-right pr-1">
+                                                <i class="fas fa-brain 2x"></i>
+                                            </span>
+                                        </h3>
                                     </div>
                                     <div class="card-body">
                                         <h4 class="card-title">EECS 280 Project 5</h4>
-                                        <h5 class="card-subtitle text-muted">C++</h5>
+                                        <h5 class="card-subtitle mb-2 text-muted">C++</h5>
+                                        <div class="d-flex justify-content-center">
+                                            <a class="btn" tabindex="0" data-toggle="popover" data-trigger="focus"
+                                                data-placement="bottom"
+                                                data-content="The goal of the final project in EECS 280 was to develop a
+                                            program that can classify posts on a student Q&A board called Piazza using
+                                            map and binary search tree data structures. This also involved thorough unit
+                                            testing. The code repository is private due to school honor code policy.">Description</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow-sm">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Web Backend</h3>
+                                        <h3 class="font-weight-bold mb-n1">Web Backend
+                                            <span class="float-right pr-1">
+                                                <i class="fas fa-network-wired 2x"></i>
+                                            </span>
+                                        </h3>
                                     </div>
                                     <div class="card-body">
                                         <h4 class="card-title">EECS 280 Project 4</h4>
-                                        <h5 class="card-subtitle text-muted">C++</h5>
+                                        <h5 class="card-subtitle mb-2 text-muted">C++</h5>
+                                        <div class="d-flex justify-content-center">
+                                            <a class="btn" tabindex="0" data-toggle="popover" data-trigger="focus"
+                                                data-placement="bottom" data-content="This project was my first experience with web APIs. It
+                                            involved implementing a list data structure and using the list to implement
+                                            an office hours queue for the EECS 280 website. This required development of
+                                            a REST API and processing of JSON data. The code repository is private due
+                                            to school honor code policy.">Description</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow-sm">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Euchre</h3>
+                                        <h3 class="font-weight-bold mb-n1">Euchre
+                                            <span class="float-right pr-1">
+                                                <i class="fas fa-gamepad 2x"></i>
+                                            </span>
+                                        </h3>
                                     </div>
                                     <div class="card-body">
                                         <h4 class="card-title">EECS 280 Project 3</h4>
-                                        <h5 class="card-subtitle text-muted">C++</h5>
+                                        <h5 class="card-subtitle mb-2 text-muted">C++</h5>
+                                        <div class="d-flex justify-content-center">
+                                            <a class="btn" tabindex="0" data-toggle="popover" data-trigger="focus"
+                                                data-placement="bottom" data-content="Euchre is likely the most complex
+                                            project I've taken on. This involved heavy use of inheritance and
+                                            object-oriented programming, with separate classes for each component of
+                                            the game. The game logic was also very complex and required thorough
+                                            testing to eliminate bugs. The code repository is private due to school
+                                            honor code policy.">Description</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow-sm">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Seam Carving</h3>
+                                        <h3 class="font-weight-bold mb-n1">Seam Carving
+                                            <span class="float-right pr-1">
+                                                <i class="fas fa-camera 2x"></i>
+                                            </span>
+                                        </h3>
                                     </div>
                                     <div class="card-body">
                                         <h4 class="card-title">EECS 280 Project 2</h4>
-                                        <h5 class="card-subtitle text-muted">C++</h5>
+                                        <h5 class="card-subtitle mb-2 text-muted">C++</h5>
+                                        <div class="d-flex justify-content-center">
+                                            <a class="btn" tabindex="0" data-toggle="popover" data-trigger="focus"
+                                                data-placement="bottom" data-content="">Description</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow-sm">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Cubes</h3>
+                                        <h3 class="font-weight-bold mb-n1">Cubes
+                                            <span class="float-right pr-1">
+                                                <i class="fas fa-dice-d6 2x"></i>
+                                            </span>
+                                        </h3>
                                     </div>
                                     <div class="card-body">
-                                        <h4 class="card-title">A Video Game for Children with ASD</h4>
-                                        <h5 class="card-subtitle text-muted">GameMaker Language</h5>
+                                        <h4 class="card-title">A Game for Children with ASD</h4>
+                                        <h5 class="card-subtitle mb-2 text-muted">GameMaker Language</h5>
+                                        <div class="d-flex justify-content-center">
+                                            <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
+                                                data-placement="bottom" data-content="">Description</a>
+                                            <a href="https://github.com/kyschnit/engr-100-cubes" target="_blank"
+                                                class="btn">Code</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow-sm">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Hungr</h3>
+                                        <h3 class="font-weight-bold mb-n1">Hungr
+                                            <span class="float-right pr-1">
+                                                <i class="fas fa-hamburger 2x"></i>
+                                            </span>
+                                        </h3>
                                     </div>
                                     <div class="card-body">
                                         <h4 class="card-title">"Tinder for Food"</h4>
-                                        <h5 class="card-subtitle text-muted">Java, Android Studio</h5>
+                                        <h5 class="card-subtitle mb-2 text-muted">Java, Android Studio</h5>
+                                        <div class="d-flex justify-content-center">
+                                            <a class="btn" tabindex="0" data-toggle="popover" data-trigger="focus"
+                                                data-placement="bottom" data-content="">Description</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -337,33 +427,61 @@
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow-sm">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Ten for Men</h3>
+                                        <h3 class="font-weight-bold mb-n1">Ten for Men
+                                            <span class="float-right pr-1">
+                                                <i class="fas fa-bible 2x"></i>
+                                            </span>
+                                        </h3>
                                     </div>
                                     <div class="card-body">
                                         <h4 class="card-title">Leader/Mentor</h4>
-                                        <h5 class="card-subtitle text-muted">Youth Group</h5>
+                                        <h5 class="card-subtitle mb-2 text-muted">Youth Group</h5>
+                                        <div class="d-flex justify-content-center">
+                                            <a class="btn" tabindex="0" data-toggle="popover" data-trigger="focus"
+                                                data-placement="bottom" data-content="">Description</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow-sm">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Michigan Hackers</h3>
+                                        <h3 class="font-weight-bold mb-n1">Michigan Hackers
+                                            <span class="float-right pr-1">
+                                                <i class="fas fa-laptop-code 2x"></i>
+                                            </span>
+                                        </h3>
                                     </div>
                                     <div class="card-body">
                                         <h4 class="card-title">Core Member - Android</h4>
-                                        <h5 class="card-subtitle text-muted">Student Computer Science Organization</h5>
+                                        <h5 class="card-subtitle mb-2 text-muted">Student CS Organization</h5>
+                                        <div class="d-flex justify-content-center">
+                                            <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
+                                                data-placement="bottom" data-content="">Description</a>
+                                            <a href="https://michiganhackers.org" target="_blank"
+                                                class="btn">Website</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow-sm">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">MASA</h3>
+                                        <h3 class="font-weight-bold mb-n1">MASA
+                                            <span class="float-right pr-1">
+                                                <i class="fas fa-rocket 2x"></i>
+                                            </span>
+                                        </h3>
                                     </div>
                                     <div class="card-body">
                                         <h4 class="card-title">Member</h4>
-                                        <h5 class="card-subtitle text-muted">Student Rocketry Organization</h5>
+                                        <h5 class="card-subtitle mb-2 text-muted">Student Rocketry Organization</h5>
+                                        <div class="d-flex justify-content-center">
+                                            <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
+                                                data-placement="bottom" data-content="">Description</a>
+                                            <a href="https://masa.engin.umich.edu/" target="_blank"
+                                                class="btn">Website</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -374,11 +492,21 @@
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow-sm">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Epsilon Imaging</h3>
+                                        <h3 class="font-weight-bold mb-n1">Epsilon Imaging
+                                            <span class="float-right pr-1">
+                                                <i class="fas fa-heartbeat 2x"></i>
+                                            </span>
+                                        </h3>
                                     </div>
                                     <div class="card-body">
                                         <h4 class="card-title">Software Engineering Intern</h4>
-                                        <h5 class="card-subtitle text-muted">May 2021 - August 2021</h5>
+                                        <h5 class="card-subtitle mb-2 text-muted">May 2021 - August 2021</h5>
+                                        <div class="d-flex justify-content-center">
+                                            <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
+                                                data-placement="bottom" data-content="">Description</a>
+                                            <a href="https://epsilon-imaging.com/" target="_blank"
+                                                class="btn">Website</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -450,8 +578,7 @@
                     <div class="g-recaptcha" data-sitekey="6LdOOXIbAAAAAFgHQoZz3djcph517dpoT76GeUIQ"></div>
                 </div>
                 <div class="d-flex justify-content-between">
-                    <button type="submit" class="btn btn-primary mb-3 col-lg-1 mr-2"
-                        value="Send Message">Submit</button>
+                    <button type="submit" class="btn btn-submit mb-3 col-lg-1 mr-2" value="Send Message">Submit</button>
                 </div>
                 <div class="modal fade" id="modal-success" data-backdrop="true">
                     <div class="modal-dialog modal-dialog-centered">

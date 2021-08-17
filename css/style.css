@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #e1bfc3;
+    background-color: #284037;
     font-family: "Calibri", "Candara", "Segoe", "Segoe UI", "Optima", Arial, sans-serif;
     color: black;
 }
@@ -12,7 +12,6 @@ body {
     overflow: auto;
     font-size: 20px;
     background: url("../imgs/background.jpg") no-repeat center center fixed;
-    background-size: cover;
     min-height: 500px;
     height: 100vh;
     background-attachment: fixed;
@@ -48,16 +47,46 @@ span>a:hover {
     color: #29648a;
 }
 
+.btn {
+    background-color: #66B1F2;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #A0CCF2;
+    color: white;
+}
+
+.btn:active {
+    background-color: #72A9F2;
+    color: white;
+}
+
+.btn-submit {
+    background-color: #284037;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #3E594F;
+    color: white;
+}
+
+.btn-submit:active {
+    background-color: #012619;
+    color: white;
+}
+
 .nav-pills a {
     color: black;
 }
 
 .nav-pills .nav-item {
-    background-color: #8fa3b3;
+    background-color: white;
 }
 
 .nav-pills .nav-item:hover {
-    background-color: #687580;
+    background-color: #BBC3C6;
 }
 
 .nav-pills .nav-item .active {
@@ -75,7 +104,7 @@ span>a:hover {
 }
 
 .info {
-    background-color: #c4ced5;
+    background-color: #72A9F2;
     box-shadow: 3px 2px 2px black;
 }
 
