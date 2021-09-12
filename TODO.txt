@@ -2,4 +2,4 @@ TODO
 
 Add CAD portfolio
 Update formatting of school cards
-Add skills
+Add skill descriptions
