@@ -26,27 +26,28 @@
 </head>
 
 <body>
-	<audio autoplay muted loop id="audio">
+	<audio autoplay muted loop defaultmuted playsinline id="audio">
 		<source src="media/beachsound.mp3" type="audio/mp3">
 	</audio>
-	<div id="container" class="h-100">
-		<div class="embed-responsive embed-responsive-16by9">
-			<video autoplay muted id="video" class="embed-responsive-item">
-				<source src="media/beach.mp4" type="video/mp4">
-			</video>
-		</div>
+	<div class="" id="container">
+		<video autoplay muted id="video" class="">
+			<source src="media/beach.mp4" type="video/mp4">
+		</video>
 	</div>
 	<i class="fas fa-volume-mute fa-2x" id="vol"></i>
 	<div id="countdown">
-		<h1 id="days" class="display-1"></h1>
-		<h4 id="hms" class="display-4 text-right"></h4>
-		<h1 id="break" class="display-3"></h1>
+		<h1 id="days"></h1>
+		<h4 id="hms" class="text-right"></h4>
+		<h1 id="break"></h1>
 	</div>
 
 	<script>
-		$("#video").bind('ended', function () {
-			this.currentTime = 1;
-			this.play();
+		var video = document.getElementById('video');
+		video.addEventListener('timeupdate', function () {
+			if (video.currentTime > 21.5) {
+				video.currentTime = 0;
+				video.play();
+			}
 		});
 
 	</script>

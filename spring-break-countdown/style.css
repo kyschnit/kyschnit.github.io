@@ -1,13 +1,29 @@
 body {
 	overflow-x: hidden;
 	overflow-y: hidden;
+	background: #FF512F;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F09819, #FF512F);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 #container {
-	position: relative;
+	overflow: hidden;
 }
 
-#vol, #novol {
+video {
+	height: 100%;
+	width: 177.77777778vh;
+	/* 100 * 16 / 9 */
+	min-width: 100%;
+	min-height: 56.25vw;
+	/* 100 * 9 / 16 */
+}
+
+#vol {
 	position: fixed;
 	z-index: 2;
 	top: 1%;
@@ -27,6 +43,7 @@ body {
 		-0.03em 0 black,
 		0 -0.03em black;
 	color: white;
+	font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .fas {
