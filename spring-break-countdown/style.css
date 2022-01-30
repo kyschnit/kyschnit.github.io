@@ -2,7 +2,7 @@ body {
 	overflow: hidden;
 	background: #FF512F;
 	margin: 0;
-	/* padding: 0; */
+	padding: 0;
 	/* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #F09819, #FF512F);
 	/* Chrome 10-25, Safari 5.1-6 */
