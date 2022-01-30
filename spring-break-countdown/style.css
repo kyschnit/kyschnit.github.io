@@ -1,0 +1,40 @@
+body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+#container {
+	position: relative;
+}
+
+#vol, #novol {
+	position: fixed;
+	z-index: 2;
+	top: 1%;
+	right: 1%;
+}
+
+#countdown {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	cursor: move;
+	user-select: none;
+	text-shadow:
+		0.03em 0 black,
+		0 0.03em black,
+		-0.03em 0 black,
+		0 -0.03em black;
+	color: white;
+}
+
+.fas {
+	transition: opacity 0.2s;
+	opacity: 0.3;
+}
+
+.fas:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
