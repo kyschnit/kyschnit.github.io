@@ -26,13 +26,16 @@
 </head>
 
 <body>
-	<audio autoplay muted loop defaultmuted playsinline id="audio">
+	<audio autoplay muted loop playsinline defaultMuted id="audio">
 		<source src="media/beachsound.mp3" type="audio/mp3">
 	</audio>
-	<div class="" id="container">
+	<div class="d-none d-md-block" id="container">
 		<video autoplay muted id="video" class="">
 			<source src="media/beach.mp4" type="video/mp4">
 		</video>
+	</div>
+	<div class="d-md-none" id="mobilecontainer">
+		<img src="media/beach.gif">
 	</div>
 	<i class="fas fa-volume-mute fa-2x" id="vol"></i>
 	<div id="countdown">

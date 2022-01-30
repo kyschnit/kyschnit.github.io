@@ -10,11 +10,12 @@ body {
 
 }
 
-#container {
+#container, #mobilecontainer {
 	overflow: hidden;
+	margin: auto;
 }
 
-video {
+video, img {
 	height: 100%;
 	width: 177.77777778vh;
 	/* 100 * 16 / 9 */
