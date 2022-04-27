@@ -3,9 +3,14 @@ html {
 }
 
 body {
-    background-color: #284037;
-    font-family: "Calibri", "Candara", "Segoe", "Segoe UI", "Optima", Arial, sans-serif;
+    background: rgb(60, 133, 221);
+    background: linear-gradient(178deg, rgba(60, 133, 221, 1) 0%, rgba(255, 255, 255, 1) 90%);
+    font-family: 'Courier New', monospace;
     color: black;
+}
+
+h2 {
+    background-color: #0F1626;
 }
 
 .header {
@@ -48,37 +53,26 @@ span>a:hover {
 }
 
 .btn {
-    background-color: #66B1F2;
+    background-color: #0F1626;
     color: white;
 }
 
 .btn:hover {
-    background-color: #A0CCF2;
+    background-color: #2b354e;
     color: white;
 }
 
 .btn:active {
-    background-color: #72A9F2;
+    background-color: #454f6a;
     color: white;
 }
 
-.btn-submit {
-    background-color: #284037;
-    color: white;
-}
-
-.btn-submit:hover {
-    background-color: #3E594F;
-    color: white;
-}
-
-.btn-submit:active {
-    background-color: #012619;
-    color: white;
+.navbar {
+    background-color: #0F1626;
 }
 
 .nav-pills a {
-    color: black;
+    color: #0F1626;
 }
 
 .nav-pills .nav-item {
@@ -90,7 +84,7 @@ span>a:hover {
 }
 
 .nav-pills .nav-item .active {
-    background-color: #363e44;
+    background-color: #0F1626;
 }
 
 .social {
@@ -104,8 +98,8 @@ span>a:hover {
 }
 
 .info {
-    background-color: #72A9F2;
-    box-shadow: 3px 2px 2px gray;
+    background-color: #FBEEC1;
+    box-shadow: 3px 2px 2px rgb(132, 132, 132);
 }
 
 #github {
@@ -135,6 +129,8 @@ footer .social:hover {
 
 .school-logo {
     max-width: 100%;
+    margin: auto;
+    display: block;
     height: auto;
 }
 

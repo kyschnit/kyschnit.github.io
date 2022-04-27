@@ -47,7 +47,7 @@
                 <img src="imgs/user.jpg" class="mx-auto d-block rounded-circle border border-dark" id="user-img"
                     alt="Kyle Schnitzer">
             </div>
-            <div class="d-flex justify-content-center align-items-center mt-5 mb-4">
+            <div class="d-flex justify-content-center align-items-center mt-5 mb-4 mx-4">
                 <p id="intro-text">
                     I'm a rising junior at the University of Michigan College of Engineering. <br><br>
                     This site is intended to give you a short overview of
@@ -62,7 +62,7 @@
     </header>
 
     <!-- Navigation Section -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobileContent">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -111,8 +111,8 @@
     <!-- Main Section -->
     <main>
         <!-- About Section -->
-        <div class="info d-flex flex-column mt-3 mx-4 px-3 pt-3 rounded" id="about">
-            <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 mb-3 rounded">About Me
+        <div class="info d-flex flex-column mt-4 mx-5 px-3 pt-3 rounded" id="about">
+            <h2 class="text-white font-weight-bold pl-2 py-1 mb-3 rounded">About Me
                 <span class="float-right pr-3">
                     <a data-toggle="collapse" data-target="#about-content" href="#about-content" aria-expanded="true">
                         <i class="fas fa-caret-down 2x expand-caret"></i>
@@ -152,8 +152,8 @@
         </div>
 
         <!-- Skills Section -->
-        <div class="info d-flex flex-column mt-3 mx-4 px-3 pt-3 rounded" id="skills">
-            <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 mb-3 rounded">My Skills
+        <div class="info d-flex flex-column mt-4 mx-5 px-3 pt-3 rounded" id="skills">
+            <h2 class="text-white font-weight-bold pl-2 py-1 mb-3 rounded">My Skills
                 <span class="float-right pr-3">
                     <a data-toggle="collapse" data-target="#skills-content" href="#skills-content" aria-expanded="true">
                         <i class="fas fa-caret-down 2x expand-caret"></i>
@@ -186,13 +186,13 @@
                 <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
                     data-content="">Linux</a>
                 <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
-                    data-content="">CAD Software</a>
+                    data-content="">CAD</a>
             </div>
         </div>
 
         <!-- Education Section-->
-        <div class="info d-flex flex-column mt-3 mx-4 px-3 pt-3 rounded" id="education">
-            <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 mb-3 rounded">Education
+        <div class="info d-flex flex-column mt-4 mx-5 px-3 pt-3 rounded" id="education">
+            <h2 class="text-white font-weight-bold pl-2 py-1 mb-2 rounded">Education
                 <span class="float-right pr-3">
                     <a data-toggle="collapse" data-target="#education-content" href="#education-content"
                         aria-expanded="true">
@@ -200,30 +200,37 @@
                     </a>
                 </span>
             </h2>
-            <div class="card-deck mt-2 mb-4 mx-1 collapse show" id="education-content">
-                <div class="card border-dark bg-light h-100 shadow">
+            <div class="mt-2 mb-4 mx-1 collapse show" id="education-content">
+                <div class="card border-dark bg-light h-100 shadow mb-3">
                     <div class="card-header">
                         <h3 class="font-weight-bold mb-n1">University of Michigan</h3>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">B.S.E. in Computer Science</h4>
-                        <h5 class="card-subtitle text-muted">Ann Arbor, MI &middot; August 2020 - April 2024 (est.)</h5>
-                        <h5 class="mt-3">Coursework</h5>
-                        <ul>
-                            <li>EECS 370 - Introduction to Computer Organization</li>
-                            <li>EECS 298 - Applied Machine Learning for Engineers</li>
-                            <li>EECS 281 - Data Structures and Algorithms</li>
-                            <li>EECS 280 - Programming and Introductory Data Structures</li>
-                            <li>EECS 203 - Discrete Mathematics</li>
-                            <li>ENGR 100 - Introduction to Engineering</li>
-                            <li>MATH 214 - Applied Linear Algebra</li>
-                            <li>MATH 216 - Introduction to Differential Equations</li>
-                        </ul>
-                        <p class="mt-1">GPA: 3.75</p>
-                        <span class="mt-3 d-none d-sm-flex justify-content-center">
-                            <a href="https://umich.edu" target="_blank"><img src="imgs/michigan_logo.png"
-                                    class="school-logo"></a>
-                        </span>
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <h4 class="card-title">B.S.E. in Computer Science</h4>
+                                    <h5 class="card-subtitle text-muted">Ann Arbor, MI &middot; August 2020 - April 2024
+                                        (est.)</h5>
+                                    <h5 class="mt-3">Coursework</h5>
+                                    <ul>
+                                        <li>EECS 370 - Introduction to Computer Organization</li>
+                                        <li>EECS 298 - Applied Machine Learning for Engineers</li>
+                                        <li>EECS 281 - Data Structures and Algorithms</li>
+                                        <li>EECS 280 - Programming and Introductory Data Structures</li>
+                                        <li>EECS 203 - Discrete Mathematics</li>
+                                        <li>ENGR 100 - Introduction to Engineering</li>
+                                        <li>MATH 214 - Applied Linear Algebra</li>
+                                        <li>MATH 216 - Introduction to Differential Equations</li>
+                                    </ul>
+                                    <p class="mt-1">GPA: 3.83</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="https://umich.edu" target="_blank"><img src="imgs/michigan_logo.png"
+                                            class="school-logo"></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card border-dark bg-light h-100 shadow">
@@ -231,28 +238,35 @@
                         <h3 class="font-weight-bold mb-n1">Saline High School</h3>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">Diploma</h4>
-                        <h5 class="card-subtitle text-muted">Saline, MI &middot; September 2016 - May 2020</h5>
-                        <h5 class="mt-3">Coursework</h5>
-                        <ul>
-                            <li>AP Computer Science A</li>
-                            <li>AP Calculus BC</li>
-                            <li>AP Chemistry</li>
-                            <li>AP Physics C: Mechanics</li>
-                        </ul>
-                        <p class="mt-1">GPA: 4.3</p>
-                        <span class="mt-3 d-none d-sm-flex justify-content-center">
-                            <a href="https://www.salineschools.org/" target="_blank"><img src="imgs/saline_logo.png"
-                                    class="school-logo"></a>
-                        </span>
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <h4 class="card-title">Diploma</h4>
+                                    <h5 class="card-subtitle text-muted">Saline, MI &middot; September 2016 - May 2020
+                                    </h5>
+                                    <h5 class="mt-3">Coursework</h5>
+                                    <ul>
+                                        <li>AP Computer Science A</li>
+                                        <li>AP Calculus BC</li>
+                                        <li>AP Chemistry</li>
+                                        <li>AP Physics C: Mechanics</li>
+                                    </ul>
+                                    <p class="mt-1">GPA: 4.3</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="https://www.salineschools.org/" target="_blank"><img
+                                            src="imgs/saline_logo.png" class="school-logo"></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Experience Section -->
-        <div class="info d-flex flex-column mt-3 mx-4 px-3 pt-3 rounded" id="experience">
-            <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 mb-3 rounded">Experience
+        <div class="info d-flex flex-column mt-4 mx-5 px-3 pt-3 rounded" id="experience">
+            <h2 class="text-white font-weight-bold pl-2 py-1 mb-3 rounded">Experience
                 <span class="float-right pr-3">
                     <a data-toggle="collapse" data-target="#experience-content" href="#experience-content"
                         aria-expanded="true">
@@ -286,7 +300,8 @@
                                     </div>
                                     <div class="card-body">
                                         <h4 class="card-title">Roadtrip Planning Website</h4>
-                                        <h5 class="card-subtitle mb-2 text-muted">HTML, CSS, JavaScript, Bootstrap</h5>
+                                        <h5 class="card-subtitle mb-2 text-muted">HTML, CSS, JavaScript, Bootstrap
+                                        </h5>
                                         <div class="d-flex justify-content-center">
                                             <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
                                                 data-placement="bottom" data-content="Currently undergoing development. 
@@ -309,7 +324,8 @@
                                     </div>
                                     <div class="card-body">
                                         <h4 class="card-title">This Website!</h4>
-                                        <h5 class="card-subtitle mb-2 text-muted">HTML, CSS, JavaScript, Bootstrap</h5>
+                                        <h5 class="card-subtitle mb-2 text-muted">HTML, CSS, JavaScript, Bootstrap
+                                        </h5>
                                         <div class="d-flex justify-content-center">
                                             <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
                                                 data-placement="bottom" data-content="I built this website almost entirely from scratch during
@@ -585,10 +601,10 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="info d-flex flex-column my-3 mx-4 px-3 pt-3 rounded" id="contact">
+    <footer class="info d-flex flex-column my-4 mx-5 px-3 pt-3 rounded" id="contact">
 
         <!-- Contact Section -->
-        <h2 class="bg-dark text-white font-weight-bold pl-2 py-1 mb-3 rounded">Contact Me
+        <h2 class="text-white font-weight-bold pl-2 py-1 mb-3 rounded">Contact Me
             <span class="float-right pr-3">
                 <a data-toggle="collapse" data-target="#contact-content" href="#contact-content" aria-expanded="true">
                     <i class="fas fa-caret-down 2x expand-caret"></i>
@@ -696,11 +712,11 @@
                     </div>
                 </div>
             </form>
-            <div class="d-flex justify-content-center">
-                <p class="text-muted">Website created by Kyle Schnitzer. Hosted on Github Pages.</p>
-            </div>
         </div>
     </footer>
+    <div class="d-flex justify-content-center">
+        <p class="text-muted">Website created by Kyle Schnitzer. Hosted on Github Pages.</p>
+    </div>
 </body>
 
 </html>
