@@ -15,7 +15,6 @@ h2 {
 
 .header {
     overflow: auto;
-    font-size: 3vh;
     background: url("../imgs/background.jpg") no-repeat center center fixed;
     min-height: 500px;
     height: 100vh;
@@ -37,6 +36,7 @@ h2 {
         width: 15em;
         border-right: 3px solid #fff;
         animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+        animation-delay: 1s;
         letter-spacing: 2px;
         white-space: nowrap;
     }
