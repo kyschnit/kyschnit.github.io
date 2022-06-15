@@ -4,7 +4,7 @@ html {
 
 body {
     background: rgb(60, 133, 221);
-    background: linear-gradient(178deg, rgba(60, 133, 221, 1) 0%, rgba(255, 255, 255, 1) 90%);
+    background: linear-gradient(178deg, rgba(60, 133, 221, 1) 0%, rgb(217, 212, 255) 90%);
     font-family: 'Courier New', monospace;
     color: black;
 }
@@ -121,7 +121,7 @@ span>a:hover {
 }
 
 .info {
-    background-color: #FBEEC1;
+    background-color: #FAF9F6;
     box-shadow: 3px 2px 2px rgb(19, 19, 19);
 }
 

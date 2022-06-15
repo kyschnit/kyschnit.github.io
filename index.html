@@ -3,6 +3,7 @@
 
 <head>
     <title>Kyle Schnitzer</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
 
     <!-- Link Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -131,8 +132,7 @@
                     constantly expanding my working knowledge. My primary programming experience lies in C++,
                     Javascript, and
                     Angular.
-                    I'm currently doing web development for the Ford School of Public Policy, and I'm an incoming EDG
-                    Intern at MathWorks this summer!
+                    I'm currently a Software Engineering Intern at MathWorks in the Engineering Development Group!
                 </p>
                 <p>
                     I grew up surrounded by technology, so it seemed almost inevitable that I would major in computer
@@ -172,6 +172,8 @@
                     data-content="">CSS</a>
                 <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
                     data-content="">Angular</a>
+                <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
+                    data-content="">React</a>
                 <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
                     data-content="">Java</a>
                 <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
@@ -275,19 +277,44 @@
             </h2>
             <div class="collapse show" id="experience-content">
                 <ul class="nav nav-pills nav-justified mt-1" role="tablist">
-                    <li class="nav-item mr-2 rounded shadow-sm">
+                    <li class="nav-item mr-2 rounded shadow">
                         <a class="nav-link active" data-toggle="pill" href="#projects">Projects</a>
                     </li>
-                    <li class="nav-item mr-2 rounded shadow-sm">
+                    <li class="nav-item mr-2 rounded shadow">
                         <a class="nav-link" data-toggle="pill" href="#extracurriculars">Extracurriculars</a>
                     </li>
-                    <li class="nav-item rounded shadow-sm">
+                    <li class="nav-item rounded shadow">
                         <a class="nav-link" data-toggle="pill" href="#work">Work</a>
                     </li>
                 </ul>
                 <div class="tab-content mx-2">
                     <div class="tab-pane fade show active" id="projects">
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3">
+                            <div class="col mb-4">
+                                <div class="card h-100 border-dark bg-light shadow">
+                                    <div class="card-header">
+                                        <h3 class="font-weight-bold mb-n1">SB Countdown
+                                            <span class="float-right pr-1">
+                                                <i class="fas fa-umbrella-beach 2x"></i>
+                                            </span>
+                                        </h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Countdown Website</h4>
+                                        <h5 class="card-subtitle mb-2 text-muted">HTML, CSS, JavaScript, Bootstrap
+                                        </h5>
+                                        <div class="d-flex justify-content-center">
+                                            <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
+                                                data-placement="bottom"
+                                                data-content="A small creative project I hacked together in a few hours. 
+                                                This is a countdown for my university church's spring break trip. This was fun to make,
+                                                and even involved a little bit of video editing to get the background video to loop.">Description</a>
+                                            <a href="https://github.com/kyschnit/spring-break-countdown" target="_blank"
+                                                class="btn">Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow">
                                     <div class="card-header">
@@ -565,6 +592,31 @@
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow">
                                     <div class="card-header">
+                                        <h3 class="font-weight-bold mb-n1">MathWorks
+                                            <span class="float-right pr-1">
+                                                <i class="fas fa-calculator-simple 2x"></i>
+                                            </span>
+                                        </h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Software Engineering Intern</h4>
+                                        <h5 class="card-subtitle mb-2 text-muted">May 2022 - August 2022</h5>
+                                        <div class="d-flex justify-content-center">
+                                            <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
+                                                data-placement="bottom" data-content="In the summer of 2022 I interned as a software engineer
+                                                in the Engineering Development Group at MathWorks. My project for
+                                                this internship involved migrating an internal webapp from 
+                                                legacy AngularJS code to the React framework. I learned so much
+                                                from this experience, including technical skills, effective communication,
+                                                teamwork, and Agile development.">Description</a>
+                                            <a href="https://www.mathworks.com/" target="_blank" class="btn">Website</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card h-100 border-dark bg-light shadow">
+                                    <div class="card-header">
                                         <h3 class="font-weight-bold mb-n1">Epsilon Imaging
                                             <span class="float-right pr-1">
                                                 <i class="fas fa-heartbeat 2x"></i>
@@ -578,14 +630,14 @@
                                             <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
                                                 data-placement="bottom"
                                                 data-content="In the summer of 2021 I worked as a 
-                                                software engineering intern for Epsilon Imaging, 
-                                                an Ann Arbor-based medical imaging software company.
-                                                My projects while working here included developing
-                                                a setup wizard page and a diagnostics page,
-                                                both created using Angular, TypeScript, HTML, and Bootstrap.
-                                                These projects were focused on making Epsilon's primary application more
-                                                user-friendly. This involved collaboration
-                                                with the product development team and the customer support team.">Description</a>
+                                                                            software engineering intern for Epsilon Imaging, 
+                                                                            an Ann Arbor-based medical imaging software company.
+                                                                            My projects while working here included developing
+                                                                            a setup wizard page and a diagnostics page,
+                                                                            both created using Angular, TypeScript, HTML, and Bootstrap.
+                                                                            These projects were focused on making Epsilon's primary application more
+                                                                            user-friendly. This involved collaboration
+                                                                            with the product development team and the customer support team.">Description</a>
                                             <a href="https://epsilon-imaging.com/" target="_blank"
                                                 class="btn">Website</a>
                                         </div>
