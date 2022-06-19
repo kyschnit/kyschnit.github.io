@@ -3,34 +3,30 @@ html {
 }
 
 body {
-    background: rgb(60, 133, 221);
-    background: linear-gradient(178deg, rgba(60, 133, 221, 1) 0%, rgb(217, 212, 255) 90%);
-    font-family: 'Courier New', monospace;
-    color: black;
-}
-
-h2 {
-    background-color: #0F1626;
+    overflow-x: hidden;
 }
 
 .header {
-    overflow: auto;
-    background: url("../imgs/background.jpg") no-repeat center center fixed;
-    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        url("../imgs/background3.jpg");
     height: 100vh;
+    background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 1px 1px 0 #333,
+        -1px -1px 0 #333,
+        1px -1px 0 #333,
+        -1px 1px 0 #333,
+        2px 2px 5px rgba(0, 0, 0, 0.65);
 }
 
 .header h1 {
-    text-align: center;
     color: #fff;
-    font-weight: bold;
-    text-shadow: 1px 1px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 2px 2px 5px rgba(0, 0, 0, 0.65);
-
 }
 
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
     .header h1 {
         overflow: hidden;
         width: 15em;
@@ -52,62 +48,15 @@ h2 {
     50% {
         border-color: transparent
     }
-}
+} */
 
 .header img {
-    box-shadow: 2px 1px 1px black;
-    width: 150px;
-}
-
-.header p {
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 2px 2px 5px rgba(0, 0, 0, 0.65);
-}
-
-span>a {
-    color: #2e9cca;
-}
-
-span>a:hover {
-    color: #29648a;
-}
-
-.btn {
-    background-color: #0F1626;
-    color: white;
-}
-
-.btn:hover {
-    background-color: #2b354e;
-    color: white;
-}
-
-.btn:active {
-    background-color: #454f6a;
-    color: white;
-}
-
-.navbar {
-    background-color: #0F1626;
-}
-
-.nav-pills a {
-    color: #0F1626;
-}
-
-.nav-pills .nav-item {
-    background-color: white;
+    max-width: 15%;
 }
 
 .nav-pills .nav-item:hover {
-    background-color: #BBC3C6;
-}
-
-.nav-pills .nav-item .active {
-    background-color: #0F1626;
+    background-color: #bbc3c6;
+    border-radius: 0.25rem;
 }
 
 .social {
@@ -120,45 +69,8 @@ span>a:hover {
     color: white;
 }
 
-.info {
-    background-color: #FAF9F6;
-    box-shadow: 3px 2px 2px rgb(19, 19, 19);
-}
-
-#github {
-    color: black;
-}
-
-#linkedin {
-    color: #0077b5;
-}
-
-#mail {
-    color: white;
-}
-
-#resume {
-    color: white;
-}
-
-footer .social {
-    transition: opacity 0.2s;
-    opacity: 1;
-}
-
-footer .social:hover {
-    opacity: 0.5;
-}
-
-.school-logo {
-    max-width: 100%;
-    margin: auto;
-    display: block;
-    height: auto;
-}
-
 .expand-caret {
-    color: white;
+    color: black;
     transition: opacity 0.2s, transform 0.2s;
     opacity: 1;
 }
@@ -167,6 +79,6 @@ footer .social:hover {
     opacity: 0.7;
 }
 
-a[aria-expanded='false']>.expand-caret {
+a[aria-expanded="false"]>.expand-caret {
     transform: rotate(90deg);
 }

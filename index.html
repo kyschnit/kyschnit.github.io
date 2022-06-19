@@ -6,7 +6,8 @@
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
 
     <!-- Link Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/cyborg/bootstrap.min.css">
 
     <!-- Link CSS Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -41,20 +42,23 @@
     <!-- Header Section -->
     <header>
         <div class="header d-flex flex-column justify-content-center" id="home">
-            <div class="d-flex justify-content-center align-items-center mt-1 mb-4">
-                <h1>Hi, I'm Kyle Schnitzer!</h1>
+            <div class="d-flex justify-content-center mt-1 mb-4">
+                <h1 class="text-center fw-bold">Hi, I'm Kyle Schnitzer!</h1>
             </div>
             <div class="mt-5 mb-4">
-                <img src="imgs/user.jpg" class="mx-auto d-block rounded-circle border border-dark" alt="Kyle Schnitzer">
+                <img src="imgs/user.jpg" class="img-fluid mx-auto d-block rounded-circle border border-dark shadow-sm"
+                    alt="Kyle Schnitzer">
             </div>
-            <div class="d-flex justify-content-center align-items-center mt-4 mb-1 mx-4">
-                <p>
+            <div class="d-flex justify-content-center mt-4 mb-1 mx-4">
+                <p class="text-center fw-bold">
                     I'm a rising junior at the University of Michigan College of Engineering. <br><br>
                     This site is intended to give you a short overview of
-                    <span class="text-link"><a tabindex="0" href="#about">who I am</a></span>,
-                    <span class="text-link"><a tabindex="0" href="#skills">my skills</a></span>,
-                    <span class="text-link"><a tabindex="0" href="#education">my education</a></span>, and
-                    <span class="text-link"><a tabindex="0" href="#experience">my experience</a></span>. <br><br>
+                    <span><a class="text-decoration-none link-info" tabindex="0" href="#about">who I am</a></span>,
+                    <span><a class="text-decoration-none link-info" tabindex="0" href="#skills">my skills</a></span>,
+                    <span><a class="text-decoration-none link-info" tabindex="0" href="#education">my
+                            education</a></span>, and
+                    <span><a class="text-decoration-none link-info" tabindex="0" href="#experience">my
+                            experience</a></span>. <br><br>
                     Keep scrolling to learn more!
                 </p>
             </div>
@@ -62,12 +66,12 @@
     </header>
 
     <!-- Navigation Section -->
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobileContent">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navMobileContent">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ps-3">
                 <li class="nav-item">
                     <a class="nav-link" href="#home">Home</a>
                 </li>
@@ -94,16 +98,16 @@
 
         <div id="social-media">
             <a href="https://github.com/kyschnit" aria-label="Github" data-toggle="tooltip" data-placement="bottom"
-                title="Visit my GitHub!" class="social" target="_blank">
-                <i class="fab fa-github fa-2x"></i>
+                title="Visit my GitHub!" class="social text-decoration-none" target="_blank">
+                <i class="fab fa-github fa-2x pe-2"></i>
             </a>
             <a href="https://www.linkedin.com/in/kyle-schnitzer-a203211a6/" aria-label="LinkedIn" data-toggle="tooltip"
-                data-placement="bottom" title="Visit my LinkedIn!" class="social" target="_blank">
-                <i class="fab fa-linkedin-in fa-2x"></i>
+                data-placement="bottom" title="Visit my LinkedIn!" class="social text-decoration-none" target="_blank">
+                <i class="fab fa-linkedin-in fa-2x pe-2"></i>
             </a>
-            <a href="mailto:kyschnit@umich.edu" aria-label="Send an Email" data-toggle="tooltip" data-placement="bottom"
-                title="Send me an email at kyschnit@umich.edu" class="social">
-                <i class="fas fa-envelope fa-2x"></i>
+            <a href="mailto:kyschnit@umich.edu" aria-label="Send an Email" data-toggle="tooltip" data-placement="left"
+                title="Send me an email at kyschnit@umich.edu" class="social text-decoration-none">
+                <i class="fas fa-envelope fa-2x pe-4"></i>
             </a>
         </div>
     </nav>
@@ -111,9 +115,9 @@
     <!-- Main Section -->
     <main>
         <!-- About Section -->
-        <div class="info d-flex flex-column mt-4 mx-4 px-3 pt-3 rounded" id="about">
-            <h2 class="text-white font-weight-bold pl-2 py-1 mb-3 rounded">About Me
-                <span class="float-right pr-3">
+        <div class="d-flex flex-column mt-4 mx-4 px-3 pt-3" id="about">
+            <h2 class="fw-bold ps-2 py-1 mb-3 ">About Me
+                <span class="float-end pe-3">
                     <a data-toggle="collapse" data-target="#about-content" href="#about-content" aria-expanded="true">
                         <i class="fas fa-caret-down 2x expand-caret"></i>
                     </a>
@@ -151,50 +155,50 @@
         </div>
 
         <!-- Skills Section -->
-        <div class="info d-flex flex-column mt-4 mx-4 px-3 pt-3 rounded" id="skills">
-            <h2 class="text-white font-weight-bold pl-2 py-1 mb-3 rounded">My Skills
-                <span class="float-right pr-3">
+        <div class="d-flex flex-column mt-4 mx-4 px-3 pt-3" id="skills">
+            <h2 class="fw-bold ps-2 py-1 mb-3 ">My Skills
+                <span class="float-end pe-3">
                     <a data-toggle="collapse" data-target="#skills-content" href="#skills-content" aria-expanded="true">
                         <i class="fas fa-caret-down 2x expand-caret"></i>
                     </a>
                 </span>
             </h2>
-            <div class=" mb-2 collapse show" id="skills-content">
-                <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
-                    data-content="">C++</a>
-                <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
-                    data-content="">TypeScript</a>
-                <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
-                    data-content="">JavaScript</a>
-                <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
-                    data-content="">HTML</a>
-                <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
-                    data-content="">CSS</a>
-                <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
-                    data-content="">Angular</a>
-                <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
-                    data-content="">React</a>
-                <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
-                    data-content="">Java</a>
-                <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
-                    data-content="">Python</a>
-                <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
-                    data-content="">MATLAB</a>
-                <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
-                    data-content="">Git</a>
-                <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
-                    data-content="">Windows</a>
-                <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
-                    data-content="">Linux</a>
-                <a class="btn btn-light mr-1 mb-1" data-toggle="popover" data-trigger="focus" data-placement="bottom"
-                    data-content="">CAD</a>
+            <div class="mb-2 collapse show d-flex justify-content-center" id="skills-content">
+                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+                    data-placement="bottom" data-content="">C++</a>
+                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+                    data-placement="bottom" data-content="">TypeScript</a>
+                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+                    data-placement="bottom" data-content="">JavaScript</a>
+                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+                    data-placement="bottom" data-content="">HTML</a>
+                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+                    data-placement="bottom" data-content="">CSS</a>
+                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+                    data-placement="bottom" data-content="">Angular</a>
+                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+                    data-placement="bottom" data-content="">React</a>
+                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+                    data-placement="bottom" data-content="">Java</a>
+                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+                    data-placement="bottom" data-content="">Python</a>
+                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+                    data-placement="bottom" data-content="">MATLAB</a>
+                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+                    data-placement="bottom" data-content="">Git</a>
+                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+                    data-placement="bottom" data-content="">Windows</a>
+                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+                    data-placement="bottom" data-content="">Linux</a>
+                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+                    data-placement="bottom" data-content="">CAD</a>
             </div>
         </div>
 
         <!-- Education Section-->
-        <div class="info d-flex flex-column mt-4 mx-4 px-3 pt-3 rounded" id="education">
-            <h2 class="text-white font-weight-bold pl-2 py-1 mb-2 rounded">Education
-                <span class="float-right pr-3">
+        <div class=" d-flex flex-column mt-4 mx-4 px-3 pt-3" id="education">
+            <h2 class="fw-bold ps-2 py-1 mb-2 ">Education
+                <span class="float-end pe-3">
                     <a data-toggle="collapse" data-target="#education-content" href="#education-content"
                         aria-expanded="true">
                         <i class="fas fa-caret-down 2x expand-caret"></i>
@@ -204,7 +208,7 @@
             <div class="mt-2 mb-4 mx-1 collapse show" id="education-content">
                 <div class="card border-dark bg-light h-100 shadow mb-3">
                     <div class="card-header">
-                        <h3 class="font-weight-bold mb-n1">University of Michigan</h3>
+                        <h3 class="fw-bold mb-n1">University of Michigan</h3>
                     </div>
                     <div class="card-body">
                         <div class="container">
@@ -228,7 +232,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <a href="https://umich.edu" target="_blank"><img src="imgs/michigan_logo.png"
-                                            class="school-logo"></a>
+                                            class="d-block img-fluid mx-auto my-auto"></a>
                                 </div>
                             </div>
                         </div>
@@ -236,7 +240,7 @@
                 </div>
                 <div class="card border-dark bg-light h-100 shadow">
                     <div class="card-header">
-                        <h3 class="font-weight-bold mb-n1">Saline High School</h3>
+                        <h3 class="fw-bold mb-n1">Saline High School</h3>
                     </div>
                     <div class="card-body">
                         <div class="container">
@@ -256,7 +260,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <a href="https://www.salineschools.org/" target="_blank"><img
-                                            src="imgs/saline_logo.png" class="school-logo"></a>
+                                            src="imgs/saline_logo.png" class="d-block img-fluid mx-auto my-auto"></a>
                                 </div>
                             </div>
                         </div>
@@ -266,9 +270,9 @@
         </div>
 
         <!-- Experience Section -->
-        <div class="info d-flex flex-column mt-4 mx-4 px-3 pt-3 rounded" id="experience">
-            <h2 class="text-white font-weight-bold pl-2 py-1 mb-3 rounded">Experience
-                <span class="float-right pr-3">
+        <div class=" d-flex flex-column mt-4 mx-4 px-3 pt-3 " id="experience">
+            <h2 class="fw-bold ps-2 py-1 mb-3 ">Experience
+                <span class="float-end pe-3">
                     <a data-toggle="collapse" data-target="#experience-content" href="#experience-content"
                         aria-expanded="true">
                         <i class="fas fa-caret-down 2x expand-caret"></i>
@@ -277,13 +281,13 @@
             </h2>
             <div class="collapse show" id="experience-content">
                 <ul class="nav nav-pills nav-justified mt-1" role="tablist">
-                    <li class="nav-item mr-2 rounded shadow">
+                    <li class="nav-item me-2 shadow">
                         <a class="nav-link active" data-toggle="pill" href="#projects">Projects</a>
                     </li>
-                    <li class="nav-item mr-2 rounded shadow">
+                    <li class="nav-item me-2 shadow">
                         <a class="nav-link" data-toggle="pill" href="#extracurriculars">Extracurriculars</a>
                     </li>
-                    <li class="nav-item rounded shadow">
+                    <li class="nav-item shadow">
                         <a class="nav-link" data-toggle="pill" href="#work">Work</a>
                     </li>
                 </ul>
@@ -293,8 +297,8 @@
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">SB Countdown
-                                            <span class="float-right pr-1">
+                                        <h3 class="fw-bold mb-n1">SB Countdown
+                                            <span class="float-end pe-1">
                                                 <i class="fas fa-umbrella-beach 2x"></i>
                                             </span>
                                         </h3>
@@ -304,13 +308,13 @@
                                         <h5 class="card-subtitle mb-2 text-muted">HTML, CSS, JavaScript, Bootstrap
                                         </h5>
                                         <div class="d-flex justify-content-center">
-                                            <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
-                                                data-placement="bottom"
+                                            <a class="btn btn-primary me-1" tabindex="0" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom"
                                                 data-content="A small creative project I hacked together in a few hours. 
                                                 This is a countdown for my university church's spring break trip. This was fun to make,
                                                 and even involved a little bit of video editing to get the background video to loop.">Description</a>
                                             <a href="https://github.com/kyschnit/spring-break-countdown" target="_blank"
-                                                class="btn">Code</a>
+                                                class="btn btn-dark">Code</a>
                                         </div>
                                     </div>
                                 </div>
@@ -318,8 +322,8 @@
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Road Trip Radius
-                                            <span class="float-right pr-1">
+                                        <h3 class="fw-bold mb-n1">Road Trip Radius
+                                            <span class="float-end pe-1">
                                                 <i class="fas fa-car 2x"></i>
                                             </span>
                                         </h3>
@@ -329,12 +333,12 @@
                                         <h5 class="card-subtitle mb-2 text-muted">HTML, CSS, JavaScript, Bootstrap
                                         </h5>
                                         <div class="d-flex justify-content-center">
-                                            <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
-                                                data-placement="bottom" data-content="Currently undergoing development. 
+                                            <a class="btn btn-primary me-1" tabindex="0" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom" data-content="Currently undergoing development. 
                                                 The plan is to use the Google Maps API to determine where the user can drive to in a specified period of time or driving distance. 
                                                 Inspired by my love for roadtrips with friends.">Description</a>
                                             <a href="https://github.com/kyschnit/road-trip-radius" target="_blank"
-                                                class="btn">Code</a>
+                                                class="btn btn-dark">Code</a>
                                         </div>
                                     </div>
                                 </div>
@@ -342,8 +346,8 @@
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">kyle-schnitzer.com
-                                            <span class="float-right pr-1">
+                                        <h3 class="fw-bold mb-n1">kyle-schnitzer.com
+                                            <span class="float-end pe-1">
                                                 <i class="fas fa-code 2x"></i>
                                             </span>
                                         </h3>
@@ -353,14 +357,14 @@
                                         <h5 class="card-subtitle mb-2 text-muted">HTML, CSS, JavaScript, Bootstrap
                                         </h5>
                                         <div class="d-flex justify-content-center">
-                                            <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
-                                                data-placement="bottom" data-content="I built this website almost entirely from scratch during
+                                            <a class="btn btn-primary me-1" tabindex="0" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom" data-content="I built this website almost entirely from scratch during
                                                 my time in college. It was intended as a way to improve upon my web
                                                 development skills in addition to being a portfolio of my work. This is a
                                                 constant work in progress, expanding as I gain more experience. All of the
                                                 code is available on my GitHub.">Description</a>
                                             <a href="https://github.com/kyschnit/kyschnit.github.io" target="_blank"
-                                                class="btn">Code</a>
+                                                class="btn btn-dark">Code</a>
                                         </div>
                                     </div>
                                 </div>
@@ -368,8 +372,8 @@
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Machine Learning
-                                            <span class="float-right pr-1">
+                                        <h3 class="fw-bold mb-n1">Machine Learning
+                                            <span class="float-end pe-1">
                                                 <i class="fas fa-brain 2x"></i>
                                             </span>
                                         </h3>
@@ -378,8 +382,8 @@
                                         <h4 class="card-title">EECS 280 Project 5</h4>
                                         <h5 class="card-subtitle mb-2 text-muted">C++</h5>
                                         <div class="d-flex justify-content-center">
-                                            <a class="btn" tabindex="0" data-toggle="popover" data-trigger="focus"
-                                                data-placement="bottom"
+                                            <a class="btn btn-primary" tabindex="0" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom"
                                                 data-content="The goal of the final project in EECS 280 was to develop a
                                                 program that can classify posts on a student Q&A board called Piazza using
                                                 map and binary search tree data structures. This also involved thorough unit
@@ -391,8 +395,8 @@
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Web Backend
-                                            <span class="float-right pr-1">
+                                        <h3 class="fw-bold mb-n1">Web Backend
+                                            <span class="float-end pe-1">
                                                 <i class="fas fa-network-wired 2x"></i>
                                             </span>
                                         </h3>
@@ -401,8 +405,8 @@
                                         <h4 class="card-title">EECS 280 Project 4</h4>
                                         <h5 class="card-subtitle mb-2 text-muted">C++</h5>
                                         <div class="d-flex justify-content-center">
-                                            <a class="btn" tabindex="0" data-toggle="popover" data-trigger="focus"
-                                                data-placement="bottom" data-content="This project was my first experience with web APIs. It
+                                            <a class="btn btn-primary" tabindex="0" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom" data-content="This project was my first experience with web APIs. It
                                                 involved implementing a list data structure and using the list to implement
                                                 an office hours queue for the EECS 280 website. This required development of
                                                 a REST API and processing of JSON data. The code repository is private due
@@ -414,8 +418,8 @@
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Euchre
-                                            <span class="float-right pr-1">
+                                        <h3 class="fw-bold mb-n1">Euchre
+                                            <span class="float-end pe-1">
                                                 <i class="fas fa-gamepad 2x"></i>
                                             </span>
                                         </h3>
@@ -424,8 +428,8 @@
                                         <h4 class="card-title">EECS 280 Project 3</h4>
                                         <h5 class="card-subtitle mb-2 text-muted">C++</h5>
                                         <div class="d-flex justify-content-center">
-                                            <a class="btn" tabindex="0" data-toggle="popover" data-trigger="focus"
-                                                data-placement="bottom" data-content="Euchre is likely the most complex
+                                            <a class="btn btn-primary" tabindex="0" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom" data-content="Euchre is likely the most complex
                                                 project I've taken on. This involved heavy use of inheritance and
                                                 object-oriented programming, with separate classes for each component of
                                                 the game. The game logic was also very complex and required thorough
@@ -438,8 +442,8 @@
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Seam Carving
-                                            <span class="float-right pr-1">
+                                        <h3 class="fw-bold mb-n1">Seam Carving
+                                            <span class="float-end pe-1">
                                                 <i class="fas fa-camera 2x"></i>
                                             </span>
                                         </h3>
@@ -448,8 +452,8 @@
                                         <h4 class="card-title">EECS 280 Project 2</h4>
                                         <h5 class="card-subtitle mb-2 text-muted">C++</h5>
                                         <div class="d-flex justify-content-center">
-                                            <a class="btn" tabindex="0" data-toggle="popover" data-trigger="focus"
-                                                data-placement="bottom"
+                                            <a class="btn btn-primary" tabindex="0" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom"
                                                 data-content="This was the first real project I did in EECS 280.
                                                 This involved reading in an image as a PPM file, putting the data into a matrix,
                                                 creating a pixel data structure to represent each pixel of the image,
@@ -463,8 +467,8 @@
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Cubes
-                                            <span class="float-right pr-1">
+                                        <h3 class="fw-bold mb-n1">Cubes
+                                            <span class="float-end pe-1">
                                                 <i class="fas fa-dice-d6 2x"></i>
                                             </span>
                                         </h3>
@@ -473,8 +477,8 @@
                                         <h4 class="card-title">A Game for Children with ASD</h4>
                                         <h5 class="card-subtitle mb-2 text-muted">GameMaker Language</h5>
                                         <div class="d-flex justify-content-center">
-                                            <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
-                                                data-placement="bottom"
+                                            <a class="btn btn-primary me-1" tabindex="0" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom"
                                                 data-content="Cubes is a video game designed specifically
                                                 for children with Autism Spectrum Disorder(ASD). It was designed and created
                                                 by my 3-person team in ENGR 100, using GameMaker Studio A heavy focus was placed on
@@ -482,7 +486,7 @@
                                                 involved programming game logic and aiding 
                                                 in the creation of technical documents such as the game manual.">Description</a>
                                             <a href="https://github.com/kyschnit/engr-100-cubes" target="_blank"
-                                                class="btn">Code</a>
+                                                class="btn btn-dark">Code</a>
                                         </div>
                                     </div>
                                 </div>
@@ -490,8 +494,8 @@
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Hungr
-                                            <span class="float-right pr-1">
+                                        <h3 class="fw-bold mb-n1">Hungr
+                                            <span class="float-end pe-1">
                                                 <i class="fas fa-hamburger 2x"></i>
                                             </span>
                                         </h3>
@@ -500,8 +504,8 @@
                                         <h4 class="card-title">"Tinder for Food"</h4>
                                         <h5 class="card-subtitle mb-2 text-muted">Java, Android Studio</h5>
                                         <div class="d-flex justify-content-center">
-                                            <a class="btn" tabindex="0" data-toggle="popover" data-trigger="focus"
-                                                data-placement="bottom" data-content="Hungr is an Android app 
+                                            <a class="btn btn-primary" tabindex="0" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom" data-content="Hungr is an Android app 
                                                 that allows the user to enter their food preferences and 
                                                 gives them a list of restaurant options to swipe through (thus the nickname &quotTinder for Food&quot). 
                                                 This was created by the Android subteam of Michigan
@@ -518,8 +522,8 @@
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Ten for Men
-                                            <span class="float-right pr-1">
+                                        <h3 class="fw-bold mb-n1">Ten for Men
+                                            <span class="float-end pe-1">
                                                 <i class="fas fa-bible 2x"></i>
                                             </span>
                                         </h3>
@@ -528,8 +532,8 @@
                                         <h4 class="card-title">Leader/Mentor</h4>
                                         <h5 class="card-subtitle mb-2 text-muted">Youth Group</h5>
                                         <div class="d-flex justify-content-center">
-                                            <a class="btn" tabindex="0" data-toggle="popover" data-trigger="focus"
-                                                data-placement="bottom" data-content="Ten for Men is a Christian youth group 
+                                            <a class="btn btn-primary" tabindex="0" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom" data-content="Ten for Men is a Christian youth group 
                                                 I have been attending since my freshman year of high school.
                                                 Since my junior year of high school, I've been a leader of the group.
                                                 This position involves scheduling and structuring meetings and events,
@@ -542,8 +546,8 @@
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Michigan Hackers
-                                            <span class="float-right pr-1">
+                                        <h3 class="fw-bold mb-n1">Michigan Hackers
+                                            <span class="float-end pe-1">
                                                 <i class="fas fa-laptop-code 2x"></i>
                                             </span>
                                         </h3>
@@ -552,14 +556,14 @@
                                         <h4 class="card-title">Core Member - Android</h4>
                                         <h5 class="card-subtitle mb-2 text-muted">Student CS Organization</h5>
                                         <div class="d-flex justify-content-center">
-                                            <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
-                                                data-placement="bottom"
+                                            <a class="btn btn-primary me-1" tabindex="0" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom"
                                                 data-content="Michigan Hackers is a student CS organization
                                                 at the University of Michigan. It is split into several specialized subteams.
                                                 I am currently a member of the Android subteam. Through Michigan Hackers
                                                 I have been able to develop software with people from a variety of backgrounds.">Description</a>
                                             <a href="https://michiganhackers.org" target="_blank"
-                                                class="btn">Website</a>
+                                                class="btn btn-dark">Website</a>
                                         </div>
                                     </div>
                                 </div>
@@ -567,8 +571,8 @@
                             <!-- <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">MASA
-                                            <span class="float-right pr-1">
+                                        <h3 class="fw-bold mb-n1">MASA
+                                            <span class="float-end pe-1">
                                                 <i class="fas fa-rocket 2x"></i>
                                             </span>
                                         </h3>
@@ -577,10 +581,10 @@
                                         <h4 class="card-title">Member</h4>
                                         <h5 class="card-subtitle mb-2 text-muted">Student Rocketry Organization</h5>
                                         <div class="d-flex justify-content-center">
-                                            <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
+                                            <a class="btn btn-primary me-1" tabindex="0" data-toggle="popover" data-trigger="focus"
                                                 data-placement="bottom" data-content="">Description</a>
                                             <a href="https://masa.engin.umich.edu/" target="_blank"
-                                                class="btn">Website</a>
+                                                class="btn btn-dark">Website</a>
                                         </div>
                                     </div>
                                 </div>
@@ -592,8 +596,8 @@
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">MathWorks
-                                            <span class="float-right pr-1">
+                                        <h3 class="fw-bold mb-n1">MathWorks
+                                            <span class="float-end pe-1">
                                                 <i class="fas fa-calculator-simple 2x"></i>
                                             </span>
                                         </h3>
@@ -602,14 +606,15 @@
                                         <h4 class="card-title">Software Engineering Intern</h4>
                                         <h5 class="card-subtitle mb-2 text-muted">May 2022 - August 2022</h5>
                                         <div class="d-flex justify-content-center">
-                                            <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
-                                                data-placement="bottom" data-content="In the summer of 2022 I interned as a software engineer
+                                            <a class="btn btn-primary me-1" tabindex="0" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom" data-content="In the summer of 2022 I interned as a software engineer
                                                 in the Engineering Development Group at MathWorks. My project for
                                                 this internship involved migrating an internal webapp from 
                                                 legacy AngularJS code to the React framework. I learned so much
                                                 from this experience, including technical skills, effective communication,
                                                 teamwork, and Agile development.">Description</a>
-                                            <a href="https://www.mathworks.com/" target="_blank" class="btn">Website</a>
+                                            <a href="https://www.mathworks.com/" target="_blank"
+                                                class="btn btn-dark">Website</a>
                                         </div>
                                     </div>
                                 </div>
@@ -617,8 +622,8 @@
                             <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow">
                                     <div class="card-header">
-                                        <h3 class="font-weight-bold mb-n1">Epsilon Imaging
-                                            <span class="float-right pr-1">
+                                        <h3 class="fw-bold mb-n1">Epsilon Imaging
+                                            <span class="float-end pe-1">
                                                 <i class="fas fa-heartbeat 2x"></i>
                                             </span>
                                         </h3>
@@ -627,8 +632,8 @@
                                         <h4 class="card-title">Software Engineering Intern</h4>
                                         <h5 class="card-subtitle mb-2 text-muted">May 2021 - August 2021</h5>
                                         <div class="d-flex justify-content-center">
-                                            <a class="btn mr-1" tabindex="0" data-toggle="popover" data-trigger="focus"
-                                                data-placement="bottom"
+                                            <a class="btn btn-primary me-1" tabindex="0" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom"
                                                 data-content="In the summer of 2021 I worked as a 
                                                                             software engineering intern for Epsilon Imaging, 
                                                                             an Ann Arbor-based medical imaging software company.
@@ -639,7 +644,7 @@
                                                                             user-friendly. This involved collaboration
                                                                             with the product development team and the customer support team.">Description</a>
                                             <a href="https://epsilon-imaging.com/" target="_blank"
-                                                class="btn">Website</a>
+                                                class="btn btn-dark">Website</a>
                                         </div>
                                     </div>
                                 </div>
@@ -652,11 +657,11 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="info d-flex flex-column my-4 mx-4 px-3 pt-3 rounded" id="contact">
+    <footer class=" d-flex flex-column my-4 mx-4 px-3 pt-3 " id="contact">
 
         <!-- Contact Section -->
-        <h2 class="text-white font-weight-bold pl-2 py-1 mb-3 rounded">Contact Me
-            <span class="float-right pr-3">
+        <h2 class="fw-bold ps-2 py-1 mb-3 ">Contact Me
+            <span class="float-end pe-3">
                 <a data-toggle="collapse" data-target="#contact-content" href="#contact-content" aria-expanded="true">
                     <i class="fas fa-caret-down 2x expand-caret"></i>
                 </a>
@@ -665,54 +670,55 @@
         <div class="collapse show mx-2" id="contact-content">
             <div class="d-flex justify-content-center mt-2">
                 <a href="https://github.com/kyschnit" aria-label="Github" data-toggle="tooltip" data-placement="bottom"
-                    title="Visit my GitHub!" class="mr-4 social" id="github" target="_blank">
+                    title="Visit my GitHub!" class="px-2 link-secondary" id="github" target="_blank">
                     <i class="fab fa-github fa-4x"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/kyle-schnitzer-a203211a6/" aria-label="LinkedIn"
-                    data-toggle="tooltip" data-placement="bottom" title="Visit my LinkedIn!" class="social"
+                    data-toggle="tooltip" data-placement="bottom" title="Visit my LinkedIn!" class="px-2 link-info"
                     id="linkedin" target="_blank">
                     <i class="fab fa-linkedin fa-4x"></i>
                 </a>
                 <a href="mailto:kyschnit@umich.edu" aria-label="Send an Email" data-toggle="tooltip"
-                    data-placement="bottom" title="Send me an email at kyschnit@umich.edu" class="ml-4 social"
+                    data-placement="bottom" title="Send me an email at kyschnit@umich.edu" class="px-2 link-secondary"
                     id="mail">
                     <i class="fas fa-envelope fa-4x"></i>
                 </a>
                 <a href="./files/Kyle Schnitzer Resume.pdf" aria-label="Download my Resume" data-toggle="tooltip"
-                    data-placement="bottom" title="Download my resume!" class="ml-4 social" id="resume" target="_blank">
+                    data-placement="bottom" title="Download my resume!" class="px-2 link-secondary" id="resume"
+                    target="_blank">
                     <i class="fas fa-file-download fa-4x"></i>
                 </a>
             </div>
 
             <form id="contact-form" method="post">
                 <div class="form-group" style="display: none">
-                    <input type="hidden" name="contact_number" class="form-control">
+                    <input type="hidden" name="contact_number" class="form-control mb-3">
                 </div>
                 <div class="form-group">
                     <label for="name">Name:</label>
-                    <input type="text" class="form-control" placeholder="Your Name" id="name" name="user_name"
+                    <input type="text" class="form-control mb-3" placeholder="Your Name" id="name" name="user_name"
                         required="required" data-error="Name is required.">
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" class="form-control" placeholder="Your Email" id="email" name="user_email"
+                    <input type="email" class="form-control mb-3" placeholder="Your Email" id="email" name="user_email"
                         required="required" data-error="Email is required.">
                 </div>
                 <div class="form-group">
                     <label for="subject">Subject:</label>
-                    <input type="text" class="form-control" placeholder="Message Subject" id="subject" name="subject"
-                        required="required" data-error="Subject is required.">
+                    <input type="text" class="form-control mb-3" placeholder="Message Subject" id="subject"
+                        name="subject" required="required" data-error="Subject is required.">
                 </div>
                 <div class="form-group">
                     <label for="message">Message:</label>
-                    <textarea type="text" class="form-control" placeholder="Your Message" rows="5" id="message"
+                    <textarea type="text" class="form-control mb-3" placeholder="Your Message" rows="5" id="message"
                         name="message" required="required" data-error="Please enter a message."></textarea>
                 </div>
                 <div class="form-group">
-                    <div class="g-recaptcha" data-sitekey="6LdOOXIbAAAAAFgHQoZz3djcph517dpoT76GeUIQ"></div>
+                    <div class="g-recaptcha mb-3" data-sitekey="6LdOOXIbAAAAAFgHQoZz3djcph517dpoT76GeUIQ"></div>
                 </div>
                 <div class="d-flex justify-content-between">
-                    <button type="submit" class="btn btn-submit mb-3 col-lg-1 mr-2" value="Send Message">Submit</button>
+                    <button type="submit" class="btn btn-success mb-3 col-lg-1" value="Send Message">Submit</button>
                 </div>
                 <div class="modal fade" id="modal-success" data-backdrop="true">
                     <div class="modal-dialog modal-dialog-centered">
