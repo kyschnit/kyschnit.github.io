@@ -2,6 +2,10 @@
 	emailjs.init("user_S9naJDiA4QnWLZ8GpMkXx");
 })();
 
+function onSubmit(token) {
+	document.getElementById("contact-form").submit();
+}
+
 window.onload = function () {
 	document
 		.getElementById("contact-form")

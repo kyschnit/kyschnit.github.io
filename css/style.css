@@ -22,7 +22,7 @@ header h1 {
     color: #fff;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 400px) {
     #typewriter {
         overflow: hidden;
         border-right: 3px solid #fff;
