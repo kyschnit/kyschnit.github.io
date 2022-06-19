@@ -2,578 +2,745 @@
 <html lang="en">
 
 <head>
-    <title>Kyle Schnitzer</title>
-    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+	<title>Kyle Schnitzer</title>
+	<link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
 
-    <!-- Link Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/cyborg/bootstrap.min.css">
+	<!-- Link Bootstrap CSS -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/minty/bootstrap.min.css">
 
-    <!-- Link CSS Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+	<!-- Link CSS Stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
 
-    <!-- Link jQuery, Popper.js, JS, EmailJS, contact form JS, tooltip JS, and reCAPTCHA JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Link jQuery, Popper.js, JS, EmailJS, contact form JS, tooltip JS, and reCAPTCHA JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-    <script type="text/javascript" src="js/contact.js"></script>
-    <script type="text/javascript" src="js/tooltip-popover.js"></script>
-    <script type="text/javascript" src="js/image-async.js"></script>
+	<script type="text/javascript" src="js/contact.js"></script>
+	<script type="text/javascript" src="js/tooltip-popover.js"></script>
+	<script type="text/javascript" src="js/image-async.js"></script>
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <!-- Link Font Awesome stylesheet CDN -->
-    <script src="https://kit.fontawesome.com/eba0e32aea.js" crossorigin="anonymous"></script>
+	<!-- Link Font Awesome stylesheet CDN -->
+	<script src="https://kit.fontawesome.com/95dd8fd1b9.js" crossorigin="anonymous"></script>
 
-    <!-- Meta -->
-    <meta charset="UTF-8">
-    <meta name="description" content="Kyle Schnitzer's Portfolio Website.">
-    <meta name="keywords" content="Kyle Schnitzer, Kyle, Schnitzer, kyschnit, schnitzerkyle, resume, portfolio">
-    <meta name="author" content="Kyle Schnitzer">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta name="description" content="Kyle Schnitzer's Portfolio Website.">
+	<meta name="keywords" content="Kyle Schnitzer, Kyle, Schnitzer, kyschnit, schnitzerkyle, resume, portfolio">
+	<meta name="author" content="Kyle Schnitzer">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!-- Header Section -->
-    <header>
-        <div class="header d-flex flex-column justify-content-center" id="home">
-            <div class="d-flex justify-content-center mt-1 mb-4">
-                <h1 class="text-center fw-bold">Hi, I'm Kyle Schnitzer!</h1>
-            </div>
-            <div class="mt-5 mb-4">
-                <img src="imgs/user.jpg" class="img-fluid mx-auto d-block rounded-circle border border-dark shadow-sm"
-                    alt="Kyle Schnitzer">
-            </div>
-            <div class="d-flex justify-content-center mt-4 mb-1 mx-4">
-                <p class="text-center fw-bold">
-                    I'm a rising junior at the University of Michigan College of Engineering. <br><br>
-                    This site is intended to give you a short overview of
-                    <span><a class="text-decoration-none link-info" tabindex="0" href="#about">who I am</a></span>,
-                    <span><a class="text-decoration-none link-info" tabindex="0" href="#skills">my skills</a></span>,
-                    <span><a class="text-decoration-none link-info" tabindex="0" href="#education">my
-                            education</a></span>, and
-                    <span><a class="text-decoration-none link-info" tabindex="0" href="#experience">my
-                            experience</a></span>. <br><br>
-                    Keep scrolling to learn more!
-                </p>
-            </div>
-        </div>
-    </header>
+<body data-spy="scroll" data-target=".navbar">
+	<!-- Header Section -->
+	<header class="d-flex flex-column justify-content-center text-center" id="home">
+		<h1 class="fw-bold d-inline" id="typewriter">Hi, I'm Kyle Schnitzer!</h1>
+		<p>
+			I'm a student and software developer based in Ann Arbor, Michigan.
+		</p>
+		<a class="t" href="#about">
+			<i class="fa-solid fa-chevron-down fa-2xl mt-5 floating nav-link"></i>
+		</a>
+	</header>
 
-    <!-- Navigation Section -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobileContent">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMobileContent">
-            <ul class="navbar-nav ps-3">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        Resume
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#education">Education</a>
-                        <a class="dropdown-item" href="#experience">Experience</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Me</a>
-                </li>
-            </ul>
-        </div>
+	<!-- Navigation Section -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobileContent">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navMobileContent">
+			<ul class="navbar-nav ps-3">
+				<li class="nav-item">
+					<a class="nav-link" href="#home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#skills">Skills</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+						data-toggle="dropdown">
+						Resume
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#education">Education</a>
+						<a class="dropdown-item" href="#experience">Experience</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact Me</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://kyle-schnitzer.com/blog">Thoughts</a>
+				</li>
+			</ul>
+		</div>
 
-        <div id="social-media">
-            <a href="https://github.com/kyschnit" aria-label="Github" data-toggle="tooltip" data-placement="bottom"
-                title="Visit my GitHub!" class="social text-decoration-none" target="_blank">
-                <i class="fab fa-github fa-2x pe-2"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/kyle-schnitzer-a203211a6/" aria-label="LinkedIn" data-toggle="tooltip"
-                data-placement="bottom" title="Visit my LinkedIn!" class="social text-decoration-none" target="_blank">
-                <i class="fab fa-linkedin-in fa-2x pe-2"></i>
-            </a>
-            <a href="mailto:kyschnit@umich.edu" aria-label="Send an Email" data-toggle="tooltip" data-placement="left"
-                title="Send me an email at kyschnit@umich.edu" class="social text-decoration-none">
-                <i class="fas fa-envelope fa-2x pe-4"></i>
-            </a>
-        </div>
-    </nav>
+		<div id="social-media">
+			<a href="https://github.com/kyschnit" aria-label="Github" data-toggle="tooltip"
+				data-placement="bottom" title="Visit my GitHub!" class="social text-decoration-none"
+				target="_blank">
+				<i class="fa-brands fa-github fa-2xl pe-1"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/kyle-schnitzer-a203211a6/" aria-label="LinkedIn"
+				data-toggle="tooltip" data-placement="bottom" title="Visit my LinkedIn!"
+				class="social text-decoration-none" target="_blank">
+				<i class="fa-brands fa-linkedin-in fa-2xl pe-1"></i>
+			</a>
+			<a href="mailto:kyschnit@umich.edu" aria-label="Send an Email" data-toggle="tooltip"
+				data-placement="left" title="Send me an email at kyschnit@umich.edu"
+				class="social text-decoration-none">
+				<i class="fa-solid fa-envelope fa-2xl pe-4"></i>
+			</a>
+		</div>
+	</nav>
 
-    <!-- Main Section -->
-    <main>
-        <!-- About Section -->
-        <div class="d-flex flex-column mt-4 mx-4 px-3 pt-3" id="about">
-            <h2 class="fw-bold ps-2 py-1 mb-3 ">About Me
-                <span class="float-end pe-3">
-                    <a data-toggle="collapse" data-target="#about-content" href="#about-content" aria-expanded="true">
-                        <i class="fas fa-caret-down 2x expand-caret"></i>
-                    </a>
-                </span>
-            </h2>
-            <div class="collapse show mx-2" id="about-content">
-                <p>
-                    I'm a rising junior studying computer science at the University of Michigan. I'm still
-                    discovering my
-                    passions within the field,
-                    but I have enjoyed my experiences with web development and Android app development. I'm pursuing a
-                    minor in entrepreneurship, and I'm very interested in the fast-paced, innovative culture of
-                    startups. I'm always
-                    willing
-                    to learn something new, and I'm
-                    constantly expanding my working knowledge. My primary programming experience lies in C++,
-                    Javascript, and
-                    Angular.
-                    I'm currently a Software Engineering Intern at MathWorks in the Engineering Development Group!
-                </p>
-                <p>
-                    I grew up surrounded by technology, so it seemed almost inevitable that I would major in computer
-                    science. It is something that has
-                    shaped my life, and I hope to use it to make a positive impact on the world around me.
-                </p>
-                <p>
-                    Outside of programming, my interests include traveling, reading, running, biking, hiking, camping,
-                    baking, playing video games, and 3D modeling with CAD software.
-                    <!-- (to view some of my CAD work, click here) --> I am a member of Michigan Hackers, a student
-                    computer science organization at the University of Michigan.
-                    I also help to lead Ten for Men, a youth group for students at the high school I attended.
-                    I stay active as a member of the University of Michigan Club Triathlon team.
-                </p>
-            </div>
-        </div>
+	<!-- Main Section -->
+	<main>
+		<!-- About Section -->
+		<div class="container-fluid pt-3" id="about">
+			<h2 class="fw-bold pt-5 text-center">About Me</h2>
+			<div class="row gx-5 mx-5">
+				<div class="col col-lg-4 mb-3">
+					<img class="img-thumbnail img-fluid mt-3" src="imgs/user.jpg"
+						alt="Kyle Schnitzer">
+				</div>
+				<div class="d-flex flex-column justify-content-center col-md" id="about-content">
+					<p>
+						I'm a rising junior studying computer science at the University of
+						Michigan. I'm
+						still
+						discovering my
+						passions within the field,
+						but I have enjoyed my experiences with web development and Android app
+						development. I'm pursuing a
+						minor in entrepreneurship, and I'm very interested in the fast-paced,
+						innovative
+						culture of
+						startups. I'm always
+						willing
+						to learn something new, and I'm
+						constantly expanding my working knowledge. My primary programming
+						experience
+						lies in C++,
+						Javascript, and
+						Angular.
+						I'm currently a Software Engineering Intern at MathWorks in the
+						Engineering
+						Development Group!
+					</p>
+					<p>
+						I grew up surrounded by technology, so it seemed almost inevitable that
+						I would
+						major in computer
+						science. It is something that has
+						shaped my life, and I hope to use it to make a positive impact on the
+						world
+						around me.
+					</p>
+					<p>
+						Outside of programming, my interests include traveling, reading,
+						running,
+						biking, hiking, camping,
+						baking, playing video games, and 3D modeling with CAD software.
+						<!-- (to view some of my CAD work, click here) --> I am a member of
+						Michigan
+						Hackers, a student
+						computer science organization at the University of Michigan.
+						I also help to lead Ten for Men, a youth group for students at the high
+						school I
+						attended.
+						I stay active as a member of the University of Michigan Club Triathlon
+						team.
+					</p>
+				</div>
+			</div>
+		</div>
 
-        <!-- Skills Section -->
-        <div class="d-flex flex-column mt-4 mx-4 px-3 pt-3" id="skills">
-            <h2 class="fw-bold ps-2 py-1 mb-3 ">My Skills
-                <span class="float-end pe-3">
-                    <a data-toggle="collapse" data-target="#skills-content" href="#skills-content" aria-expanded="true">
-                        <i class="fas fa-caret-down 2x expand-caret"></i>
-                    </a>
-                </span>
-            </h2>
-            <div class="mb-2 collapse show d-flex justify-content-center" id="skills-content">
-                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
-                    data-placement="bottom" data-content="">C++</a>
-                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
-                    data-placement="bottom" data-content="">TypeScript</a>
-                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
-                    data-placement="bottom" data-content="">JavaScript</a>
-                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
-                    data-placement="bottom" data-content="">HTML</a>
-                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
-                    data-placement="bottom" data-content="">CSS</a>
-                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
-                    data-placement="bottom" data-content="">Angular</a>
-                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
-                    data-placement="bottom" data-content="">React</a>
-                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
-                    data-placement="bottom" data-content="">Java</a>
-                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
-                    data-placement="bottom" data-content="">Python</a>
-                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
-                    data-placement="bottom" data-content="">MATLAB</a>
-                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
-                    data-placement="bottom" data-content="">Git</a>
-                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
-                    data-placement="bottom" data-content="">Windows</a>
-                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
-                    data-placement="bottom" data-content="">Linux</a>
-                <a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
-                    data-placement="bottom" data-content="">CAD</a>
-            </div>
-        </div>
+		<!-- Skills Section -->
+		<div class="d-flex flex-column mt-4 mx-4 px-3 pt-3" id="skills">
+			<h2 class="fw-bold ps-2 py-1 mb-3 ">My Skills
+				<span class="float-end pe-3">
+					<a data-toggle="collapse" data-target="#skills-content" href="#skills-content"
+						aria-expanded="true">
+						<i class="fa-solid fa-caret-down 2x expand-caret"></i>
+					</a>
+				</span>
+			</h2>
+			<div class="mb-2 collapse show d-flex justify-content-center" id="skills-content">
+				<a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+					data-placement="bottom" data-content="">C++</a>
+				<a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+					data-placement="bottom" data-content="">TypeScript</a>
+				<a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+					data-placement="bottom" data-content="">JavaScript</a>
+				<a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+					data-placement="bottom" data-content="">HTML</a>
+				<a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+					data-placement="bottom" data-content="">CSS</a>
+				<a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+					data-placement="bottom" data-content="">Angular</a>
+				<a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+					data-placement="bottom" data-content="">React</a>
+				<a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+					data-placement="bottom" data-content="">Java</a>
+				<a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+					data-placement="bottom" data-content="">Python</a>
+				<a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+					data-placement="bottom" data-content="">MATLAB</a>
+				<a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+					data-placement="bottom" data-content="">Git</a>
+				<a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+					data-placement="bottom" data-content="">Windows</a>
+				<a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+					data-placement="bottom" data-content="">Linux</a>
+				<a class="btn btn-outline-info me-1 mb-1" data-toggle="popover" data-trigger="focus"
+					data-placement="bottom" data-content="">CAD</a>
+			</div>
+		</div>
 
-        <!-- Education Section-->
-        <div class=" d-flex flex-column mt-4 mx-4 px-3 pt-3" id="education">
-            <h2 class="fw-bold ps-2 py-1 mb-2 ">Education
-                <span class="float-end pe-3">
-                    <a data-toggle="collapse" data-target="#education-content" href="#education-content"
-                        aria-expanded="true">
-                        <i class="fas fa-caret-down 2x expand-caret"></i>
-                    </a>
-                </span>
-            </h2>
-            <div class="mt-2 mb-4 mx-1 collapse show" id="education-content">
-                <div class="card border-dark bg-light h-100 shadow mb-3">
-                    <div class="card-header">
-                        <h3 class="fw-bold mb-n1">University of Michigan</h3>
-                    </div>
-                    <div class="card-body">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-md-6">
-                                    <h4 class="card-title">B.S.E. in Computer Science</h4>
-                                    <h5 class="card-subtitle text-muted">Ann Arbor, MI &middot; August 2020 - April 2024
-                                        (est.)</h5>
-                                    <h5 class="mt-3">Coursework</h5>
-                                    <ul>
-                                        <li>EECS 370 - Introduction to Computer Organization</li>
-                                        <li>EECS 298 - Applied Machine Learning for Engineers</li>
-                                        <li>EECS 281 - Data Structures and Algorithms</li>
-                                        <li>EECS 280 - Programming and Introductory Data Structures</li>
-                                        <li>EECS 203 - Discrete Mathematics</li>
-                                        <li>ENGR 100 - Introduction to Engineering</li>
-                                        <li>MATH 214 - Applied Linear Algebra</li>
-                                        <li>MATH 216 - Introduction to Differential Equations</li>
-                                    </ul>
-                                    <p class="mt-1">GPA: 3.83</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <a href="https://umich.edu" target="_blank"><img src="imgs/michigan_logo.png"
-                                            class="d-block img-fluid mx-auto my-auto"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card border-dark bg-light h-100 shadow">
-                    <div class="card-header">
-                        <h3 class="fw-bold mb-n1">Saline High School</h3>
-                    </div>
-                    <div class="card-body">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-md-6">
-                                    <h4 class="card-title">Diploma</h4>
-                                    <h5 class="card-subtitle text-muted">Saline, MI &middot; September 2016 - May 2020
-                                    </h5>
-                                    <h5 class="mt-3">Coursework</h5>
-                                    <ul>
-                                        <li>AP Computer Science A</li>
-                                        <li>AP Calculus BC</li>
-                                        <li>AP Chemistry</li>
-                                        <li>AP Physics C: Mechanics</li>
-                                    </ul>
-                                    <p class="mt-1">GPA: 4.3</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <a href="https://www.salineschools.org/" target="_blank"><img
-                                            src="imgs/saline_logo.png" class="d-block img-fluid mx-auto my-auto"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<!-- Education Section-->
+		<div class=" d-flex flex-column mt-4 mx-4 px-3 pt-3" id="education">
+			<h2 class="fw-bold ps-2 py-1 mb-2 ">Education
+				<span class="float-end pe-3">
+					<a data-toggle="collapse" data-target="#education-content"
+						href="#education-content" aria-expanded="true">
+						<i class="fa-solid fa-caret-down 2x expand-caret"></i>
+					</a>
+				</span>
+			</h2>
+			<div class="mt-2 mb-4 mx-1 collapse show" id="education-content">
+				<div class="card border-dark bg-light h-100 shadow mb-3">
+					<div class="card-header">
+						<h3 class="fw-bold mb-n1">University of Michigan</h3>
+					</div>
+					<div class="card-body">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-md-6">
+									<h4 class="card-title">B.S.E. in
+										Computer
+										Science</h4>
+									<h5 class="card-subtitle text-muted">Ann
+										Arbor,
+										MI &middot; August 2020 - April
+										2024
+										(est.)</h5>
+									<h5 class="mt-3">Coursework</h5>
+									<ul>
+										<li>EECS 370 - Introduction to
+											Computer
+											Organization</li>
+										<li>EECS 298 - Applied Machine
+											Learning
+											for Engineers</li>
+										<li>EECS 281 - Data Structures
+											and
+											Algorithms</li>
+										<li>EECS 280 - Programming and
+											Introductory Data
+											Structures
+										</li>
+										<li>EECS 203 - Discrete
+											Mathematics</li>
+										<li>ENGR 100 - Introduction to
+											Engineering</li>
+										<li>MATH 214 - Applied Linear
+											Algebra
+										</li>
+										<li>MATH 216 - Introduction to
+											Differential Equations
+										</li>
+									</ul>
+									<p class="mt-1">GPA: 3.83</p>
+								</div>
+								<div class="col-md-6">
+									<a href="https://umich.edu" target="_blank"><img
+											src="imgs/michigan_logo.png"
+											class="d-block img-fluid mx-auto my-auto"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card border-dark bg-light h-100 shadow">
+					<div class="card-header">
+						<h3 class="fw-bold mb-n1">Saline High School</h3>
+					</div>
+					<div class="card-body">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-md-6">
+									<h4 class="card-title">Diploma</h4>
+									<h5 class="card-subtitle text-muted">
+										Saline, MI
+										&middot; September 2016 - May
+										2020
+									</h5>
+									<h5 class="mt-3">Coursework</h5>
+									<ul>
+										<li>AP Computer Science A</li>
+										<li>AP Calculus BC</li>
+										<li>AP Chemistry</li>
+										<li>AP Physics C: Mechanics</li>
+									</ul>
+									<p class="mt-1">GPA: 4.3</p>
+								</div>
+								<div class="col-md-6">
+									<a href="https://www.salineschools.org/"
+										target="_blank"><img
+											src="imgs/saline_logo.png"
+											class="d-block img-fluid mx-auto my-auto"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- Experience Section -->
-        <div class=" d-flex flex-column mt-4 mx-4 px-3 pt-3 " id="experience">
-            <h2 class="fw-bold ps-2 py-1 mb-3 ">Experience
-                <span class="float-end pe-3">
-                    <a data-toggle="collapse" data-target="#experience-content" href="#experience-content"
-                        aria-expanded="true">
-                        <i class="fas fa-caret-down 2x expand-caret"></i>
-                    </a>
-                </span>
-            </h2>
-            <div class="collapse show" id="experience-content">
-                <ul class="nav nav-pills nav-justified mt-1" role="tablist">
-                    <li class="nav-item me-2 shadow">
-                        <a class="nav-link active" data-toggle="pill" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item me-2 shadow">
-                        <a class="nav-link" data-toggle="pill" href="#extracurriculars">Extracurriculars</a>
-                    </li>
-                    <li class="nav-item shadow">
-                        <a class="nav-link" data-toggle="pill" href="#work">Work</a>
-                    </li>
-                </ul>
-                <div class="tab-content mx-2">
-                    <div class="tab-pane fade show active" id="projects">
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3">
-                            <div class="col mb-4">
-                                <div class="card h-100 border-dark bg-light shadow">
-                                    <div class="card-header">
-                                        <h3 class="fw-bold mb-n1">SB Countdown
-                                            <span class="float-end pe-1">
-                                                <i class="fas fa-umbrella-beach 2x"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Countdown Website</h4>
-                                        <h5 class="card-subtitle mb-2 text-muted">HTML, CSS, JavaScript, Bootstrap
-                                        </h5>
-                                        <div class="d-flex justify-content-center">
-                                            <a class="btn btn-primary me-1" tabindex="0" data-toggle="popover"
-                                                data-trigger="focus" data-placement="bottom"
-                                                data-content="A small creative project I hacked together in a few hours. 
+		<!-- Experience Section -->
+		<div class=" d-flex flex-column mt-4 mx-4 px-3 pt-3 " id="experience">
+			<h2 class="fw-bold ps-2 py-1 mb-3 ">Experience
+				<span class="float-end pe-3">
+					<a data-toggle="collapse" data-target="#experience-content"
+						href="#experience-content" aria-expanded="true">
+						<i class="fa-solid fa-caret-down 2x expand-caret"></i>
+					</a>
+				</span>
+			</h2>
+			<div class="collapse show" id="experience-content">
+				<ul class="nav nav-pills nav-justified mt-1" role="tablist">
+					<li class="nav-item me-2 shadow">
+						<a class="nav-link active" data-toggle="pill"
+							href="#projects">Projects</a>
+					</li>
+					<li class="nav-item me-2 shadow">
+						<a class="nav-link" data-toggle="pill"
+							href="#extracurriculars">Extracurriculars</a>
+					</li>
+					<li class="nav-item shadow">
+						<a class="nav-link" data-toggle="pill" href="#work">Work</a>
+					</li>
+				</ul>
+				<div class="tab-content mx-2">
+					<div class="tab-pane fade show active" id="projects">
+						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3">
+							<div class="col mb-4">
+								<div class="card h-100 border-dark bg-light shadow">
+									<div class="card-header">
+										<h3 class="fw-bold mb-n1">SB
+											Countdown
+											<span class="float-end pe-1">
+												<i
+													class="fa-solid fa-umbrella-beach 2x"></i>
+											</span>
+										</h3>
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">Countdown
+											Website
+										</h4>
+										<h5
+											class="card-subtitle mb-2 text-muted">
+											HTML, CSS, JavaScript,
+											Bootstrap
+										</h5>
+										<div
+											class="d-flex justify-content-center">
+											<a class="btn btn-primary me-1"
+												tabindex="0"
+												data-toggle="popover"
+												data-trigger="focus"
+												data-placement="bottom"
+												data-content="A small creative project I hacked together in a few hours. 
                                                 This is a countdown for my university church's spring break trip. This was fun to make,
                                                 and even involved a little bit of video editing to get the background video to loop.">Description</a>
-                                            <a href="https://github.com/kyschnit/spring-break-countdown" target="_blank"
-                                                class="btn btn-dark">Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="card h-100 border-dark bg-light shadow">
-                                    <div class="card-header">
-                                        <h3 class="fw-bold mb-n1">Road Trip Radius
-                                            <span class="float-end pe-1">
-                                                <i class="fas fa-car 2x"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Roadtrip Planning Website</h4>
-                                        <h5 class="card-subtitle mb-2 text-muted">HTML, CSS, JavaScript, Bootstrap
-                                        </h5>
-                                        <div class="d-flex justify-content-center">
-                                            <a class="btn btn-primary me-1" tabindex="0" data-toggle="popover"
-                                                data-trigger="focus" data-placement="bottom" data-content="Currently undergoing development. 
+											<a href="https://github.com/kyschnit/spring-break-countdown"
+												target="_blank"
+												class="btn btn-dark">Code</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100 border-dark bg-light shadow">
+									<div class="card-header">
+										<h3 class="fw-bold mb-n1">Road
+											Trip
+											Radius
+											<span class="float-end pe-1">
+												<i
+													class="fa-solid fa-car 2x"></i>
+											</span>
+										</h3>
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">Roadtrip
+											Planning
+											Website</h4>
+										<h5
+											class="card-subtitle mb-2 text-muted">
+											HTML, CSS, JavaScript,
+											Bootstrap
+										</h5>
+										<div
+											class="d-flex justify-content-center">
+											<a class="btn btn-primary me-1"
+												tabindex="0"
+												data-toggle="popover"
+												data-trigger="focus"
+												data-placement="bottom"
+												data-content="Currently undergoing development. 
                                                 The plan is to use the Google Maps API to determine where the user can drive to in a specified period of time or driving distance. 
                                                 Inspired by my love for roadtrips with friends.">Description</a>
-                                            <a href="https://github.com/kyschnit/road-trip-radius" target="_blank"
-                                                class="btn btn-dark">Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="card h-100 border-dark bg-light shadow">
-                                    <div class="card-header">
-                                        <h3 class="fw-bold mb-n1">kyle-schnitzer.com
-                                            <span class="float-end pe-1">
-                                                <i class="fas fa-code 2x"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">This Website!</h4>
-                                        <h5 class="card-subtitle mb-2 text-muted">HTML, CSS, JavaScript, Bootstrap
-                                        </h5>
-                                        <div class="d-flex justify-content-center">
-                                            <a class="btn btn-primary me-1" tabindex="0" data-toggle="popover"
-                                                data-trigger="focus" data-placement="bottom" data-content="I built this website almost entirely from scratch during
+											<a href="https://github.com/kyschnit/road-trip-radius"
+												target="_blank"
+												class="btn btn-dark">Code</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100 border-dark bg-light shadow">
+									<div class="card-header">
+										<h3 class="fw-bold mb-n1">
+											kyle-schnitzer.com
+											<span class="float-end pe-1">
+												<i
+													class="fa-solid fa-code 2x"></i>
+											</span>
+										</h3>
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">This
+											Website!
+										</h4>
+										<h5
+											class="card-subtitle mb-2 text-muted">
+											HTML, CSS, JavaScript,
+											Bootstrap
+										</h5>
+										<div
+											class="d-flex justify-content-center">
+											<a class="btn btn-primary me-1"
+												tabindex="0"
+												data-toggle="popover"
+												data-trigger="focus"
+												data-placement="bottom"
+												data-content="I built this website almost entirely from scratch during
                                                 my time in college. It was intended as a way to improve upon my web
                                                 development skills in addition to being a portfolio of my work. This is a
                                                 constant work in progress, expanding as I gain more experience. All of the
                                                 code is available on my GitHub.">Description</a>
-                                            <a href="https://github.com/kyschnit/kyschnit.github.io" target="_blank"
-                                                class="btn btn-dark">Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="card h-100 border-dark bg-light shadow">
-                                    <div class="card-header">
-                                        <h3 class="fw-bold mb-n1">Machine Learning
-                                            <span class="float-end pe-1">
-                                                <i class="fas fa-brain 2x"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">EECS 280 Project 5</h4>
-                                        <h5 class="card-subtitle mb-2 text-muted">C++</h5>
-                                        <div class="d-flex justify-content-center">
-                                            <a class="btn btn-primary" tabindex="0" data-toggle="popover"
-                                                data-trigger="focus" data-placement="bottom"
-                                                data-content="The goal of the final project in EECS 280 was to develop a
+											<a href="https://github.com/kyschnit/kyschnit.github.io"
+												target="_blank"
+												class="btn btn-dark">Code</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100 border-dark bg-light shadow">
+									<div class="card-header">
+										<h3 class="fw-bold mb-n1">
+											Machine
+											Learning
+											<span class="float-end pe-1">
+												<i
+													class="fa-solid fa-brain 2x"></i>
+											</span>
+										</h3>
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">EECS 280
+											Project
+											5</h4>
+										<h5
+											class="card-subtitle mb-2 text-muted">
+											C++</h5>
+										<div
+											class="d-flex justify-content-center">
+											<a class="btn btn-primary"
+												tabindex="0"
+												data-toggle="popover"
+												data-trigger="focus"
+												data-placement="bottom"
+												data-content="The goal of the final project in EECS 280 was to develop a
                                                 program that can classify posts on a student Q&A board called Piazza using
                                                 map and binary search tree data structures. This also involved thorough unit
                                                 testing. The code repository is private due to school honor code policy.">Description</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="card h-100 border-dark bg-light shadow">
-                                    <div class="card-header">
-                                        <h3 class="fw-bold mb-n1">Web Backend
-                                            <span class="float-end pe-1">
-                                                <i class="fas fa-network-wired 2x"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">EECS 280 Project 4</h4>
-                                        <h5 class="card-subtitle mb-2 text-muted">C++</h5>
-                                        <div class="d-flex justify-content-center">
-                                            <a class="btn btn-primary" tabindex="0" data-toggle="popover"
-                                                data-trigger="focus" data-placement="bottom" data-content="This project was my first experience with web APIs. It
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100 border-dark bg-light shadow">
+									<div class="card-header">
+										<h3 class="fw-bold mb-n1">Web
+											Backend
+											<span class="float-end pe-1">
+												<i
+													class="fa-solid fa-network-wired 2x"></i>
+											</span>
+										</h3>
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">EECS 280
+											Project
+											4</h4>
+										<h5
+											class="card-subtitle mb-2 text-muted">
+											C++</h5>
+										<div
+											class="d-flex justify-content-center">
+											<a class="btn btn-primary"
+												tabindex="0"
+												data-toggle="popover"
+												data-trigger="focus"
+												data-placement="bottom"
+												data-content="This project was my first experience with web APIs. It
                                                 involved implementing a list data structure and using the list to implement
                                                 an office hours queue for the EECS 280 website. This required development of
                                                 a REST API and processing of JSON data. The code repository is private due
                                                 to school honor code policy.">Description</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="card h-100 border-dark bg-light shadow">
-                                    <div class="card-header">
-                                        <h3 class="fw-bold mb-n1">Euchre
-                                            <span class="float-end pe-1">
-                                                <i class="fas fa-gamepad 2x"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">EECS 280 Project 3</h4>
-                                        <h5 class="card-subtitle mb-2 text-muted">C++</h5>
-                                        <div class="d-flex justify-content-center">
-                                            <a class="btn btn-primary" tabindex="0" data-toggle="popover"
-                                                data-trigger="focus" data-placement="bottom" data-content="Euchre is likely the most complex
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100 border-dark bg-light shadow">
+									<div class="card-header">
+										<h3 class="fw-bold mb-n1">Euchre
+											<span class="float-end pe-1">
+												<i
+													class="fa-solid fa-gamepad 2x"></i>
+											</span>
+										</h3>
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">EECS 280
+											Project
+											3</h4>
+										<h5
+											class="card-subtitle mb-2 text-muted">
+											C++</h5>
+										<div
+											class="d-flex justify-content-center">
+											<a class="btn btn-primary"
+												tabindex="0"
+												data-toggle="popover"
+												data-trigger="focus"
+												data-placement="bottom"
+												data-content="Euchre is likely the most complex
                                                 project I've taken on. This involved heavy use of inheritance and
                                                 object-oriented programming, with separate classes for each component of
                                                 the game. The game logic was also very complex and required thorough
                                                 testing to eliminate bugs. The code repository is private due to school
                                                 honor code policy.">Description</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="card h-100 border-dark bg-light shadow">
-                                    <div class="card-header">
-                                        <h3 class="fw-bold mb-n1">Seam Carving
-                                            <span class="float-end pe-1">
-                                                <i class="fas fa-camera 2x"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">EECS 280 Project 2</h4>
-                                        <h5 class="card-subtitle mb-2 text-muted">C++</h5>
-                                        <div class="d-flex justify-content-center">
-                                            <a class="btn btn-primary" tabindex="0" data-toggle="popover"
-                                                data-trigger="focus" data-placement="bottom"
-                                                data-content="This was the first real project I did in EECS 280.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100 border-dark bg-light shadow">
+									<div class="card-header">
+										<h3 class="fw-bold mb-n1">Seam
+											Carving
+											<span class="float-end pe-1">
+												<i
+													class="fa-solid fa-camera 2x"></i>
+											</span>
+										</h3>
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">EECS 280
+											Project
+											2</h4>
+										<h5
+											class="card-subtitle mb-2 text-muted">
+											C++</h5>
+										<div
+											class="d-flex justify-content-center">
+											<a class="btn btn-primary"
+												tabindex="0"
+												data-toggle="popover"
+												data-trigger="focus"
+												data-placement="bottom"
+												data-content="This was the first real project I did in EECS 280.
                                                 This involved reading in an image as a PPM file, putting the data into a matrix,
                                                 creating a pixel data structure to represent each pixel of the image,
                                                 and writing an algorithm to resize the image to a specified size.
                                                 The algorithm determined the least important vertical seams of pixels in the image and removed them.
                                                 The code repository is private due to school honor code policy.">Description</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="card h-100 border-dark bg-light shadow">
-                                    <div class="card-header">
-                                        <h3 class="fw-bold mb-n1">Cubes
-                                            <span class="float-end pe-1">
-                                                <i class="fas fa-dice-d6 2x"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">A Game for Children with ASD</h4>
-                                        <h5 class="card-subtitle mb-2 text-muted">GameMaker Language</h5>
-                                        <div class="d-flex justify-content-center">
-                                            <a class="btn btn-primary me-1" tabindex="0" data-toggle="popover"
-                                                data-trigger="focus" data-placement="bottom"
-                                                data-content="Cubes is a video game designed specifically
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100 border-dark bg-light shadow">
+									<div class="card-header">
+										<h3 class="fw-bold mb-n1">Cubes
+											<span class="float-end pe-1">
+												<i
+													class="fa-solid fa-dice-d6 2x"></i>
+											</span>
+										</h3>
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">A Game
+											for
+											Children with ASD</h4>
+										<h5
+											class="card-subtitle mb-2 text-muted">
+											GameMaker Language</h5>
+										<div
+											class="d-flex justify-content-center">
+											<a class="btn btn-primary me-1"
+												tabindex="0"
+												data-toggle="popover"
+												data-trigger="focus"
+												data-placement="bottom"
+												data-content="Cubes is a video game designed specifically
                                                 for children with Autism Spectrum Disorder(ASD). It was designed and created
                                                 by my 3-person team in ENGR 100, using GameMaker Studio A heavy focus was placed on
                                                 making the game as accessible as possible. My role in the project
                                                 involved programming game logic and aiding 
                                                 in the creation of technical documents such as the game manual.">Description</a>
-                                            <a href="https://github.com/kyschnit/engr-100-cubes" target="_blank"
-                                                class="btn btn-dark">Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="card h-100 border-dark bg-light shadow">
-                                    <div class="card-header">
-                                        <h3 class="fw-bold mb-n1">Hungr
-                                            <span class="float-end pe-1">
-                                                <i class="fas fa-hamburger 2x"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">"Tinder for Food"</h4>
-                                        <h5 class="card-subtitle mb-2 text-muted">Java, Android Studio</h5>
-                                        <div class="d-flex justify-content-center">
-                                            <a class="btn btn-primary" tabindex="0" data-toggle="popover"
-                                                data-trigger="focus" data-placement="bottom" data-content="Hungr is an Android app 
+											<a href="https://github.com/kyschnit/engr-100-cubes"
+												target="_blank"
+												class="btn btn-dark">Code</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100 border-dark bg-light shadow">
+									<div class="card-header">
+										<h3 class="fw-bold mb-n1">Hungr
+											<span class="float-end pe-1">
+												<i
+													class="fa-solid fa-hamburger 2x"></i>
+											</span>
+										</h3>
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">"Tinder
+											for Food"
+										</h4>
+										<h5
+											class="card-subtitle mb-2 text-muted">
+											Java, Android Studio
+										</h5>
+										<div
+											class="d-flex justify-content-center">
+											<a class="btn btn-primary"
+												tabindex="0"
+												data-toggle="popover"
+												data-trigger="focus"
+												data-placement="bottom"
+												data-content="Hungr is an Android app 
                                                 that allows the user to enter their food preferences and 
                                                 gives them a list of restaurant options to swipe through (thus the nickname &quotTinder for Food&quot). 
                                                 This was created by the Android subteam of Michigan
                                                 Hackers. My role in the project was primarily UI design
                                                 using Android Studio's UI development features.">Description</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="extracurriculars">
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3">
-                            <div class="col mb-4">
-                                <div class="card h-100 border-dark bg-light shadow">
-                                    <div class="card-header">
-                                        <h3 class="fw-bold mb-n1">Ten for Men
-                                            <span class="float-end pe-1">
-                                                <i class="fas fa-bible 2x"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Leader/Mentor</h4>
-                                        <h5 class="card-subtitle mb-2 text-muted">Youth Group</h5>
-                                        <div class="d-flex justify-content-center">
-                                            <a class="btn btn-primary" tabindex="0" data-toggle="popover"
-                                                data-trigger="focus" data-placement="bottom" data-content="Ten for Men is a Christian youth group 
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="extracurriculars">
+						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3">
+							<div class="col mb-4">
+								<div class="card h-100 border-dark bg-light shadow">
+									<div class="card-header">
+										<h3 class="fw-bold mb-n1">Ten
+											for Men
+											<span class="float-end pe-1">
+												<i
+													class="fa-solid fa-bible 2x"></i>
+											</span>
+										</h3>
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">
+											Leader/Mentor
+										</h4>
+										<h5
+											class="card-subtitle mb-2 text-muted">
+											Youth Group</h5>
+										<div
+											class="d-flex justify-content-center">
+											<a class="btn btn-primary"
+												tabindex="0"
+												data-toggle="popover"
+												data-trigger="focus"
+												data-placement="bottom"
+												data-content="Ten for Men is a Christian youth group 
                                                 I have been attending since my freshman year of high school.
                                                 Since my junior year of high school, I've been a leader of the group.
                                                 This position involves scheduling and structuring meetings and events,
                                                 organizing and facilitating discussions,
                                                 and being a mentor to the high schoolers in the group.">Description</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="card h-100 border-dark bg-light shadow">
-                                    <div class="card-header">
-                                        <h3 class="fw-bold mb-n1">Michigan Hackers
-                                            <span class="float-end pe-1">
-                                                <i class="fas fa-laptop-code 2x"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Core Member - Android</h4>
-                                        <h5 class="card-subtitle mb-2 text-muted">Student CS Organization</h5>
-                                        <div class="d-flex justify-content-center">
-                                            <a class="btn btn-primary me-1" tabindex="0" data-toggle="popover"
-                                                data-trigger="focus" data-placement="bottom"
-                                                data-content="Michigan Hackers is a student CS organization
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100 border-dark bg-light shadow">
+									<div class="card-header">
+										<h3 class="fw-bold mb-n1">
+											Michigan
+											Hackers
+											<span class="float-end pe-1">
+												<i
+													class="fa-solid fa-laptop-code 2x"></i>
+											</span>
+										</h3>
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">Core
+											Member -
+											Android</h4>
+										<h5
+											class="card-subtitle mb-2 text-muted">
+											Student CS Organization
+										</h5>
+										<div
+											class="d-flex justify-content-center">
+											<a class="btn btn-primary me-1"
+												tabindex="0"
+												data-toggle="popover"
+												data-trigger="focus"
+												data-placement="bottom"
+												data-content="Michigan Hackers is a student CS organization
                                                 at the University of Michigan. It is split into several specialized subteams.
                                                 I am currently a member of the Android subteam. Through Michigan Hackers
                                                 I have been able to develop software with people from a variety of backgrounds.">Description</a>
-                                            <a href="https://michiganhackers.org" target="_blank"
-                                                class="btn btn-dark">Website</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="col mb-4">
+											<a href="https://michiganhackers.org"
+												target="_blank"
+												class="btn btn-dark">Website</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="col mb-4">
                                 <div class="card h-100 border-dark bg-light shadow">
                                     <div class="card-header">
                                         <h3 class="fw-bold mb-n1">MASA
                                             <span class="float-end pe-1">
-                                                <i class="fas fa-rocket 2x"></i>
+                                                <i class="fa-solid fa-rocket 2x"></i>
                                             </span>
                                         </h3>
                                     </div>
@@ -589,52 +756,75 @@
                                     </div>
                                 </div>
                             </div> -->
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="work">
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3">
-                            <div class="col mb-4">
-                                <div class="card h-100 border-dark bg-light shadow">
-                                    <div class="card-header">
-                                        <h3 class="fw-bold mb-n1">MathWorks
-                                            <span class="float-end pe-1">
-                                                <i class="fas fa-calculator-simple 2x"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Software Engineering Intern</h4>
-                                        <h5 class="card-subtitle mb-2 text-muted">May 2022 - August 2022</h5>
-                                        <div class="d-flex justify-content-center">
-                                            <a class="btn btn-primary me-1" tabindex="0" data-toggle="popover"
-                                                data-trigger="focus" data-placement="bottom" data-content="In the summer of 2022 I interned as a software engineer
+						</div>
+					</div>
+					<div class="tab-pane fade" id="work">
+						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3">
+							<div class="col mb-4">
+								<div class="card h-100 border-dark bg-light shadow">
+									<div class="card-header">
+										<h3 class="fw-bold mb-n1">
+											MathWorks
+											<span class="float-end pe-1">
+												<i
+													class="fa-solid fa-calculator-simple 2x"></i>
+											</span>
+										</h3>
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">Software
+											Engineering Intern</h4>
+										<h5
+											class="card-subtitle mb-2 text-muted">
+											May 2022 - August 2022
+										</h5>
+										<div
+											class="d-flex justify-content-center">
+											<a class="btn btn-primary me-1"
+												tabindex="0"
+												data-toggle="popover"
+												data-trigger="focus"
+												data-placement="bottom"
+												data-content="In the summer of 2022 I interned as a software engineer
                                                 in the Engineering Development Group at MathWorks. My project for
                                                 this internship involved migrating an internal webapp from 
                                                 legacy AngularJS code to the React framework. I learned so much
                                                 from this experience, including technical skills, effective communication,
                                                 teamwork, and Agile development.">Description</a>
-                                            <a href="https://www.mathworks.com/" target="_blank"
-                                                class="btn btn-dark">Website</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="card h-100 border-dark bg-light shadow">
-                                    <div class="card-header">
-                                        <h3 class="fw-bold mb-n1">Epsilon Imaging
-                                            <span class="float-end pe-1">
-                                                <i class="fas fa-heartbeat 2x"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Software Engineering Intern</h4>
-                                        <h5 class="card-subtitle mb-2 text-muted">May 2021 - August 2021</h5>
-                                        <div class="d-flex justify-content-center">
-                                            <a class="btn btn-primary me-1" tabindex="0" data-toggle="popover"
-                                                data-trigger="focus" data-placement="bottom"
-                                                data-content="In the summer of 2021 I worked as a 
+											<a href="https://www.mathworks.com/"
+												target="_blank"
+												class="btn btn-dark">Website</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100 border-dark bg-light shadow">
+									<div class="card-header">
+										<h3 class="fw-bold mb-n1">
+											Epsilon
+											Imaging
+											<span class="float-end pe-1">
+												<i
+													class="fa-solid fa-heartbeat 2x"></i>
+											</span>
+										</h3>
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">Software
+											Engineering Intern</h4>
+										<h5
+											class="card-subtitle mb-2 text-muted">
+											May 2021 - August 2021
+										</h5>
+										<div
+											class="d-flex justify-content-center">
+											<a class="btn btn-primary me-1"
+												tabindex="0"
+												data-toggle="popover"
+												data-trigger="focus"
+												data-placement="bottom"
+												data-content="In the summer of 2021 I worked as a 
                                                                             software engineering intern for Epsilon Imaging, 
                                                                             an Ann Arbor-based medical imaging software company.
                                                                             My projects while working here included developing
@@ -643,137 +833,313 @@
                                                                             These projects were focused on making Epsilon's primary application more
                                                                             user-friendly. This involved collaboration
                                                                             with the product development team and the customer support team.">Description</a>
-                                            <a href="https://epsilon-imaging.com/" target="_blank"
-                                                class="btn btn-dark">Website</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+											<a href="https://epsilon-imaging.com/"
+												target="_blank"
+												class="btn btn-dark">Website</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- Footer Section -->
-    <footer class=" d-flex flex-column my-4 mx-4 px-3 pt-3 " id="contact">
+		<!-- Contact Section -->
+		<div class="container-fluid pt-3" id="contact">
+			<h2 class="fw-bold pt-5 text-center">Contact Me</h2>
+			<div class="mx-5" id="contact-content">
+				<div class="row">
+					<div class="col col-lg-6">
+						<div class="row">
+							<div class="col col-md-12">
+								<div class="card bg-light mb-3 shadow-sm">
+									<div class="card-body text-center">
+										<span class="fa-stack fa-2x">
+											<i
+												class="fa-solid fa-circle fa-stack-2x text-primary"></i>
+											<i
+												class="fa-solid fa-share-nodes fa-stack-1x fa-inverse"></i>
+										</span>
+										<h6 class="mt-3 fw-bold">Social Media
+										</h6>
+										<div
+											class="d-flex justify-content-center mt-3">
+											<a href="https://github.com/kyschnit"
+												aria-label="Github"
+												data-toggle="tooltip"
+												data-placement="bottom"
+												title="Visit my GitHub!"
+												class="px-2 link-secondary"
+												id="github"
+												target="_blank">
+												<span class="fa-stack">
+													<i
+														class="fa-solid fa-circle fa-stack-2x"></i>
+													<i
+														class="fa-brands fa-github fa-stack-1x fa-inverse"></i>
+												</span>
+												<a href="https://www.linkedin.com/in/kyle-schnitzer-a203211a6/"
+													aria-label="LinkedIn"
+													data-toggle="tooltip"
+													data-placement="bottom"
+													title="Visit my LinkedIn!"
+													class="px-2 link-secondary"
+													id="linkedin"
+													target="_blank">
+													<span
+														class="fa-stack">
+														<i
+															class="fa-solid fa-circle fa-stack-2x"></i>
+														<i
+															class="fa-brands fa-linkedin fa-stack-1x fa-inverse"></i>
+													</span>
+												</a>
+												<a href="https://www.instagram.com/k.schnitzer/"
+													aria-label="Instagram"
+													data-toggle="tooltip"
+													data-placement="bottom"
+													title="Visit my Instagram!"
+													class="px-2 link-secondary"
+													id="instagram"
+													target="_blank">
+													<span
+														class="fa-stack">
+														<i
+															class="fa-solid fa-circle fa-stack-2x"></i>
+														<i
+															class="fa-brands fa-instagram fa-stack-1x fa-inverse"></i>
+													</span>
+												</a>
+												<a href="https://www.kyle-schnitzer.com/blog"
+													aria-label="Visit my blog"
+													data-toggle="tooltip"
+													data-placement="bottom"
+													title="Visit my blog!"
+													class="px-2 link-secondary"
+													id="blog"
+													target="_blank">
+													<span
+														class="fa-stack">
+														<i
+															class="fa-solid fa-circle fa-stack-2x"></i>
+														<i
+															class="fa-solid fa-blog fa-stack-1x fa-inverse"></i>
+													</span>
+												</a>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col col-md-6">
+								<div class="card bg-light mb-3 shadow-sm">
+									<div class="card-body text-center">
+										<span class="fa-stack fa-2x">
+											<i
+												class="fa-solid fa-circle fa-stack-2x text-primary"></i>
+											<i
+												class="fa-solid fa-envelope fa-stack-1x fa-inverse"></i>
+										</span>
+										<h6 class="mt-3 fw-bold">Email Me
+										</h6>
+										<a class="link-secondary"
+											href="mailto:kyschnit@umich.edu">
+											kyschnit@umich.edu
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col col-md-6">
+								<div class="card bg-light mb-3 shadow-sm">
+									<div class="card-body text-center">
+										<span class="fa-stack fa-2x">
+											<i
+												class="fa-solid fa-circle fa-stack-2x text-primary"></i>
+											<i
+												class="fa-solid fa-file-download fa-stack-1x fa-inverse"></i>
+										</span>
+										<h6 class="mt-3 fw-bold">View my
+											Resume</h6>
+										<a class="link-secondary"
+											href="./files/Kyle Schnitzer Resume.pdf">
+											Download
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col col-lg-6">
+						<div class="card bg-light mb-3 shadow-sm">
+							<div class="card-body">
+								<form id="contact-form" method="post">
+									<div class="form-group d-none">
+										<input type="hidden"
+											name="contact_number"
+											class="form-control">
+									</div>
+									<div class="row">
+										<div class="col-md-6 form-group">
+											<input type="text"
+												class="form-control mb-3"
+												placeholder="Your Name"
+												id="name"
+												name="user_name"
+												required="required"
+												data-error="Name is required.">
+										</div>
+										<div class="col-md-6 form-group">
+											<input type="email"
+												class="form-control mb-3"
+												placeholder="Your Email"
+												id="email"
+												name="user_email"
+												required="required"
+												data-error="Email is required.">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12 form-group">
+											<input type="text"
+												class="form-control mb-3"
+												placeholder="Subject"
+												id="subject"
+												name="subject"
+												required="required"
+												data-error="Subject is required.">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12 form-group">
+											<textarea type="text"
+												class="form-control mb-3"
+												placeholder="Message"
+												rows="5" id="message"
+												name="message"
+												required="required"
+												data-error="Please enter a message."></textarea>
+										</div>
+									</div>
+									<div class="row">
+										<div
+											class="d-flex justify-content-center col col-md-12 form-group">
+											<div class="g-recaptcha mb-3"
+												data-sitekey="6LdOOXIbAAAAAFgHQoZz3djcph517dpoT76GeUIQ">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div
+											class="d-flex justify-content-center col col-lg-12 form-group">
+											<button type="submit"
+												class="btn btn-success"
+												value="Send Message">Submit</button>
+										</div>
+									</div>
+									<div class="modal fade" id="modal-success"
+										data-backdrop="true">
+										<div
+											class="modal-dialog modal-dialog-centered">
+											<div
+												class="modal-content border border-success">
 
-        <!-- Contact Section -->
-        <h2 class="fw-bold ps-2 py-1 mb-3 ">Contact Me
-            <span class="float-end pe-3">
-                <a data-toggle="collapse" data-target="#contact-content" href="#contact-content" aria-expanded="true">
-                    <i class="fas fa-caret-down 2x expand-caret"></i>
-                </a>
-            </span>
-        </h2>
-        <div class="collapse show mx-2" id="contact-content">
-            <div class="d-flex justify-content-center mt-2">
-                <a href="https://github.com/kyschnit" aria-label="Github" data-toggle="tooltip" data-placement="bottom"
-                    title="Visit my GitHub!" class="px-2 link-secondary" id="github" target="_blank">
-                    <i class="fab fa-github fa-4x"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/kyle-schnitzer-a203211a6/" aria-label="LinkedIn"
-                    data-toggle="tooltip" data-placement="bottom" title="Visit my LinkedIn!" class="px-2 link-info"
-                    id="linkedin" target="_blank">
-                    <i class="fab fa-linkedin fa-4x"></i>
-                </a>
-                <a href="mailto:kyschnit@umich.edu" aria-label="Send an Email" data-toggle="tooltip"
-                    data-placement="bottom" title="Send me an email at kyschnit@umich.edu" class="px-2 link-secondary"
-                    id="mail">
-                    <i class="fas fa-envelope fa-4x"></i>
-                </a>
-                <a href="./files/Kyle Schnitzer Resume.pdf" aria-label="Download my Resume" data-toggle="tooltip"
-                    data-placement="bottom" title="Download my resume!" class="px-2 link-secondary" id="resume"
-                    target="_blank">
-                    <i class="fas fa-file-download fa-4x"></i>
-                </a>
-            </div>
+												<!-- Modal Header -->
+												<div
+													class="modal-header">
+													<h4
+														class="modal-title">
+														Message
+														Sent
+													</h4>
+													<button type="button"
+														class="close"
+														data-dismiss="modal"
+														aria-label="Close">&times;</button>
+												</div>
 
-            <form id="contact-form" method="post">
-                <div class="form-group" style="display: none">
-                    <input type="hidden" name="contact_number" class="form-control mb-3">
-                </div>
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" class="form-control mb-3" placeholder="Your Name" id="name" name="user_name"
-                        required="required" data-error="Name is required.">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control mb-3" placeholder="Your Email" id="email" name="user_email"
-                        required="required" data-error="Email is required.">
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject:</label>
-                    <input type="text" class="form-control mb-3" placeholder="Message Subject" id="subject"
-                        name="subject" required="required" data-error="Subject is required.">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea type="text" class="form-control mb-3" placeholder="Your Message" rows="5" id="message"
-                        name="message" required="required" data-error="Please enter a message."></textarea>
-                </div>
-                <div class="form-group">
-                    <div class="g-recaptcha mb-3" data-sitekey="6LdOOXIbAAAAAFgHQoZz3djcph517dpoT76GeUIQ"></div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <button type="submit" class="btn btn-success mb-3 col-lg-1" value="Send Message">Submit</button>
-                </div>
-                <div class="modal fade" id="modal-success" data-backdrop="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content border border-success">
+												<!-- Modal body -->
+												<div class="modal-body">
+													Your
+													message
+													has
+													been
+													sent!
+												</div>
 
-                            <!-- Modal Header -->
-                            <div class="modal-header">
-                                <h4 class="modal-title">Message Sent</h4>
-                                <button type="button" class="close" data-dismiss="modal"
-                                    aria-label="Close">&times;</button>
-                            </div>
+												<!-- Modal footer -->
+												<div
+													class="modal-footer">
+													<button type="button"
+														class="btn btn-success"
+														data-dismiss="modal"
+														aria-label="Close">Close</button>
+												</div>
 
-                            <!-- Modal body -->
-                            <div class="modal-body">
-                                Your message has been sent!
-                            </div>
+											</div>
+										</div>
+									</div>
+									<div class="modal fade" id="modal-failure"
+										data-backdrop="true">
+										<div
+											class="modal-dialog modal-dialog-centered">
+											<div
+												class="modal-content border border-danger">
 
-                            <!-- Modal footer -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-success" data-dismiss="modal"
-                                    aria-label="Close">Close</button>
-                            </div>
+												<!-- Modal Header -->
+												<div
+													class="modal-header">
+													<h4
+														class="modal-title">
+														Message
+														Failed
+														to
+														Send
+													</h4>
+													<button type="button"
+														class="close"
+														data-dismiss="modal">&times;</button>
+												</div>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="modal-failure" data-backdrop="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content border border-danger">
+												<!-- Modal body -->
+												<div class="modal-body">
+													Make
+													sure you
+													have
+													completed
+													the
+													captcha.
+												</div>
 
-                            <!-- Modal Header -->
-                            <div class="modal-header">
-                                <h4 class="modal-title">Message Failed to Send</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
+												<!-- Modal footer -->
+												<div
+													class="modal-footer">
+													<button type="button"
+														class="btn btn-danger"
+														data-dismiss="modal">Close</button>
+												</div>
 
-                            <!-- Modal body -->
-                            <div class="modal-body">
-                                Make sure you have completed the captcha.
-                            </div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</main>
 
-                            <!-- Modal footer -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </footer>
-    <div class="d-flex justify-content-center">
-        <p class="text-muted">Website created by Kyle Schnitzer. Hosted on Github Pages.</p>
-    </div>
+	<!-- Footer Section -->
+	<footer class="bg-primary">
+		<div class="container-fluid text-center text-white py-3">
+			<p>Website created by <strong>Kyle Schnitzer.</strong> <br>
+				Hosted on Github Pages.</p>
+		</div>
+	</footer>
 </body>
 
 </html>
