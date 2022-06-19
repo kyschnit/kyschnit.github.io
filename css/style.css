@@ -2,6 +2,11 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 header {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
         url("../imgs/background3.jpg");
