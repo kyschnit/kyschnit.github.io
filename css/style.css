@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-}   
+}
 
 header {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
@@ -95,6 +95,10 @@ hr {
     opacity: 50%;
 }
 
+.list-group-item {
+    word-wrap: break-word;
+}
+
 .timeline {
     list-style-type: none;
     position: relative;
@@ -110,7 +114,7 @@ hr {
     left: 0px;
 }
 
-.timeline > li:before {
+.timeline>li:before {
     content: '';
     background-color: white;
     display: inline-block;

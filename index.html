@@ -72,8 +72,9 @@
 						Resume
 					</a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#education">Education</a>
-						<a class="dropdown-item" href="#experience">Experience</a>
+						<a class="dropdown-item"
+							href="#education-experience">Education/Experience</a>
+						<a class="dropdown-item" href="#projects">Projects</a>
 					</div>
 				</li>
 				<li class="nav-item">
@@ -110,7 +111,7 @@
 		<div class="container-fluid pt-3" id="about">
 			<h2 class="fw-bold mt-5 text-center">About Me</h2>
 			<hr class="mx-auto">
-			<div class="row gx-5 mx-3">
+			<div class="row gx-5 mx-3 border shadow-sm">
 				<div class="col col-lg-4 mb-3">
 					<img class="img-thumbnail img-fluid mt-3" src="imgs/user.jpg"
 						alt="Kyle Schnitzer">
@@ -171,7 +172,7 @@
 		<div class="container-fluid pt-3" id="skills">
 			<h2 class="fw-bold pt-5 text-center">My Skills</h2>
 			<hr class="mx-auto mb-4">
-			<div class="accordion mx-5" id="skills-content">
+			<div class="accordion mx-5 shadow-sm" id="skills-content">
 				<div class="accordion-item">
 					<h2 class="accordion-header" id="heading-one">
 						<button class="accordion-button" type="button" data-toggle="collapse"
@@ -292,14 +293,14 @@
 		</div>
 
 		<!-- Resume Section-->
-		<div class="container-fluid pt-3" id="education">
+		<div class="container-fluid pt-3" id="education-experience">
 			<h2 class="fw-bold pt-5 text-center">Resume</h2>
-			<hr class="mx-auto mb-4">
-			<div class="row mx-5" id="education-content">
+			<hr class="mx-auto mb-5">
+			<div class="row mx-5 gx-5 py-3 px-1" id="education-experience-content">
 				<div class="col-lg-6">
 					<h3 class="fw-bold text-left mb-3">Education</h3>
 					<ul class="timeline">
-						<li class="mb-2">
+						<li class="mb-5">
 							<h5 class="bg-secondary text-center">Bachelor of Science
 								Engineering, Computer Science</h5>
 							<h6><strong>School:</strong> University of Michigan</h6>
@@ -332,7 +333,7 @@
 								</li>
 							</ul>
 						</li>
-						<li class="mb-2">
+						<li>
 							<h5 class="bg-secondary text-center">High School Diploma</h5>
 							<h6><strong>School:</strong> Saline High School</h6>
 							<h6><strong>Duration:</strong> 2016 - 2020</h6>
@@ -346,11 +347,27 @@
 							</ul>
 						</li>
 					</ul>
+					<h3 class="fw-bold text-left mb-3">Leadership</h3>
+					<ul class="timeline">
+						<li>
+							<h5 class="bg-secondary text-center">Leader/Mentor</h5>
+							<h6><strong>Organization:</strong> Ten for Men</h6>
+							<h6><strong>Duration:</strong> 2018 - Present</h6>
+							Ten for Men is a Christian youth group
+							I have been attending since my freshman year of high school.
+							Since my junior year of high school, I've been a leader of the
+							group.
+							This position involves scheduling and structuring meetings and
+							events,
+							organizing and facilitating discussions,
+							and being a mentor to the high schoolers in the group.
+						</li>
+					</ul>
 				</div>
 				<div class="col-lg-6">
 					<h3 class="fw-bold text-left mb-3">Work Experience</h3>
 					<ul class="timeline">
-						<li class="mb-2">
+						<li class="mb-5">
 							<h5 class="bg-secondary text-center">Software Engineering
 								Intern, EDG</h5>
 							<h6><strong>Company:</strong> MathWorks</h6>
@@ -363,7 +380,7 @@
 							technical debt and drastically increased code maintainability
 							and security.
 						</li>
-						<li class="mb-2">
+						<li class="mb-5">
 							<h5 class="bg-secondary text-center">Web Developer</h5>
 							<h6><strong>Company:</strong> University of Michigan</h6>
 							<h6><strong>Duration:</strong> Sept 2021 - May 2022</h6>
@@ -376,7 +393,7 @@
 							website. I also worked to ensure
 							accessibility across the website.
 						</li>
-						<li class="mb-2">
+						<li>
 							<h5 class="bg-secondary text-center">Software Engineering Intern
 							</h5>
 							<h6><strong>Company:</strong> Epsilon Imaging</h6>
@@ -398,430 +415,112 @@
 			</div>
 		</div>
 
-		<!-- Experience Section -->
-		<div class=" d-flex flex-column mt-4 mx-4 px-3 pt-3 " id="experience">
-			<h2 class="fw-bold ps-2 py-1 mb-3 ">Experience
-				<span class="float-end pe-3">
-					<a data-toggle="collapse" data-target="#experience-content"
-						href="#experience-content" aria-expanded="true">
-						<i class="fa-solid fa-caret-down 2x expand-caret"></i>
-					</a>
-				</span>
-			</h2>
-			<div class="collapse show" id="experience-content">
-				<ul class="nav nav-pills nav-justified mt-1" role="tablist">
-					<li class="nav-item me-2 shadow">
-						<a class="nav-link active" data-toggle="pill"
-							href="#projects">Projects</a>
-					</li>
-					<li class="nav-item me-2 shadow">
-						<a class="nav-link" data-toggle="pill"
-							href="#extracurriculars">Extracurriculars</a>
-					</li>
-				</ul>
-				<div class="tab-content mx-2">
-					<div class="tab-pane fade show active" id="projects">
-						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3">
-							<div class="col mb-4">
-								<div class="card h-100 border-dark bg-light shadow">
-									<div class="card-header">
-										<h3 class="fw-bold mb-n1">SB
-											Countdown
-											<span class="float-end pe-1">
-												<i
-													class="fa-solid fa-umbrella-beach 2x"></i>
-											</span>
-										</h3>
-									</div>
-									<div class="card-body">
-										<h4 class="card-title">Countdown
-											Website
-										</h4>
-										<h5
-											class="card-subtitle mb-2 text-muted">
-											HTML, CSS, JavaScript,
-											Bootstrap
-										</h5>
-										<div
-											class="d-flex justify-content-center">
-											<a class="btn btn-primary me-1"
-												tabindex="0"
-												data-toggle="popover"
-												data-trigger="focus"
-												data-placement="bottom"
-												data-content="A small creative project I hacked together in a few hours. 
-                                                This is a countdown for my university church's spring break trip. This was fun to make,
-                                                and even involved a little bit of video editing to get the background video to loop.">Description</a>
-											<a href="https://github.com/kyschnit/spring-break-countdown"
-												target="_blank"
-												class="btn btn-dark">Code</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col mb-4">
-								<div class="card h-100 border-dark bg-light shadow">
-									<div class="card-header">
-										<h3 class="fw-bold mb-n1">Road
-											Trip
-											Radius
-											<span class="float-end pe-1">
-												<i
-													class="fa-solid fa-car 2x"></i>
-											</span>
-										</h3>
-									</div>
-									<div class="card-body">
-										<h4 class="card-title">Roadtrip
-											Planning
-											Website</h4>
-										<h5
-											class="card-subtitle mb-2 text-muted">
-											HTML, CSS, JavaScript,
-											Bootstrap
-										</h5>
-										<div
-											class="d-flex justify-content-center">
-											<a class="btn btn-primary me-1"
-												tabindex="0"
-												data-toggle="popover"
-												data-trigger="focus"
-												data-placement="bottom"
-												data-content="Currently undergoing development. 
-                                                The plan is to use the Google Maps API to determine where the user can drive to in a specified period of time or driving distance. 
-                                                Inspired by my love for roadtrips with friends.">Description</a>
-											<a href="https://github.com/kyschnit/road-trip-radius"
-												target="_blank"
-												class="btn btn-dark">Code</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col mb-4">
-								<div class="card h-100 border-dark bg-light shadow">
-									<div class="card-header">
-										<h3 class="fw-bold mb-n1">
-											kyle-schnitzer.com
-											<span class="float-end pe-1">
-												<i
-													class="fa-solid fa-code 2x"></i>
-											</span>
-										</h3>
-									</div>
-									<div class="card-body">
-										<h4 class="card-title">This
-											Website!
-										</h4>
-										<h5
-											class="card-subtitle mb-2 text-muted">
-											HTML, CSS, JavaScript,
-											Bootstrap
-										</h5>
-										<div
-											class="d-flex justify-content-center">
-											<a class="btn btn-primary me-1"
-												tabindex="0"
-												data-toggle="popover"
-												data-trigger="focus"
-												data-placement="bottom"
-												data-content="I built this website almost entirely from scratch during
-                                                my time in college. It was intended as a way to improve upon my web
-                                                development skills in addition to being a portfolio of my work. This is a
-                                                constant work in progress, expanding as I gain more experience. All of the
-                                                code is available on my GitHub.">Description</a>
-											<a href="https://github.com/kyschnit/kyschnit.github.io"
-												target="_blank"
-												class="btn btn-dark">Code</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col mb-4">
-								<div class="card h-100 border-dark bg-light shadow">
-									<div class="card-header">
-										<h3 class="fw-bold mb-n1">
-											Machine
-											Learning
-											<span class="float-end pe-1">
-												<i
-													class="fa-solid fa-brain 2x"></i>
-											</span>
-										</h3>
-									</div>
-									<div class="card-body">
-										<h4 class="card-title">EECS 280
-											Project
-											5</h4>
-										<h5
-											class="card-subtitle mb-2 text-muted">
-											C++</h5>
-										<div
-											class="d-flex justify-content-center">
-											<a class="btn btn-primary"
-												tabindex="0"
-												data-toggle="popover"
-												data-trigger="focus"
-												data-placement="bottom"
-												data-content="The goal of the final project in EECS 280 was to develop a
-                                                program that can classify posts on a student Q&A board called Piazza using
-                                                map and binary search tree data structures. This also involved thorough unit
-                                                testing. The code repository is private due to school honor code policy.">Description</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col mb-4">
-								<div class="card h-100 border-dark bg-light shadow">
-									<div class="card-header">
-										<h3 class="fw-bold mb-n1">Web
-											Backend
-											<span class="float-end pe-1">
-												<i
-													class="fa-solid fa-network-wired 2x"></i>
-											</span>
-										</h3>
-									</div>
-									<div class="card-body">
-										<h4 class="card-title">EECS 280
-											Project
-											4</h4>
-										<h5
-											class="card-subtitle mb-2 text-muted">
-											C++</h5>
-										<div
-											class="d-flex justify-content-center">
-											<a class="btn btn-primary"
-												tabindex="0"
-												data-toggle="popover"
-												data-trigger="focus"
-												data-placement="bottom"
-												data-content="This project was my first experience with web APIs. It
-                                                involved implementing a list data structure and using the list to implement
-                                                an office hours queue for the EECS 280 website. This required development of
-                                                a REST API and processing of JSON data. The code repository is private due
-                                                to school honor code policy.">Description</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col mb-4">
-								<div class="card h-100 border-dark bg-light shadow">
-									<div class="card-header">
-										<h3 class="fw-bold mb-n1">Euchre
-											<span class="float-end pe-1">
-												<i
-													class="fa-solid fa-gamepad 2x"></i>
-											</span>
-										</h3>
-									</div>
-									<div class="card-body">
-										<h4 class="card-title">EECS 280
-											Project
-											3</h4>
-										<h5
-											class="card-subtitle mb-2 text-muted">
-											C++</h5>
-										<div
-											class="d-flex justify-content-center">
-											<a class="btn btn-primary"
-												tabindex="0"
-												data-toggle="popover"
-												data-trigger="focus"
-												data-placement="bottom"
-												data-content="Euchre is likely the most complex
-                                                project I've taken on. This involved heavy use of inheritance and
-                                                object-oriented programming, with separate classes for each component of
-                                                the game. The game logic was also very complex and required thorough
-                                                testing to eliminate bugs. The code repository is private due to school
-                                                honor code policy.">Description</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col mb-4">
-								<div class="card h-100 border-dark bg-light shadow">
-									<div class="card-header">
-										<h3 class="fw-bold mb-n1">Seam
-											Carving
-											<span class="float-end pe-1">
-												<i
-													class="fa-solid fa-camera 2x"></i>
-											</span>
-										</h3>
-									</div>
-									<div class="card-body">
-										<h4 class="card-title">EECS 280
-											Project
-											2</h4>
-										<h5
-											class="card-subtitle mb-2 text-muted">
-											C++</h5>
-										<div
-											class="d-flex justify-content-center">
-											<a class="btn btn-primary"
-												tabindex="0"
-												data-toggle="popover"
-												data-trigger="focus"
-												data-placement="bottom"
-												data-content="This was the first real project I did in EECS 280.
-                                                This involved reading in an image as a PPM file, putting the data into a matrix,
-                                                creating a pixel data structure to represent each pixel of the image,
-                                                and writing an algorithm to resize the image to a specified size.
-                                                The algorithm determined the least important vertical seams of pixels in the image and removed them.
-                                                The code repository is private due to school honor code policy.">Description</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col mb-4">
-								<div class="card h-100 border-dark bg-light shadow">
-									<div class="card-header">
-										<h3 class="fw-bold mb-n1">Cubes
-											<span class="float-end pe-1">
-												<i
-													class="fa-solid fa-dice-d6 2x"></i>
-											</span>
-										</h3>
-									</div>
-									<div class="card-body">
-										<h4 class="card-title">A Game
-											for
-											Children with ASD</h4>
-										<h5
-											class="card-subtitle mb-2 text-muted">
-											GameMaker Language</h5>
-										<div
-											class="d-flex justify-content-center">
-											<a class="btn btn-primary me-1"
-												tabindex="0"
-												data-toggle="popover"
-												data-trigger="focus"
-												data-placement="bottom"
-												data-content="Cubes is a video game designed specifically
-                                                for children with Autism Spectrum Disorder(ASD). It was designed and created
-                                                by my 3-person team in ENGR 100, using GameMaker Studio A heavy focus was placed on
-                                                making the game as accessible as possible. My role in the project
-                                                involved programming game logic and aiding 
-                                                in the creation of technical documents such as the game manual.">Description</a>
-											<a href="https://github.com/kyschnit/engr-100-cubes"
-												target="_blank"
-												class="btn btn-dark">Code</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col mb-4">
-								<div class="card h-100 border-dark bg-light shadow">
-									<div class="card-header">
-										<h3 class="fw-bold mb-n1">Hungr
-											<span class="float-end pe-1">
-												<i
-													class="fa-solid fa-hamburger 2x"></i>
-											</span>
-										</h3>
-									</div>
-									<div class="card-body">
-										<h4 class="card-title">"Tinder
-											for Food"
-										</h4>
-										<h5
-											class="card-subtitle mb-2 text-muted">
-											Java, Android Studio
-										</h5>
-										<div
-											class="d-flex justify-content-center">
-											<a class="btn btn-primary"
-												tabindex="0"
-												data-toggle="popover"
-												data-trigger="focus"
-												data-placement="bottom"
-												data-content="Hungr is an Android app 
-                                                that allows the user to enter their food preferences and 
-                                                gives them a list of restaurant options to swipe through (thus the nickname &quotTinder for Food&quot). 
-                                                This was created by the Android subteam of Michigan
-                                                Hackers. My role in the project was primarily UI design
-                                                using Android Studio's UI development features.">Description</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+		<!-- Projects Section -->
+		<div class="container-fluid pt-5" id="projects">
+			<h2 class="fw-bold pt-3 text-center">Projects</h2>
+			<hr class="mx-auto mb-4">
+			<div class="row mx-5 gx-5 gy-3" id="projects-content">
+				<div class="col-lg-4">
+					<div class="list-group shadow-sm" id="list-tab" role="tablist">
+						<a class="list-group-item list-group-item-action active"
+							id="list-sb-countdown" data-toggle="list" href="#sb-countdown"
+							role="tab" aria-controls="list-sb-countdown">
+							Spring Break Countdown
+							<span class="float-end pe-1">
+								<i class="fa-solid fa-umbrella-beach fa-lg"></i>
+							</span></a>
+						<a class="list-group-item list-group-item-action" id="list-website"
+							data-toggle="list" href="#website" role="tab"
+							aria-controls="list-website">kyle-schnitzer.com
+							<span class="float-end pe-1">
+								<i class="fa-solid fa-code fa-lg"></i>
+							</span></a>
+						<a class="list-group-item list-group-item-action" id="list-blackout"
+							data-toggle="list" href="#blackout" role="tab"
+							aria-controls="list-blackout">Blackout
+							<span class="float-end pe-1">
+								<i class="fa-solid fa-pen fa-lg"></i>
+							</span></a></a>
+						<a class="list-group-item list-group-item-action" id="list-academic"
+							data-toggle="list" href="#academic" role="tab"
+							aria-controls="list-academic">Academic C/C++ Projects
+							<span class="float-end pe-1">
+								<i class="fa-solid fa-terminal fa-lg"></i>
+							</span></a>
 					</div>
-					<div class="tab-pane fade" id="extracurriculars">
-						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3">
-							<div class="col mb-4">
-								<div class="card h-100 border-dark bg-light shadow">
-									<div class="card-header">
-										<h3 class="fw-bold mb-n1">Ten
-											for Men
-											<span class="float-end pe-1">
-												<i
-													class="fa-solid fa-bible 2x"></i>
-											</span>
-										</h3>
-									</div>
-									<div class="card-body">
-										<h4 class="card-title">
-											Leader/Mentor
-										</h4>
-										<h5
-											class="card-subtitle mb-2 text-muted">
-											Youth Group</h5>
-										<div
-											class="d-flex justify-content-center">
-											<a class="btn btn-primary"
-												tabindex="0"
-												data-toggle="popover"
-												data-trigger="focus"
-												data-placement="bottom"
-												data-content="Ten for Men is a Christian youth group 
-                                                I have been attending since my freshman year of high school.
-                                                Since my junior year of high school, I've been a leader of the group.
-                                                This position involves scheduling and structuring meetings and events,
-                                                organizing and facilitating discussions,
-                                                and being a mentor to the high schoolers in the group.">Description</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col mb-4">
-								<div class="card h-100 border-dark bg-light shadow">
-									<div class="card-header">
-										<h3 class="fw-bold mb-n1">
-											Michigan
-											Hackers
-											<span class="float-end pe-1">
-												<i
-													class="fa-solid fa-laptop-code 2x"></i>
-											</span>
-										</h3>
-									</div>
-									<div class="card-body">
-										<h4 class="card-title">Core
-											Member -
-											Android</h4>
-										<h5
-											class="card-subtitle mb-2 text-muted">
-											Student CS Organization
-										</h5>
-										<div
-											class="d-flex justify-content-center">
-											<a class="btn btn-primary me-1"
-												tabindex="0"
-												data-toggle="popover"
-												data-trigger="focus"
-												data-placement="bottom"
-												data-content="Michigan Hackers is a student CS organization
-                                                at the University of Michigan. It is split into several specialized subteams.
-                                                I am currently a member of the Android subteam. Through Michigan Hackers
-                                                I have been able to develop software with people from a variety of backgrounds.">Description</a>
-											<a href="https://michiganhackers.org"
-												target="_blank"
-												class="btn btn-dark">Website</a>
-										</div>
-									</div>
-								</div>
-							</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="tab-content py-3 px-3 border shadow-sm" id="nav-tabContent">
+						<div class="tab-pane fade show active" id="sb-countdown" role="tabpanel"
+							aria-labelledby="list-sb-countdown">
+							<h6>A small creative project I
+								hacked together in a few hours.
+								This is a countdown for my university church's spring
+								break
+								trip. This was fun to make,
+								and even involved a little bit of video editing to get
+								the
+								background video to loop.</h6>
+							<h6 class="card-subtitle mb-2 text-muted">
+								<strong>Skills:</strong> HTML, CSS, JavaScript,
+								Bootstrap
+							</h6>
+							<a href="https://github.com/kyschnit/spring-break-countdown"
+								target="_blank" class="btn btn-dark">Code</a>
+						</div>
+						<div class="tab-pane fade" id="website" role="tabpanel"
+							aria-labelledby="list-website">
+							<h6>I built this website almost entirely from scratch during
+								my time in college. It doubles as a means to improve
+								my web
+								development skills and a portfolio of my work.
+								This is a
+								constant work in progress, expanding as I gain more
+								experience. All of the
+								code is available on my GitHub.</h6>
+							<h6 class="card-subtitle mb-2 text-muted">
+								<strong>Skills:</strong> HTML, CSS, JavaScript,
+								Bootstrap
+							</h6>
+							<a href="https://github.com/kyschnit/kyschnit.github.io"
+								target="_blank" class="btn btn-dark">Code</a>
+						</div>
+						<div class="tab-pane fade" id="blackout" role="tabpanel"
+							aria-labelledby="list-blackout">
+							<h6>Currently under development.
+								This is a Flutter app that allows users to input a piece
+								of text and black out words to create a
+								<a href="https://writers.com/what-is-blackout-poetry-examples-and-inspiration"
+									target="_blank">blackout
+									poem.</a>
+								I've found that flutter is an
+								incredibly fun and intuitive framework to use and I plan
+								to make more use of it in the future.
+							</h6>
+							<h6 class="card-subtitle mb-2 text-muted">
+								<strong>Skills:</strong> Flutter, Dart
+							</h6>
+						</div>
+						<div class="tab-pane fade" id="academic" role="tabpanel"
+							aria-labelledby="list-academic">
+							<h6>In EECS 280, EECS 281, and EECS 370, I developed
+								numerous complex C/C++ projects in a Linux
+								development environment. GDB was used extensively to
+								debug. Development required thorough understanding of
+								data
+								structures, algorithms, object oriented programming,
+								and computer organization.
+								C++ projects include the Traveling
+								Salesperson Problem, a website backend,
+								a machine learning algorithm, a euchre simulator, and an
+								image resizer. C projects include a program
+								assembler/linker and processor pipeline/cache
+								simulators. Code is private due to school honor code but
+								demonstrations are available upon request.</h6>
+							<h6 class="card-subtitle mb-2 text-muted">
+								<strong>Skills:</strong> C, C++, CMake, Linux/WSL, GDB,
+								Data Structures, Algorithms, OOP
+							</h6>
 						</div>
 					</div>
 				</div>
