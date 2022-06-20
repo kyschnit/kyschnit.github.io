@@ -127,11 +127,7 @@ hr {
     z-index: 1;
 }
 
-.nav-pills .nav-item:hover {
-    background-color: #bbc3c6;
-}
-
-.expand-caret {
+/* .expand-caret {
     color: black;
     transition: opacity 0.2s, transform 0.2s;
     opacity: 1;
@@ -143,4 +139,4 @@ hr {
 
 a[aria-expanded="false"]>.expand-caret {
     transform: rotate(90deg);
-}
+} */

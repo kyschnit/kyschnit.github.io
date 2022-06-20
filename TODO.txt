@@ -1,6 +1,6 @@
 TODO
 
 Add CAD portfolio
-Add skill descriptions
 Make dropdown work on hover
 Make captcha invisible
+Redo intro blurb
