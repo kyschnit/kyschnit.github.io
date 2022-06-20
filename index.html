@@ -24,6 +24,7 @@
 	<script type="text/javascript" src="js/contact.js"></script>
 	<script type="text/javascript" src="js/tooltip-popover.js"></script>
 	<script type="text/javascript" src="js/image-async.js"></script>
+	<script type="text/javascript" src="js/flavor-text.js"></script>
 
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
@@ -117,53 +118,66 @@
 						alt="Kyle Schnitzer">
 				</div>
 				<div class="d-flex flex-column justify-content-center col-md" id="about-content">
-					<p>
-						I'm a rising junior studying computer science at the University of
-						Michigan. I'm
-						still
-						discovering my
-						passions within the field,
-						but I have enjoyed my experiences with web development and Android app
-						development. I'm pursuing a
-						minor in entrepreneurship, and I'm very interested in the fast-paced,
-						innovative
-						culture of
-						startups. I'm always
-						willing
-						to learn something new, and I'm
-						constantly expanding my working knowledge. My primary programming
-						experience
-						lies in C++,
-						Javascript, and
-						Angular.
-						I'm currently a Software Engineering Intern at MathWorks in the
-						Engineering
-						Development Group!
-					</p>
-					<p>
-						I grew up surrounded by technology, so it seemed almost inevitable that
-						I would
-						major in computer
-						science. It is something that has
-						shaped my life, and I hope to use it to make a positive impact on the
-						world
-						around me.
-					</p>
-					<p>
-						Outside of programming, my interests include traveling, reading,
-						running,
-						biking, hiking, camping,
-						baking, playing video games, and 3D modeling with CAD software.
-						<!-- (to view some of my CAD work, click here) --> I am a member of
-						Michigan
-						Hackers, a student
-						computer science organization at the University of Michigan.
-						I also help to lead Ten for Men, a youth group for students at the high
-						school I
-						attended.
-						I stay active as a member of the University of Michigan Club Triathlon
+					<h5 class="mb-5">
+						I am a junior studying computer science at the <a
+							class="text-decoration-none"
+							onclick="showonlyone('college')">University
+							of Michigan</a>. I am a skilled web developer and C++
+						programmer. Through pursuing a minor in <a class="text-decoration-none"
+							onclick="showonlyone('sharktank')">entrepreneurship</a>, I've
+						developed an interest
+						in the fast-paced, innovative culture of startups. I love challenges and
+						I am quick to learn and adapt.
+						Currently, you'll find me in Natick, MA working as a Software
+						Engineering Intern at MathWorks!
+					</h5>
+					<h5 class="mb-5">
+						Outside of programming, I love to travel, <a
+							class="text-decoration-none"
+							onclick="showonlyone('read')">read</a>,
+						<a class="text-decoration-none" onclick="showonlyone('run')">run</a>,
+						<a class="text-decoration-none" onclick="showonlyone('hike')">hike</a>,
+						camp,
+						<a class="text-decoration-none" onclick="showonlyone('bake')">bake</a>,
+						<a class="text-decoration-none" onclick="showonlyone('games')">play
+							video
+							games</a>, <a class="text-decoration-none"
+							onclick="showonlyone('music')">listen to music</a>, and <a
+							class="text-decoration-none" onclick="showonlyone('cad')">3D
+							model</a>
+						with CAD
+						software.
+						<!-- (to view some of my CAD work, click here) -->
+						In addition, I help to lead Ten for Men, a youth group for students at my
+						former high
+						school.
+						I also stay active as a member of the University of Michigan
+						Club
+						Triathlon
 						team.
-					</p>
+					</h5>
+					<div class="flavor-text">
+						<h6 class="text-muted d-none" id="college">Go Blue!</h6>
+						<h6 class="text-muted d-none" id="sharktank">Shark Tank is easily one
+							of my favorite TV shows.</h6>
+						<h6 class="text-muted d-none" id="read">Really into sci-fi/fantasy.
+							Currently reading <em>A Darker Shade of Magic</em> by V.E.
+							Schwab.</h6>
+						<h6 class="text-muted d-none" id="run">I'm training for the Detroit
+							Free Press marathon in October!</h6>
+						<h6 class="text-muted d-none" id="hike">The header image is from a
+							hiking trip with my roommates to Mount Bierstadt, one of the
+							14,000+ foot peaks in the beautiful state of Colorado!</h6>
+						<h6 class="text-muted d-none" id="bake">One of the hardest things I've
+							ever done is bake a chocolate babka.</h6>
+						<h6 class="text-muted d-none" id="games">Mostly Stardew Valley these
+							days.</h6>
+						<h6 class="text-muted d-none" id="music">I've been stuck on The Head and
+							The Heart's self-titled album for a while now.</h6>
+						<h6 class="text-muted d-none" id="cad">You can view some of my work <a
+								href="https://youtube.com/playlist?list=PLf_u8uS5vNoEcdgbmySKyvx0HNacZCmfg" target="_blank">here</a>.
+						</h6>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -353,9 +367,9 @@
 							<h5 class="bg-secondary text-center">Leader/Mentor</h5>
 							<h6><strong>Organization:</strong> Ten for Men</h6>
 							<h6><strong>Duration:</strong> 2018 - Present</h6>
-							Ten for Men is a Christian youth group
-							I have been attending since my freshman year of high school.
-							Since my junior year of high school, I've been a leader of the
+							Ten for Men is a youth group
+							I've been attending since my freshman year of high school.
+							In my junior year of high school, I became a leader of the
 							group.
 							This position involves scheduling and structuring meetings and
 							events,
@@ -476,8 +490,7 @@
 								development skills and a portfolio of my work.
 								This is a
 								constant work in progress, expanding as I gain more
-								experience. All of the
-								code is available on my GitHub.</h6>
+								experience.</h6>
 							<h6 class="card-subtitle mb-2 text-muted">
 								<strong>Skills:</strong> HTML, CSS, JavaScript,
 								Bootstrap
@@ -504,19 +517,16 @@
 						<div class="tab-pane fade" id="academic" role="tabpanel"
 							aria-labelledby="list-academic">
 							<h6>In EECS 280, EECS 281, and EECS 370, I developed
-								numerous complex C/C++ projects in a Linux
-								development environment. GDB was used extensively to
-								debug. Development required thorough understanding of
-								data
-								structures, algorithms, object oriented programming,
-								and computer organization.
+								complex C/C++ projects in a Linux
+								development environment. GDB was used to
+								debug.
 								C++ projects include the Traveling
 								Salesperson Problem, a website backend,
 								a machine learning algorithm, a euchre simulator, and an
 								image resizer. C projects include a program
 								assembler/linker and processor pipeline/cache
-								simulators. Code is private due to school honor code but
-								demonstrations are available upon request.</h6>
+								simulators. Code is private due to school honor code.
+								Demonstrations are available upon request.</h6>
 							<h6 class="card-subtitle mb-2 text-muted">
 								<strong>Skills:</strong> C, C++, CMake, Linux/WSL, GDB,
 								Data Structures, Algorithms, OOP
