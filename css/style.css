@@ -78,14 +78,6 @@ header h1 {
     }
 }
 
-header img {
-    max-width: 15%;
-}
-
-.nav-pills .nav-item:hover {
-    background-color: #bbc3c6;
-}
-
 .social {
     color: rgba(255, 255, 255, .6);
     transition: color 0.2s;
@@ -94,6 +86,45 @@ header img {
 
 .social:hover {
     color: white;
+}
+
+hr {
+    border: 3px solid #f3969a;
+    color: #f3969a;
+    width: 75px;
+    opacity: 50%;
+}
+
+.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+.timeline:before {
+    content: '';
+    background-color: #f3969a;
+    display: inline-block;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0px;
+}
+
+.timeline > li:before {
+    content: '';
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    border: 3px solid #f3969a;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    left: -9px;
+    z-index: 1;
+}
+
+.nav-pills .nav-item:hover {
+    background-color: #bbc3c6;
 }
 
 .expand-caret {
