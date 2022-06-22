@@ -95,10 +95,6 @@ hr {
     opacity: 50%;
 }
 
-.fade {
-  opacity: 1;
-}
-
 .list-group-item {
     word-wrap: break-word;
 }
