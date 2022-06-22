@@ -64,6 +64,10 @@ header h1 {
     color: #fff;
 }
 
+.fade-in {
+    opacity: 1;
+}
+
 @keyframes floating {
     0% {
         transform: translate(0, 0px);
