@@ -126,17 +126,3 @@ hr {
     left: -9px;
     z-index: 1;
 }
-
-/* .expand-caret {
-    color: black;
-    transition: opacity 0.2s, transform 0.2s;
-    opacity: 1;
-}
-
-.expand-caret:hover {
-    opacity: 0.7;
-}
-
-a[aria-expanded="false"]>.expand-caret {
-    transform: rotate(90deg);
-} */
