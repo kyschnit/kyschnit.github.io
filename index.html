@@ -1,604 +1,1036 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<title>Kyle Schnitzer</title>
 
-<head>
-	<title>Kyle Schnitzer</title>
+		<!-- Meta -->
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Kyle Schnitzer's Digital Portfolio."
+		/>
+		<meta
+			name="keywords"
+			content="Kyle Schnitzer, Kyle, Schnitzer, kyschnit, schnitzerkyle, resume, portfolio, University of Michigan, web, web development,
+				       software, software developer, web developer"
+		/>
+		<meta name="author" content="Kyle Schnitzer" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- Meta -->
-	<meta charset="UTF-8">
-	<meta name="description" content="Kyle Schnitzer's Digital Portfolio.">
-	<meta name="keywords" content="Kyle Schnitzer, Kyle, Schnitzer, kyschnit, schnitzerkyle, resume, portfolio, University of Michigan, web, web development,
-				       software, software developer, web developer">
-	<meta name="author" content="Kyle Schnitzer">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Open Graph tags -->
+		<meta
+			property="og:title"
+			content="Kyle Schnitzer's Digital Portfolio"
+		/>
+		<meta
+			property="og:image"
+			content="https://kyle-schnitzer.com/imgs/thumbnail.jpg"
+		/>
+		<meta
+			property="og:description"
+			content="Kyle is a software developer and student based in Ann Arbor, Michigan."
+		/>
+		<meta property="og:url" content="https://kyle-schnitzer.com/" />
+		<meta property="og:image:width" content="3960" />
+		<meta property="og:image:height" content="2069" />
+		<meta property="og:type" content="website" />
 
-	<!-- Open Graph tags -->
-	<meta property="og:title" content="Kyle Schnitzer's Digital Portfolio">
-	<meta property="og:image" content="https://kyle-schnitzer.com/imgs/thumbnail.jpg">
-	<meta property="og:description" content="Kyle is a software developer and student based in Ann Arbor, Michigan.">
-	<meta property="og:url" content="https://kyle-schnitzer.com/">
-	<meta property="og:image:width" content="3960">
-	<meta property="og:image:height" content="2069">
-	<meta property="og:type" content="website">
+		<!-- Twitter tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			name="twitter:title"
+			content="Kyle Schnitzer's Digital Portfolio"
+		/>
+		<meta
+			name="twitter:description"
+			content="Kyle is a software developer and student based in Ann Arbor, Michigan."
+		/>
+		<meta
+			name="twitter:image"
+			content="https://kyle-schnitzer.com/imgs/thumbnail.jpg"
+		/>
 
-	<!-- Twitter tags -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Kyle Schnitzer's Digital Portfolio">
-	<meta name="twitter:description" content="Kyle is a software developer and student based in Ann Arbor, Michigan.">
-	<meta name="twitter:image" content="https://kyle-schnitzer.com/imgs/thumbnail.jpg">
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="imgs/favicon.ico" />
 
-	<!-- Favicon -->
-	<link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+		<!-- Link Bootstrap CSS -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/minty/bootstrap.min.css"
+		/>
 
-	<!-- Link Bootstrap CSS -->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/minty/bootstrap.min.css">
+		<!-- Link CSS Stylesheet -->
+		<link rel="stylesheet" href="css/style.css" />
 
-	<!-- Link CSS Stylesheet -->
-	<link rel="stylesheet" href="css/style.css">
+		<!-- Link jQuery, Popper.js, JS, EmailJS, contact form JS, tooltip JS, and reCAPTCHA JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-	<!-- Link jQuery, Popper.js, JS, EmailJS, contact form JS, tooltip JS, and reCAPTCHA JS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+		<script src="js/contact.js"></script>
+		<script src="js/tooltip-popover.js"></script>
+		<script src="js/image-async.js"></script>
+		<script src="js/flavor-text.js"></script>
 
-	<script src="js/contact.js"></script>
-	<script src="js/tooltip-popover.js"></script>
-	<script src="js/image-async.js"></script>
-	<script src="js/flavor-text.js"></script>
+		<script
+			src="https://www.google.com/recaptcha/api.js"
+			async
+			defer
+		></script>
 
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<!-- Link Font Awesome stylesheet CDN -->
+		<script
+			src="https://kit.fontawesome.com/95dd8fd1b9.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
 
-	<!-- Link Font Awesome stylesheet CDN -->
-	<script src="https://kit.fontawesome.com/95dd8fd1b9.js" crossorigin="anonymous"></script>
-</head>
+	<body data-spy="scroll" data-target=".navbar">
+		<!-- Header Section -->
+		<header
+			class="d-flex flex-column justify-content-center text-center"
+			id="home"
+		>
+			<h1 class="fw-bold d-inline" id="typewriter">
+				Hi, I'm Kyle Schnitzer!
+			</h1>
+			<p>
+				I'm a student and software developer based in Ann Arbor,
+				Michigan.
+			</p>
+			<a href="#about">
+				<i
+					class="fa-solid fa-chevron-down fa-2xl mt-5 floating nav-link"
+				></i>
+			</a>
+		</header>
 
-<body data-spy="scroll" data-target=".navbar">
-	<!-- Header Section -->
-	<header class="d-flex flex-column justify-content-center text-center" id="home">
-		<h1 class="fw-bold d-inline" id="typewriter">Hi, I'm Kyle Schnitzer!</h1>
-		<p>
-			I'm a student and software developer based in Ann Arbor, Michigan.
-		</p>
-		<a href="#about">
-			<i class="fa-solid fa-chevron-down fa-2xl mt-5 floating nav-link"></i>
-		</a>
-	</header>
-
-	<!-- Navigation Section -->
-	<nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobileContent">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navMobileContent">
-			<ul class="navbar-nav ps-3">
-				<li class="nav-item">
-					<a class="nav-link" href="#home">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#about">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#skills">Skills</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-						Resume
-					</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#education-experience">Education/Experience</a>
-						<a class="dropdown-item" href="#projects">Projects</a>
-					</div>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
-				</li>
-				<!-- <li class="nav-item">
+		<!-- Navigation Section -->
+		<nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navMobileContent"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navMobileContent">
+				<ul class="navbar-nav ps-3">
+					<li class="nav-item">
+						<a class="nav-link" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#skills">Skills</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navbardrop"
+							data-toggle="dropdown"
+						>
+							Resume
+						</a>
+						<div class="dropdown-menu">
+							<a
+								class="dropdown-item"
+								href="#education-experience"
+								>Education/Experience</a
+							>
+							<a class="dropdown-item" href="#projects"
+								>Projects</a
+							>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+					<!-- <li class="nav-item">
 					<a class="nav-link" href="https://kyle-schnitzer.com/blog">Thoughts</a>
 				</li> -->
-			</ul>
-		</div>
-
-		<div id="social-media">
-			<a href="https://github.com/kyschnit" aria-label="Github" data-toggle="tooltip" data-placement="bottom"
-				title="Visit my GitHub!" class="social text-decoration-none" target="_blank">
-				<i class="fa-brands fa-github fa-2xl pe-1"></i>
-			</a>
-			<a href="https://www.linkedin.com/in/kyle-schnitzer-a203211a6/" aria-label="LinkedIn" data-toggle="tooltip"
-				data-placement="bottom" title="Visit my LinkedIn!" class="social text-decoration-none" target="_blank">
-				<i class="fa-brands fa-linkedin-in fa-2xl pe-1"></i>
-			</a>
-			<a href="mailto:kyschnit@umich.edu" aria-label="Send an Email" data-toggle="tooltip" data-placement="left"
-				title="Send me an email at kyschnit@umich.edu" class="social text-decoration-none">
-				<i class="fa-solid fa-envelope fa-2xl pe-4"></i>
-			</a>
-		</div>
-	</nav>
-
-	<!-- Main Section -->
-	<main>
-		<!-- About Section -->
-		<div class="container-fluid pt-3" id="about">
-			<h2 class="fw-bold mt-5 text-center">About Me</h2>
-			<hr class="mx-auto">
-			<div class="row gx-5 mx-3 border shadow-sm">
-				<div class="col col-lg-4 mb-3">
-					<img class="img-thumbnail img-fluid mt-3" src="imgs/user.jpg" alt="Kyle Schnitzer">
-				</div>
-				<div class="d-flex flex-column justify-content-center col-md" id="about-content">
-					<h5 class="mb-5">
-						I am a junior studying computer science at the <a class="text-decoration-none"
-							onclick="showonlyone('college')">University
-							of Michigan</a>. I am a skilled web developer and C++
-						programmer. Through pursuing classes focused on <a class="text-decoration-none"
-							onclick="showonlyone('sharktank')">entrepreneurship</a>, I've
-						developed an interest
-						in the fast-paced, innovative culture of startups. I love challenges and
-						I am quick to learn and adapt.
-						Currently, you'll find me in Ann Arbor taking classes, hanging out, and
-						teaching as an <a class="text-decoration-none"
-							href="https://www.eecs.umich.edu/courses/eecs281/" target="_blank">EECS
-							281</a> Instructional Aide for my university!
-					</h5>
-					<h5 class="mb-5">
-						Outside of programming, I love to travel, <a class="text-decoration-none"
-							onclick="showonlyone('read')">read</a>,
-						<a class="text-decoration-none" onclick="showonlyone('run')">run</a>,
-						<a class="text-decoration-none" onclick="showonlyone('hike')">hike</a>,
-						camp,
-						<a class="text-decoration-none" onclick="showonlyone('bake')">bake</a>,
-						<a class="text-decoration-none" onclick="showonlyone('games')">play
-							video
-							games</a>, <a class="text-decoration-none" onclick="showonlyone('music')">listen to
-							music</a>, and <a class="text-decoration-none" onclick="showonlyone('cad')">3D
-							model</a>
-						with CAD
-						software.
-						<!-- (to view some of my CAD work, click here) -->
-						In addition, I help to lead Ten for Men, a youth group for students at
-						my
-						former high
-						school.
-						I also stay active as a member of the University of Michigan
-						Club
-						Triathlon
-						team.
-					</h5>
-					<div class="flavor-text">
-						<h6 class="text-muted d-none" id="college">Go Blue!</h6>
-						<h6 class="text-muted d-none" id="sharktank">Shark Tank is easily one
-							of my favorite TV shows.</h6>
-						<h6 class="text-muted d-none" id="read">Check out my <a class="text-decoration-none"
-								href="html/readinglist.html">reading list!</a>
-						</h6>
-						<h6 class="text-muted d-none" id="run">I'm training for the Detroit
-							Free Press marathon in October!</h6>
-						<h6 class="text-muted d-none" id="hike">The header image is from a
-							hiking trip with my roommates to Mount Bierstadt, one of the
-							14,000+ foot peaks in the beautiful state of Colorado!</h6>
-						<h6 class="text-muted d-none" id="bake">One of the hardest things I've
-							ever done is bake a chocolate babka.</h6>
-						<h6 class="text-muted d-none" id="games">Mostly Stardew Valley these
-							days.</h6>
-						<h6 class="text-muted d-none" id="music">I've been stuck on The Head and
-							The Heart's self-titled album for a while now.</h6>
-						<h6 class="text-muted d-none" id="cad">You can view some of my work <a
-								href="https://youtube.com/playlist?list=PLf_u8uS5vNoEcdgbmySKyvx0HNacZCmfg"
-								target="_blank">here</a>.
-						</h6>
-					</div>
-				</div>
+				</ul>
 			</div>
-		</div>
 
-		<!-- Skills Section -->
-		<div class="container-fluid pt-3" id="skills">
-			<h2 class="fw-bold pt-5 text-center">My Skills</h2>
-			<hr class="mx-auto mb-4">
-			<div class="accordion mx-3 shadow-sm" id="skills-content">
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="heading-one">
-						<button class="accordion-button" type="button" data-toggle="collapse"
-							data-target="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
-							Programming Languages
-						</button>
-					</h2>
-					<div id="collapse-one" class="accordion-collapse collapse show" aria-labelledby="heading-one"
-						data-parent="#skills-content">
-						<div class="accordion-body">
-							<h6>HTML</h6>
-							<div class="progress mb-3">
-								<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
-									aria-valuemin="0" aria-valuemax="100">90%</div>
-							</div>
-							<h6>Typescript/Javascript</h6>
-							<div class="progress mb-3">
-								<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
-									aria-valuemin="0" aria-valuemax="100">85%</div>
-							</div>
-							<h6>C++</h6>
-							<div class="progress mb-3">
-								<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
-									aria-valuemin="0" aria-valuemax="100">80%</div>
-							</div>
-							<h6>CSS</h6>
-							<div class="progress mb-3">
-								<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
-									aria-valuemin="0" aria-valuemax="100">75%</div>
-							</div>
-							<h6>Python</h6>
-							<div class="progress mb-3">
-								<div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100">60%</div>
-							</div>
-							<h6>Java</h6>
-							<div class="progress mb-3">
-								<div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
-									aria-valuemin="0" aria-valuemax="100">50%</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="heading-two">
-						<button class="accordion-button collapsed" type="button" data-toggle="collapse"
-							data-target="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
-							Frameworks
-						</button>
-					</h2>
-					<div id="collapse-two" class="accordion-collapse collapse" aria-labelledby="heading-two"
-						data-parent="#skills-content">
-						<div class="accordion-body">
-							<h6>Angular</h6>
-							<div class="progress mb-3">
-								<div class="progress-bar bg-secondary" role="progressbar" style="width: 75%;"
-									aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-							</div>
-							<h6>React</h6>
-							<div class="progress">
-								<div class="progress-bar bg-secondary" role="progressbar" style="width: 60%;"
-									aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="heading-three">
-						<button class="accordion-button collapsed" type="button" data-toggle="collapse"
-							data-target="#collapse-three" aria-expanded="false" aria-controls="collapse-three">
-							Technologies
-						</button>
-					</h2>
-					<div id="collapse-three" class="accordion-collapse collapse" aria-labelledby="heading-three"
-						data-parent="#skills-content">
-						<div class="accordion-body">
-							<h6>Windows</h6>
-							<div class="progress mb-3">
-								<div class="progress-bar bg-info" role="progressbar" style="width: 80%;"
-									aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-							</div>
-							<h6>Linux</h6>
-							<div class="progress mb-3">
-								<div class="progress-bar bg-info" role="progressbar" style="width: 70%;"
-									aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-							</div>
-							<h6>Git</h6>
-							<div class="progress mb-3">
-								<div class="progress-bar bg-info" role="progressbar" style="width: 70%;"
-									aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-							</div>
-							<h6>CAD</h6>
-							<div class="progress">
-								<div class="progress-bar bg-info" role="progressbar" style="width: 70%;"
-									aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			<div id="social-media">
+				<a
+					href="https://github.com/kyschnit"
+					aria-label="Github"
+					data-toggle="tooltip"
+					data-placement="bottom"
+					title="Visit my GitHub!"
+					class="social text-decoration-none"
+					target="_blank"
+				>
+					<i class="fa-brands fa-github fa-2xl pe-1"></i>
+				</a>
+				<a
+					href="https://www.linkedin.com/in/kyle-schnitzer-a203211a6/"
+					aria-label="LinkedIn"
+					data-toggle="tooltip"
+					data-placement="bottom"
+					title="Visit my LinkedIn!"
+					class="social text-decoration-none"
+					target="_blank"
+				>
+					<i class="fa-brands fa-linkedin-in fa-2xl pe-1"></i>
+				</a>
+				<a
+					href="mailto:kyschnit@umich.edu"
+					aria-label="Send an Email"
+					data-toggle="tooltip"
+					data-placement="left"
+					title="Send me an email at kyschnit@umich.edu"
+					class="social text-decoration-none"
+				>
+					<i class="fa-solid fa-envelope fa-2xl pe-4"></i>
+				</a>
 			</div>
-		</div>
+		</nav>
 
-		<!-- Resume Section-->
-		<div class="container-fluid pt-3" id="education-experience">
-			<h2 class="fw-bold pt-5 text-center">Resume</h2>
-			<hr class="mx-auto mb-3">
-			<div class="row mx-3 gx-5 py-3 px-1" id="education-experience-content">
-				<div class="col-lg-6">
-					<h3 class="fw-bold text-left mb-3">Education</h3>
-					<ul class="timeline">
-						<li class="mb-5">
-							<h5 class="bg-secondary text-center">Bachelor of Science
-								Engineering, Computer Science</h5>
-							<h6><strong>School:</strong> University of Michigan</h6>
-							<h6><strong>Duration:</strong> 2020 - 2024</h6>
-							<h6><strong>GPA:</strong> 3.76</h6>
-							<h6 class="fw-bold">Coursework</h6>
-							<ul>
-								<li>EECS 482 - Intro to
-									Operating Systems
-									<ul>
-										<li>EECS 498-02 - Advanced
-											Operating Systems Projects
-										</li>
-									</ul>
-								</li>
-								<li>EECS 388 - Intro to
-									Computer Security
-								</li>
-								<li>EECS 376 - Foundations of
-									Computer Science
-								</li>
-								<li>EECS 370 - Introduction to
-									Computer
-									Organization
-								</li>
-								<li>EECS 298 - Applied Machine
-									Learning
-									for Engineers
-								</li>
-								<li>EECS 281 - Data Structures
-									and
-									Algorithms
-								</li>
-								<li>EECS 280 - Programming and
-									Introductory Data
-									Structures
-								</li>
-								<li>EECS 203 - Discrete
-									Mathematics
-								</li>
-								<li>ENGR 100 - Introduction to
-									Engineering
-								</li>
-								<li>MATH 214 - Applied Linear
-									Algebra
-								</li>
-								<li>MATH 216 - Introduction to
-									Differential Equations
-								</li>
-							</ul>
-						</li>
-						<li>
-							<h5 class="bg-secondary text-center">High School Diploma</h5>
-							<h6><strong>School:</strong> Saline High School</h6>
-							<h6><strong>Duration:</strong> 2016 - 2020</h6>
-							<h6><strong>GPA:</strong> 4.3</h6>
-							<h6 class="fw-bold">Coursework</h6>
-							<ul>
-								<li>AP Computer Science A</li>
-								<li>AP Calculus BC</li>
-								<li>AP Chemistry</li>
-								<li>AP Physics C: Mechanics</li>
-							</ul>
-						</li>
-					</ul>
-					<h3 class="fw-bold text-left mb-3">Leadership</h3>
-					<ul class="timeline">
-						<li>
-							<h5 class="bg-secondary text-center">Leader/Mentor</h5>
-							<h6><strong>Organization:</strong> Ten for Men</h6>
-							<h6><strong>Duration:</strong> 2018 - Present</h6>
-							Ten for Men is a youth group
-							I've been attending since my freshman year of high school.
-							In my junior year of high school, I became a leader of the
-							group.
-							This position involves scheduling and structuring meetings and
-							events,
-							organizing and facilitating discussions,
-							and being a mentor to the high schoolers in the group.
-						</li>
-					</ul>
-				</div>
-				<div class="col-lg-6">
-					<h3 class="fw-bold text-left mb-3">Work Experience</h3>
-					<ul class="timeline">
-						<li class="mb-5">
-							<h5 class="bg-secondary text-center">Instructional Aide</h5>
-							<h6><strong>Company:</strong> University of Michigan</h6>
-							<h6><strong>Duration:</strong> Aug 2022 - Present</h6>
-							<h6><strong>Location:</strong> Ann Arbor, Michigan</h6>
-							<h6><strong>Skills:</strong> C++, Data Structures, Algorithms, Teaching</h6>
-							I collaborate closely with professors and other staff to create materials for and run my
-							university's Data Structures and Algorithms course, which has 1000+ students. In addition, I
-							teach a two hour lab section of 30+ students, hold weekly office hours, and answer student
-							questions on an online Q&A board.
-						</li>
-						<li class="mb-5">
-							<h5 class="bg-secondary text-center">Software Engineering
-								Intern, EDG</h5>
-							<h6><strong>Company:</strong> MathWorks</h6>
-							<h6><strong>Duration:</strong> May - Aug 2022</h6>
-							<h6><strong>Location:</strong> Natick, Massachussetts</h6>
-							<h6><strong>Skills:</strong> React, JavaScript, HTML, CSS</h6>
-							I worked with the Infrastructure, Architecture, and Tools team
-							to migrate an internal webapp from
-							legacy AngularJS code to the React framework. This reduced
-							technical debt and drastically increased code maintainability
-							and security.
-						</li>
-						<li class="mb-5">
-							<h5 class="bg-secondary text-center">Web Developer</h5>
-							<h6><strong>Company:</strong> University of Michigan</h6>
-							<h6><strong>Duration:</strong> Sept 2021 - May 2022</h6>
-							<h6><strong>Location:</strong> Ann Arbor, Michigan</h6>
-							<h6><strong>Skills:</strong> HTML, CSS, JavaScript, Drupal
-							</h6>
-							I worked with the Ford School of Public Policy's web team to
-							design custom email templates and create,
-							publish, and update various pages across the Ford School
-							website. I also worked to ensure
-							accessibility across the website.
-						</li>
-						<li>
-							<h5 class="bg-secondary text-center">Software Engineering Intern
-							</h5>
-							<h6><strong>Company:</strong> Epsilon Imaging</h6>
-							<h6><strong>Duration:</strong> May - Aug 2021</h6>
-							<h6><strong>Location:</strong> Ann Arbor, Michigan</h6>
-							<h6><strong>Skills:</strong> Angular, JavaScript, HTML, CSS, C#
-							</h6>
-							I collaborated with senior engineers and the customer support
-							team to design and develop
-							a setup wizard page and a diagnostics page for Epsilon's
-							flagship
-							product.
-							These projects streamlined the webapp's setup and diagnostic
-							experiences, making it much more user-friendly. The code was
-							shipped to production and recieved positive customer feedback.
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<!-- Projects Section -->
-		<div class="container-fluid pt-5" id="projects">
-			<h2 class="fw-bold pt-3 text-center">Projects</h2>
-			<hr class="mx-auto mb-4">
-			<div class="row mx-3 gy-3" id="projects-content">
-				<div class="col-lg-4">
-					<div class="list-group shadow-sm" id="list-tab" role="tablist">
-						<a class="list-group-item list-group-item-action active" id="list-sb-countdown"
-							data-toggle="list" href="#sb-countdown" role="tab" aria-controls="list-sb-countdown">
-							Spring Break Countdown
-							<span class="float-end pe-1">
-								<i class="fa-solid fa-umbrella-beach fa-lg"></i>
-							</span></a>
-						<a class="list-group-item list-group-item-action" id="list-website" data-toggle="list"
-							href="#website" role="tab" aria-controls="list-website">kyle-schnitzer.com
-							<span class="float-end pe-1">
-								<i class="fa-solid fa-code fa-lg"></i>
-							</span></a>
-						<a class="list-group-item list-group-item-action" id="list-blackout" data-toggle="list"
-							href="#blackout" role="tab" aria-controls="list-blackout">Blackout
-							<span class="float-end pe-1">
-								<i class="fa-solid fa-pen fa-lg"></i>
-							</span></a>
-						<a class="list-group-item list-group-item-action" id="list-academic" data-toggle="list"
-							href="#academic" role="tab" aria-controls="list-academic">Academic C/C++ Projects
-							<span class="float-end pe-1">
-								<i class="fa-solid fa-terminal fa-lg"></i>
-							</span></a>
+		<!-- Main Section -->
+		<main>
+			<!-- About Section -->
+			<div class="container-fluid pt-3" id="about">
+				<h2 class="fw-bold mt-5 text-center">About Me</h2>
+				<hr class="mx-auto" />
+				<div class="row gx-5 mx-3 border shadow-sm">
+					<div class="col col-lg-4 mb-3">
+						<img
+							class="img-thumbnail img-fluid mt-3"
+							src="imgs/user.jpg"
+							alt="Kyle Schnitzer"
+						/>
 					</div>
-				</div>
-				<div class="col-lg-8">
-					<div class="tab-content py-3 px-3 border shadow-sm" id="nav-tabContent">
-						<div class="tab-pane fade show active" id="sb-countdown" role="tabpanel"
-							aria-labelledby="list-sb-countdown">
-							<h6>A small creative project I
-								hacked together in a few hours.
-								This is a countdown for my university church's spring
-								break
-								trip. This was fun to make,
-								and even involved a little bit of video editing to get
-								the
-								background video to loop.</h6>
-							<h6 class="card-subtitle mb-2 text-muted">
-								<strong>Skills:</strong> HTML, CSS, JavaScript,
-								Bootstrap
+					<div
+						class="d-flex flex-column justify-content-center col-md"
+						id="about-content"
+					>
+						<h5 class="mb-5">
+							I am a junior studying computer science at the
+							<a
+								class="text-decoration-none"
+								onclick="showonlyone('college')"
+								>University of Michigan</a
+							>. I am a skilled web developer and C++ programmer.
+							Through pursuing classes focused on
+							<a
+								class="text-decoration-none"
+								onclick="showonlyone('sharktank')"
+								>entrepreneurship</a
+							>, I've developed an interest in the fast-paced,
+							innovative culture of startups. I love challenges
+							and I am quick to learn and adapt. Currently, you'll
+							find me in Ann Arbor taking classes, hanging out,
+							and working as a programmer for the Lomize Research
+							Group!
+						</h5>
+						<h5 class="mb-5">
+							Outside of programming, I love to travel,
+							<a
+								class="text-decoration-none"
+								onclick="showonlyone('read')"
+								>read</a
+							>,
+							<a
+								class="text-decoration-none"
+								onclick="showonlyone('run')"
+								>run</a
+							>,
+							<a
+								class="text-decoration-none"
+								onclick="showonlyone('hike')"
+								>hike</a
+							>, camp,
+							<a
+								class="text-decoration-none"
+								onclick="showonlyone('bake')"
+								>bake</a
+							>,
+							<a
+								class="text-decoration-none"
+								onclick="showonlyone('games')"
+								>play video games</a
+							>,
+							<a
+								class="text-decoration-none"
+								onclick="showonlyone('music')"
+								>listen to music</a
+							>, and
+							<a
+								class="text-decoration-none"
+								onclick="showonlyone('cad')"
+								>3D model</a
+							>
+							with CAD software.
+							<!-- (to view some of my CAD work, click here) -->
+							In addition, I help to lead Ten for Men, a youth
+							group for students at my former high school. I also
+							stay active as a member of the University of
+							Michigan Club Triathlon team.
+						</h5>
+						<div class="flavor-text">
+							<h6 class="text-muted d-none" id="college">
+								Go Blue!
 							</h6>
-							<a href="https://github.com/kyschnit/spring-break-countdown" target="_blank"
-								class="btn btn-dark">Code</a>
-						</div>
-						<div class="tab-pane fade" id="website" role="tabpanel" aria-labelledby="list-website">
-							<h6>I built this website almost entirely from scratch during
-								my time in college. It doubles as a means to improve
-								my web
-								development skills and a portfolio of my work.
-								This is a
-								constant work in progress, expanding as I gain more
-								experience.</h6>
-							<h6 class="card-subtitle mb-2 text-muted">
-								<strong>Skills:</strong> HTML, CSS, JavaScript,
-								Bootstrap
+							<h6 class="text-muted d-none" id="sharktank">
+								Shark Tank is easily one of my favorite TV
+								shows.
 							</h6>
-							<a href="https://github.com/kyschnit/kyschnit.github.io" target="_blank"
-								class="btn btn-dark">Code</a>
-						</div>
-						<div class="tab-pane fade" id="blackout" role="tabpanel" aria-labelledby="list-blackout">
-							<h6>Currently under development.
-								This is a Flutter app that allows users to input a piece
-								of text and black out words to create a
-								<a href="https://writers.com/what-is-blackout-poetry-examples-and-inspiration"
-									target="_blank">blackout
-									poem.</a>
-								I've found that flutter is an
-								incredibly fun and intuitive framework to use and I plan
-								to make more use of it in the future.
+							<h6 class="text-muted d-none" id="read">
+								Check out my
+								<a
+									class="text-decoration-none"
+									href="html/readinglist.html"
+									>reading list!</a
+								>
 							</h6>
-							<h6 class="card-subtitle mb-2 text-muted">
-								<strong>Skills:</strong> Flutter, Dart
+							<h6 class="text-muted d-none" id="run">
+								I ran the Detroit Free Press marathon this past
+								October!
 							</h6>
-						</div>
-						<div class="tab-pane fade" id="academic" role="tabpanel" aria-labelledby="list-academic">
-							<h6>In EECS 280, EECS 281, and EECS 370, I developed
-								complex C/C++ projects in a Linux
-								development environment. GDB was used to
-								debug.
-								C++ projects include the Traveling
-								Salesperson Problem, a website backend,
-								a machine learning algorithm, a euchre simulator, and an
-								image resizer. C projects include a program
-								assembler/linker and processor pipeline/cache
-								simulators. Code is private due to school honor code.
-								Demonstrations are available upon request.</h6>
-							<h6 class="card-subtitle mb-2 text-muted">
-								<strong>Skills:</strong> C, C++, CMake, Linux/WSL, GDB,
-								Data Structures, Algorithms, OOP
+							<h6 class="text-muted d-none" id="hike">
+								The header image is from a hiking trip with my
+								roommates to Mount Bierstadt, one of the 14,000+
+								foot peaks in the beautiful state of Colorado!
+							</h6>
+							<h6 class="text-muted d-none" id="bake">
+								One of the hardest things I've ever done is bake
+								a chocolate babka.
+							</h6>
+							<h6 class="text-muted d-none" id="games">
+								Mostly Stardew Valley these days.
+							</h6>
+							<h6 class="text-muted d-none" id="music">
+								I've been stuck on The Head and The Heart's
+								self-titled album for a while now.
+							</h6>
+							<h6 class="text-muted d-none" id="cad">
+								You can view some of my work
+								<a
+									href="https://youtube.com/playlist?list=PLf_u8uS5vNoEcdgbmySKyvx0HNacZCmfg"
+									target="_blank"
+									>here</a
+								>.
 							</h6>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- Contact Section -->
-		<div class="container-fluid pt-3" id="contact">
-			<h2 class="fw-bold pt-5 text-center">Contact Me</h2>
-			<hr class="mx-auto mb-4">
-			<div class="mx-3" id="contact-content">
-				<div class="row">
-					<div class="col col-lg-6">
-						<div class="row">
-							<div class="col col-md-12">
-								<div class="card bg-light mb-3 shadow-sm">
-									<div class="card-body text-center">
-										<span class="fa-stack fa-2x">
-											<i class="fa-solid fa-circle fa-stack-2x text-primary"></i>
-											<i class="fa-solid fa-share-nodes fa-stack-1x fa-inverse"></i>
-										</span>
-										<h6 class="mt-3 fw-bold">Social
-											Media
-										</h6>
-										<div class="d-flex justify-content-center mt-3">
-											<a href="https://github.com/kyschnit" aria-label="Github"
-												data-toggle="tooltip" data-placement="bottom" title="Visit my GitHub!"
-												class="px-2 link-secondary" id="github" target="_blank">
-												<span class="fa-stack">
-													<i class="fa-solid fa-circle fa-stack-2x"></i>
-													<i class="fa-brands fa-github fa-stack-1x fa-inverse"></i>
-												</span>
-											</a>
-											<a href="https://www.linkedin.com/in/kyle-schnitzer-a203211a6/"
-												aria-label="LinkedIn" data-toggle="tooltip" data-placement="bottom"
-												title="Visit my LinkedIn!" class="px-2 link-secondary" id="linkedin"
-												target="_blank">
-												<span class="fa-stack">
-													<i class="fa-solid fa-circle fa-stack-2x"></i>
-													<i class="fa-brands fa-linkedin fa-stack-1x fa-inverse"></i>
-												</span>
-											</a>
-											<a href="https://www.instagram.com/k.schnitzer/" aria-label="Instagram"
-												data-toggle="tooltip" data-placement="bottom"
-												title="Visit my Instagram!" class="px-2 link-secondary" id="instagram"
-												target="_blank">
-												<span class="fa-stack">
-													<i class="fa-solid fa-circle fa-stack-2x"></i>
-													<i class="fa-brands fa-instagram fa-stack-1x fa-inverse"></i>
-												</span>
-											</a>
-											<!-- <a href="https://www.kyle-schnitzer.com/blog"
+			<!-- Skills Section -->
+			<div class="container-fluid pt-3" id="skills">
+				<h2 class="fw-bold pt-5 text-center">My Skills</h2>
+				<hr class="mx-auto mb-4" />
+				<div class="accordion mx-3 shadow-sm" id="skills-content">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="heading-one">
+							<button
+								class="accordion-button"
+								type="button"
+								data-toggle="collapse"
+								data-target="#collapse-one"
+								aria-expanded="true"
+								aria-controls="collapse-one"
+							>
+								Programming Languages
+							</button>
+						</h2>
+						<div
+							id="collapse-one"
+							class="accordion-collapse collapse show"
+							aria-labelledby="heading-one"
+							data-parent="#skills-content"
+						>
+							<div class="accordion-body">
+								<h6>HTML</h6>
+								<div class="progress mb-3">
+									<div
+										class="progress-bar"
+										role="progressbar"
+										style="width: 90%"
+										aria-valuenow="90"
+										aria-valuemin="0"
+										aria-valuemax="100"
+									>
+										90%
+									</div>
+								</div>
+								<h6>Typescript/Javascript</h6>
+								<div class="progress mb-3">
+									<div
+										class="progress-bar"
+										role="progressbar"
+										style="width: 85%"
+										aria-valuenow="85"
+										aria-valuemin="0"
+										aria-valuemax="100"
+									>
+										85%
+									</div>
+								</div>
+								<h6>C++</h6>
+								<div class="progress mb-3">
+									<div
+										class="progress-bar"
+										role="progressbar"
+										style="width: 80%"
+										aria-valuenow="80"
+										aria-valuemin="0"
+										aria-valuemax="100"
+									>
+										80%
+									</div>
+								</div>
+								<h6>CSS</h6>
+								<div class="progress mb-3">
+									<div
+										class="progress-bar"
+										role="progressbar"
+										style="width: 75%"
+										aria-valuenow="75"
+										aria-valuemin="0"
+										aria-valuemax="100"
+									>
+										75%
+									</div>
+								</div>
+								<h6>Python</h6>
+								<div class="progress mb-3">
+									<div
+										class="progress-bar"
+										role="progressbar"
+										style="width: 60%"
+										aria-valuenow="60"
+										aria-valuemin="0"
+										aria-valuemax="100"
+									>
+										60%
+									</div>
+								</div>
+								<h6>Java</h6>
+								<div class="progress mb-3">
+									<div
+										class="progress-bar"
+										role="progressbar"
+										style="width: 50%"
+										aria-valuenow="50"
+										aria-valuemin="0"
+										aria-valuemax="100"
+									>
+										50%
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="heading-two">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-toggle="collapse"
+								data-target="#collapse-two"
+								aria-expanded="false"
+								aria-controls="collapse-two"
+							>
+								Frameworks
+							</button>
+						</h2>
+						<div
+							id="collapse-two"
+							class="accordion-collapse collapse"
+							aria-labelledby="heading-two"
+							data-parent="#skills-content"
+						>
+							<div class="accordion-body">
+								<h6>Angular</h6>
+								<div class="progress mb-3">
+									<div
+										class="progress-bar bg-secondary"
+										role="progressbar"
+										style="width: 75%"
+										aria-valuenow="75"
+										aria-valuemin="0"
+										aria-valuemax="100"
+									>
+										75%
+									</div>
+								</div>
+								<h6>React</h6>
+								<div class="progress">
+									<div
+										class="progress-bar bg-secondary"
+										role="progressbar"
+										style="width: 60%"
+										aria-valuenow="60"
+										aria-valuemin="0"
+										aria-valuemax="100"
+									>
+										60%
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="heading-three">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-toggle="collapse"
+								data-target="#collapse-three"
+								aria-expanded="false"
+								aria-controls="collapse-three"
+							>
+								Technologies
+							</button>
+						</h2>
+						<div
+							id="collapse-three"
+							class="accordion-collapse collapse"
+							aria-labelledby="heading-three"
+							data-parent="#skills-content"
+						>
+							<div class="accordion-body">
+								<h6>Windows</h6>
+								<div class="progress mb-3">
+									<div
+										class="progress-bar bg-info"
+										role="progressbar"
+										style="width: 80%"
+										aria-valuenow="80"
+										aria-valuemin="0"
+										aria-valuemax="100"
+									>
+										80%
+									</div>
+								</div>
+								<h6>Linux</h6>
+								<div class="progress mb-3">
+									<div
+										class="progress-bar bg-info"
+										role="progressbar"
+										style="width: 70%"
+										aria-valuenow="70"
+										aria-valuemin="0"
+										aria-valuemax="100"
+									>
+										70%
+									</div>
+								</div>
+								<h6>Git</h6>
+								<div class="progress mb-3">
+									<div
+										class="progress-bar bg-info"
+										role="progressbar"
+										style="width: 70%"
+										aria-valuenow="70"
+										aria-valuemin="0"
+										aria-valuemax="100"
+									>
+										70%
+									</div>
+								</div>
+								<h6>CAD</h6>
+								<div class="progress">
+									<div
+										class="progress-bar bg-info"
+										role="progressbar"
+										style="width: 70%"
+										aria-valuenow="70"
+										aria-valuemin="0"
+										aria-valuemax="100"
+									>
+										70%
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Resume Section-->
+			<div class="container-fluid pt-3" id="education-experience">
+				<h2 class="fw-bold pt-5 text-center">Resume</h2>
+				<hr class="mx-auto mb-3" />
+				<div
+					class="row mx-3 gx-5 py-3 px-1"
+					id="education-experience-content"
+				>
+					<div class="col-lg-6">
+						<h3 class="fw-bold text-left mb-3">Education</h3>
+						<ul class="timeline">
+							<li class="mb-5">
+								<h5 class="bg-secondary text-center">
+									Bachelor of Science Engineering, Computer
+									Science
+								</h5>
+								<h6>
+									<strong>School:</strong> University of
+									Michigan
+								</h6>
+								<h6><strong>Duration:</strong> 2020 - 2024</h6>
+								<h6><strong>GPA:</strong> 3.76</h6>
+								<h6 class="fw-bold">Coursework</h6>
+								<ul>
+									<li>
+										EECS 482 - Intro to Operating Systems
+										<ul>
+											<li>
+												EECS 498-02 - Advanced Operating
+												Systems Projects
+											</li>
+										</ul>
+									</li>
+									<li>
+										EECS 388 - Intro to Computer Security
+									</li>
+									<li>
+										EECS 376 - Foundations of Computer
+										Science
+									</li>
+									<li>
+										EECS 370 - Introduction to Computer
+										Organization
+									</li>
+									<li>
+										EECS 298 - Applied Machine Learning for
+										Engineers
+									</li>
+									<li>
+										EECS 281 - Data Structures and
+										Algorithms
+									</li>
+									<li>
+										EECS 280 - Programming and Introductory
+										Data Structures
+									</li>
+									<li>EECS 203 - Discrete Mathematics</li>
+									<li>
+										ENGR 100 - Introduction to Engineering
+									</li>
+									<li>MATH 214 - Applied Linear Algebra</li>
+									<li>
+										MATH 216 - Introduction to Differential
+										Equations
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h5 class="bg-secondary text-center">
+									High School Diploma
+								</h5>
+								<h6>
+									<strong>School:</strong> Saline High School
+								</h6>
+								<h6><strong>Duration:</strong> 2016 - 2020</h6>
+								<h6><strong>GPA:</strong> 4.3</h6>
+								<h6 class="fw-bold">Coursework</h6>
+								<ul>
+									<li>AP Computer Science A</li>
+									<li>AP Calculus BC</li>
+									<li>AP Chemistry</li>
+									<li>AP Physics C: Mechanics</li>
+								</ul>
+							</li>
+						</ul>
+						<h3 class="fw-bold text-left mb-3">Leadership</h3>
+						<ul class="timeline">
+							<li>
+								<h5 class="bg-secondary text-center">
+									Leader/Mentor
+								</h5>
+								<h6>
+									<strong>Organization:</strong> Ten for Men
+								</h6>
+								<h6>
+									<strong>Duration:</strong> 2018 - Present
+								</h6>
+								Ten for Men is a youth group I've been attending
+								since my freshman year of high school. In my
+								junior year of high school, I became a leader of
+								the group. This position involves scheduling and
+								structuring meetings and events, organizing and
+								facilitating discussions, and being a mentor to
+								the high schoolers in the group.
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6">
+						<h3 class="fw-bold text-left mb-3">Work Experience</h3>
+						<ul class="timeline">
+							<li class="mb-5">
+								<h5 class="bg-secondary text-center">
+									Instructional Aide
+								</h5>
+								<h6>
+									<strong>Company:</strong> University of
+									Michigan
+								</h6>
+								<h6>
+									<strong>Duration:</strong> Aug 2022 -
+									Present
+								</h6>
+								<h6>
+									<strong>Location:</strong> Ann Arbor,
+									Michigan
+								</h6>
+								<h6>
+									<strong>Skills:</strong> C++, Data
+									Structures, Algorithms, Teaching
+								</h6>
+								I collaborate closely with professors and other
+								staff to create materials for and run my
+								university's Data Structures and Algorithms
+								course, which has 1000+ students. In addition, I
+								teach a two hour lab section of 30+ students,
+								hold weekly office hours, and answer student
+								questions on an online Q&A board.
+							</li>
+							<li class="mb-5">
+								<h5 class="bg-secondary text-center">
+									Software Engineering Intern, EDG
+								</h5>
+								<h6><strong>Company:</strong> MathWorks</h6>
+								<h6>
+									<strong>Duration:</strong> May - Aug 2022
+								</h6>
+								<h6>
+									<strong>Location:</strong> Natick,
+									Massachussetts
+								</h6>
+								<h6>
+									<strong>Skills:</strong> React, JavaScript,
+									HTML, CSS
+								</h6>
+								I worked with the Infrastructure, Architecture,
+								and Tools team to migrate an internal webapp
+								from legacy AngularJS code to the React
+								framework. This reduced technical debt and
+								drastically increased code maintainability and
+								security.
+							</li>
+							<li class="mb-5">
+								<h5 class="bg-secondary text-center">
+									Web Developer
+								</h5>
+								<h6>
+									<strong>Company:</strong> University of
+									Michigan
+								</h6>
+								<h6>
+									<strong>Duration:</strong> Sept 2021 - May
+									2022
+								</h6>
+								<h6>
+									<strong>Location:</strong> Ann Arbor,
+									Michigan
+								</h6>
+								<h6>
+									<strong>Skills:</strong> HTML, CSS,
+									JavaScript, Drupal
+								</h6>
+								I worked with the Ford School of Public Policy's
+								web team to design custom email templates and
+								create, publish, and update various pages across
+								the Ford School website. I also worked to ensure
+								accessibility across the website.
+							</li>
+							<li>
+								<h5 class="bg-secondary text-center">
+									Software Engineering Intern
+								</h5>
+								<h6>
+									<strong>Company:</strong> Epsilon Imaging
+								</h6>
+								<h6>
+									<strong>Duration:</strong> May - Aug 2021
+								</h6>
+								<h6>
+									<strong>Location:</strong> Ann Arbor,
+									Michigan
+								</h6>
+								<h6>
+									<strong>Skills:</strong> Angular,
+									JavaScript, HTML, CSS, C#
+								</h6>
+								I collaborated with senior engineers and the
+								customer support team to design and develop a
+								setup wizard page and a diagnostics page for
+								Epsilon's flagship product. These projects
+								streamlined the webapp's setup and diagnostic
+								experiences, making it much more user-friendly.
+								The code was shipped to production and recieved
+								positive customer feedback.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Projects Section -->
+			<div class="container-fluid pt-5" id="projects">
+				<h2 class="fw-bold pt-3 text-center">Projects</h2>
+				<hr class="mx-auto mb-4" />
+				<div class="row mx-3 gy-3" id="projects-content">
+					<div class="col-lg-4">
+						<div
+							class="list-group shadow-sm"
+							id="list-tab"
+							role="tablist"
+						>
+							<a
+								class="list-group-item list-group-item-action active"
+								id="list-sb-countdown"
+								data-toggle="list"
+								href="#sb-countdown"
+								role="tab"
+								aria-controls="list-sb-countdown"
+							>
+								Spring Break Countdown
+								<span class="float-end pe-1">
+									<i
+										class="fa-solid fa-umbrella-beach fa-lg"
+									></i> </span
+							></a>
+							<a
+								class="list-group-item list-group-item-action"
+								id="list-website"
+								data-toggle="list"
+								href="#website"
+								role="tab"
+								aria-controls="list-website"
+								>kyle-schnitzer.com
+								<span class="float-end pe-1">
+									<i
+										class="fa-solid fa-code fa-lg"
+									></i> </span
+							></a>
+							<a
+								class="list-group-item list-group-item-action"
+								id="list-blackout"
+								data-toggle="list"
+								href="#blackout"
+								role="tab"
+								aria-controls="list-blackout"
+								>Blackout
+								<span class="float-end pe-1">
+									<i class="fa-solid fa-pen fa-lg"></i> </span
+							></a>
+							<a
+								class="list-group-item list-group-item-action"
+								id="list-academic"
+								data-toggle="list"
+								href="#academic"
+								role="tab"
+								aria-controls="list-academic"
+								>Academic C/C++ Projects
+								<span class="float-end pe-1">
+									<i
+										class="fa-solid fa-terminal fa-lg"
+									></i> </span
+							></a>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div
+							class="tab-content py-3 px-3 border shadow-sm"
+							id="nav-tabContent"
+						>
+							<div
+								class="tab-pane fade show active"
+								id="sb-countdown"
+								role="tabpanel"
+								aria-labelledby="list-sb-countdown"
+							>
+								<h6>
+									A small creative project I hacked together
+									in a few hours. This is a countdown for my
+									university church's spring break trip. This
+									was fun to make, and even involved a little
+									bit of video editing to get the background
+									video to loop.
+								</h6>
+								<h6 class="card-subtitle mb-2 text-muted">
+									<strong>Skills:</strong> HTML, CSS,
+									JavaScript, Bootstrap
+								</h6>
+								<a
+									href="https://github.com/kyschnit/spring-break-countdown"
+									target="_blank"
+									class="btn btn-dark"
+									>Code</a
+								>
+							</div>
+							<div
+								class="tab-pane fade"
+								id="website"
+								role="tabpanel"
+								aria-labelledby="list-website"
+							>
+								<h6>
+									I built this website almost entirely from
+									scratch during my time in college. It
+									doubles as a means to improve my web
+									development skills and a portfolio of my
+									work. This is a constant work in progress,
+									expanding as I gain more experience.
+								</h6>
+								<h6 class="card-subtitle mb-2 text-muted">
+									<strong>Skills:</strong> HTML, CSS,
+									JavaScript, Bootstrap
+								</h6>
+								<a
+									href="https://github.com/kyschnit/kyschnit.github.io"
+									target="_blank"
+									class="btn btn-dark"
+									>Code</a
+								>
+							</div>
+							<div
+								class="tab-pane fade"
+								id="blackout"
+								role="tabpanel"
+								aria-labelledby="list-blackout"
+							>
+								<h6>
+									Currently under development. This is a
+									Flutter app that allows users to input a
+									piece of text and black out words to create
+									a
+									<a
+										href="https://writers.com/what-is-blackout-poetry-examples-and-inspiration"
+										target="_blank"
+										>blackout poem.</a
+									>
+									I've found that flutter is an incredibly fun
+									and intuitive framework to use and I plan to
+									make more use of it in the future.
+								</h6>
+								<h6 class="card-subtitle mb-2 text-muted">
+									<strong>Skills:</strong> Flutter, Dart
+								</h6>
+							</div>
+							<div
+								class="tab-pane fade"
+								id="academic"
+								role="tabpanel"
+								aria-labelledby="list-academic"
+							>
+								<h6>
+									In EECS 280, EECS 281, and EECS 370, I
+									developed complex C/C++ projects in a Linux
+									development environment. GDB was used to
+									debug. C++ projects include the Traveling
+									Salesperson Problem, a website backend, a
+									machine learning algorithm, a euchre
+									simulator, and an image resizer. C projects
+									include a program assembler/linker and
+									processor pipeline/cache simulators. Code is
+									private due to school honor code.
+									Demonstrations are available upon request.
+								</h6>
+								<h6 class="card-subtitle mb-2 text-muted">
+									<strong>Skills:</strong> C, C++, CMake,
+									Linux/WSL, GDB, Data Structures, Algorithms,
+									OOP
+								</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Contact Section -->
+			<div class="container-fluid pt-3" id="contact">
+				<h2 class="fw-bold pt-5 text-center">Contact Me</h2>
+				<hr class="mx-auto mb-4" />
+				<div class="mx-3" id="contact-content">
+					<div class="row">
+						<div class="col col-lg-6">
+							<div class="row">
+								<div class="col col-md-12">
+									<div class="card bg-light mb-3 shadow-sm">
+										<div class="card-body text-center">
+											<span class="fa-stack fa-2x">
+												<i
+													class="fa-solid fa-circle fa-stack-2x text-primary"
+												></i>
+												<i
+													class="fa-solid fa-share-nodes fa-stack-1x fa-inverse"
+												></i>
+											</span>
+											<h6 class="mt-3 fw-bold">
+												Social Media
+											</h6>
+											<div
+												class="d-flex justify-content-center mt-3"
+											>
+												<a
+													href="https://github.com/kyschnit"
+													aria-label="Github"
+													data-toggle="tooltip"
+													data-placement="bottom"
+													title="Visit my GitHub!"
+													class="px-2 link-secondary"
+													id="github"
+													target="_blank"
+												>
+													<span class="fa-stack">
+														<i
+															class="fa-solid fa-circle fa-stack-2x"
+														></i>
+														<i
+															class="fa-brands fa-github fa-stack-1x fa-inverse"
+														></i>
+													</span>
+												</a>
+												<a
+													href="https://www.linkedin.com/in/kyle-schnitzer-a203211a6/"
+													aria-label="LinkedIn"
+													data-toggle="tooltip"
+													data-placement="bottom"
+													title="Visit my LinkedIn!"
+													class="px-2 link-secondary"
+													id="linkedin"
+													target="_blank"
+												>
+													<span class="fa-stack">
+														<i
+															class="fa-solid fa-circle fa-stack-2x"
+														></i>
+														<i
+															class="fa-brands fa-linkedin fa-stack-1x fa-inverse"
+														></i>
+													</span>
+												</a>
+												<a
+													href="https://www.instagram.com/k.schnitzer/"
+													aria-label="Instagram"
+													data-toggle="tooltip"
+													data-placement="bottom"
+													title="Visit my Instagram!"
+													class="px-2 link-secondary"
+													id="instagram"
+													target="_blank"
+												>
+													<span class="fa-stack">
+														<i
+															class="fa-solid fa-circle fa-stack-2x"
+														></i>
+														<i
+															class="fa-brands fa-instagram fa-stack-1x fa-inverse"
+														></i>
+													</span>
+												</a>
+												<!-- <a href="https://www.kyle-schnitzer.com/blog"
 												aria-label="Visit my blog"
 												data-toggle="tooltip"
 												data-placement="bottom"
@@ -613,172 +1045,250 @@
 														class="fa-solid fa-blog fa-stack-1x fa-inverse"></i>
 												</span>
 											</a> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col col-md-6">
+									<div class="card bg-light mb-3 shadow-sm">
+										<div class="card-body text-center">
+											<span class="fa-stack fa-2x">
+												<i
+													class="fa-solid fa-circle fa-stack-2x text-primary"
+												></i>
+												<i
+													class="fa-solid fa-envelope fa-stack-1x fa-inverse"
+												></i>
+											</span>
+											<h6 class="mt-3 fw-bold">
+												Email Me
+											</h6>
+											<a
+												class="link-secondary"
+												href="mailto:kyschnit@umich.edu"
+											>
+												kyschnit@umich.edu
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col col-md-6">
+									<div class="card bg-light mb-3 shadow-sm">
+										<div class="card-body text-center">
+											<span class="fa-stack fa-2x">
+												<i
+													class="fa-solid fa-circle fa-stack-2x text-primary"
+												></i>
+												<i
+													class="fa-solid fa-file-download fa-stack-1x fa-inverse"
+												></i>
+											</span>
+											<h6 class="mt-3 fw-bold">
+												View my Resume
+											</h6>
+											<a
+												class="link-secondary"
+												href="./files/Kyle%20Schnitzer%20Resume.pdf"
+											>
+												Download
+											</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col col-md-6">
-								<div class="card bg-light mb-3 shadow-sm">
-									<div class="card-body text-center">
-										<span class="fa-stack fa-2x">
-											<i class="fa-solid fa-circle fa-stack-2x text-primary"></i>
-											<i class="fa-solid fa-envelope fa-stack-1x fa-inverse"></i>
-										</span>
-										<h6 class="mt-3 fw-bold">Email
-											Me
-										</h6>
-										<a class="link-secondary" href="mailto:kyschnit@umich.edu">
-											kyschnit@umich.edu
-										</a>
-									</div>
+						<div class="col col-lg-6">
+							<div class="card bg-light mb-3 shadow-sm">
+								<div class="card-body">
+									<form id="contact-form" method="post">
+										<div class="form-group d-none">
+											<input
+												type="hidden"
+												name="contact_number"
+												class="form-control"
+											/>
+										</div>
+										<div class="row">
+											<div class="col-md-6 form-group">
+												<input
+													type="text"
+													class="form-control mb-3"
+													placeholder="Your Name"
+													id="name"
+													name="user_name"
+													required="required"
+													data-error="Name is required."
+												/>
+											</div>
+											<div class="col-md-6 form-group">
+												<input
+													type="email"
+													class="form-control mb-3"
+													placeholder="Your Email"
+													id="email"
+													name="user_email"
+													required="required"
+													data-error="Email is required."
+												/>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 form-group">
+												<input
+													type="text"
+													class="form-control mb-3"
+													placeholder="Subject"
+													id="subject"
+													name="subject"
+													required="required"
+													data-error="Subject is required."
+												/>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 form-group">
+												<textarea
+													class="form-control mb-3"
+													placeholder="Message"
+													rows="5"
+													id="message"
+													name="message"
+													required="required"
+													data-error="Please enter a message."
+												></textarea>
+											</div>
+										</div>
+										<div class="row gx-5">
+											<div
+												class="col col-lg-8 form-group"
+											>
+												<div
+													class="g-recaptcha mb-3"
+													data-sitekey="6LdOOXIbAAAAAFgHQoZz3djcph517dpoT76GeUIQ"
+												></div>
+											</div>
+											<div
+												class="col col-lg-4 my-3 form-group"
+											>
+												<button
+													type="submit"
+													class="btn btn-lg btn-success"
+													value="Send Message"
+												>
+													Submit
+												</button>
+											</div>
+										</div>
+										<div
+											class="modal fade"
+											id="modal-success"
+											data-backdrop="true"
+										>
+											<div
+												class="modal-dialog modal-dialog-centered"
+											>
+												<div
+													class="modal-content border border-success"
+												>
+													<!-- Modal Header -->
+													<div class="modal-header">
+														<h4 class="modal-title">
+															Message Sent
+														</h4>
+														<button
+															type="button"
+															class="close"
+															data-dismiss="modal"
+															aria-label="Close"
+														>
+															&times;
+														</button>
+													</div>
+
+													<!-- Modal body -->
+													<div class="modal-body">
+														Your message has been
+														sent!
+													</div>
+
+													<!-- Modal footer -->
+													<div class="modal-footer">
+														<button
+															type="button"
+															class="btn btn-success"
+															data-dismiss="modal"
+															aria-label="Close"
+														>
+															Close
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div
+											class="modal fade"
+											id="modal-failure"
+											data-backdrop="true"
+										>
+											<div
+												class="modal-dialog modal-dialog-centered"
+											>
+												<div
+													class="modal-content border border-danger"
+												>
+													<!-- Modal Header -->
+													<div class="modal-header">
+														<h4 class="modal-title">
+															Message Failed to
+															Send
+														</h4>
+														<button
+															type="button"
+															class="close"
+															data-dismiss="modal"
+														>
+															&times;
+														</button>
+													</div>
+
+													<!-- Modal body -->
+													<div class="modal-body">
+														Make sure you have
+														completed the captcha.
+													</div>
+
+													<!-- Modal footer -->
+													<div class="modal-footer">
+														<button
+															type="button"
+															class="btn btn-danger"
+															data-dismiss="modal"
+														>
+															Close
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
 								</div>
-							</div>
-							<div class="col col-md-6">
-								<div class="card bg-light mb-3 shadow-sm">
-									<div class="card-body text-center">
-										<span class="fa-stack fa-2x">
-											<i class="fa-solid fa-circle fa-stack-2x text-primary"></i>
-											<i class="fa-solid fa-file-download fa-stack-1x fa-inverse"></i>
-										</span>
-										<h6 class="mt-3 fw-bold">View my
-											Resume</h6>
-										<a class="link-secondary" href="./files/Kyle%20Schnitzer%20Resume.pdf">
-											Download
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col col-lg-6">
-						<div class="card bg-light mb-3 shadow-sm">
-							<div class="card-body">
-								<form id="contact-form" method="post">
-									<div class="form-group d-none">
-										<input type="hidden" name="contact_number" class="form-control">
-									</div>
-									<div class="row">
-										<div class="col-md-6 form-group">
-											<input type="text" class="form-control mb-3" placeholder="Your Name"
-												id="name" name="user_name" required="required"
-												data-error="Name is required.">
-										</div>
-										<div class="col-md-6 form-group">
-											<input type="email" class="form-control mb-3" placeholder="Your Email"
-												id="email" name="user_email" required="required"
-												data-error="Email is required.">
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-12 form-group">
-											<input type="text" class="form-control mb-3" placeholder="Subject"
-												id="subject" name="subject" required="required"
-												data-error="Subject is required.">
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-12 form-group">
-											<textarea class="form-control mb-3" placeholder="Message" rows="5"
-												id="message" name="message" required="required"
-												data-error="Please enter a message."></textarea>
-										</div>
-									</div>
-									<div class="row gx-5">
-										<div class="col col-lg-8 form-group">
-											<div class="g-recaptcha mb-3"
-												data-sitekey="6LdOOXIbAAAAAFgHQoZz3djcph517dpoT76GeUIQ">
-											</div>
-										</div>
-										<div class="col col-lg-4 my-3 form-group">
-											<button type="submit" class="btn btn-lg btn-success"
-												value="Send Message">Submit</button>
-										</div>
-									</div>
-									<div class="modal fade" id="modal-success" data-backdrop="true">
-										<div class="modal-dialog modal-dialog-centered">
-											<div class="modal-content border border-success">
-
-												<!-- Modal Header -->
-												<div class="modal-header">
-													<h4 class="modal-title">
-														Message
-														Sent
-													</h4>
-													<button type="button" class="close" data-dismiss="modal"
-														aria-label="Close">&times;</button>
-												</div>
-
-												<!-- Modal body -->
-												<div class="modal-body">
-													Your
-													message
-													has
-													been
-													sent!
-												</div>
-
-												<!-- Modal footer -->
-												<div class="modal-footer">
-													<button type="button" class="btn btn-success" data-dismiss="modal"
-														aria-label="Close">Close</button>
-												</div>
-
-											</div>
-										</div>
-									</div>
-									<div class="modal fade" id="modal-failure" data-backdrop="true">
-										<div class="modal-dialog modal-dialog-centered">
-											<div class="modal-content border border-danger">
-
-												<!-- Modal Header -->
-												<div class="modal-header">
-													<h4 class="modal-title">
-														Message
-														Failed
-														to
-														Send
-													</h4>
-													<button type="button" class="close"
-														data-dismiss="modal">&times;</button>
-												</div>
-
-												<!-- Modal body -->
-												<div class="modal-body">
-													Make
-													sure you
-													have
-													completed
-													the
-													captcha.
-												</div>
-
-												<!-- Modal footer -->
-												<div class="modal-footer">
-													<button type="button" class="btn btn-danger"
-														data-dismiss="modal">Close</button>
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</form>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</main>
+		</main>
 
-	<!-- Footer Section -->
-	<footer class="bg-primary">
-		<div class="container-fluid text-center text-white py-3">
-			<p>Website created by <strong>Kyle Schnitzer.</strong> <br>
-				Hosted on Github Pages.</p>
-		</div>
-	</footer>
-</body>
-
+		<!-- Footer Section -->
+		<footer class="bg-primary">
+			<div class="container-fluid text-center text-white py-3">
+				<p>
+					Website created by <strong>Kyle Schnitzer.</strong> <br />
+					Hosted on Github Pages.
+				</p>
+			</div>
+		</footer>
+	</body>
 </html>
